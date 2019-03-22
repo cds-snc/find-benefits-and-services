@@ -1,5 +1,5 @@
 {
-  "name": "vac-poc",
+  "name": "find-benefits-and-services",
   "scripts": {},
   "env": {
     "AIRTABLE_READ_KEY": { "required": false },
