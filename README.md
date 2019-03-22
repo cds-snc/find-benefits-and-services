@@ -1,11 +1,11 @@
-[![CircleCI](https://circleci.com/gh/veteransaffairscanada/vac-benefits-directory.svg?style=svg)](https://circleci.com/gh/veteransaffairscanada/vac-benefits-directory)
-[![Known Vulnerabilities](https://snyk.io/test/github/veteransaffairscanada/vac-benefits-directory/badge.svg?targetFile=package.json)](https://snyk.io/test/github/veteransaffairscanada/vac-benefits-directory?targetFile=package.json)
+[![CircleCI](https://circleci.com/gh/cds-snc/find-benefits-and-services.svg?style=svg)](https://circleci.com/gh/cds-snc/find-benefits-and-services)
+[![Known Vulnerabilities](https://snyk.io/test/github/cds-snc/find-benefits-and-services/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cds-snc/find-benefits-and-services?targetFile=package.json)
 
 [La version française suit.](#---------------------------------------------------------------------)
 
 # Find benefits and services
 
-This is the code for _Find benefits and services_, a product being developed by VAC and CDS. The app is in beta and currently deployed at https://benefits-prestations.veterans.gc.ca. It is undergoing development and is not yet publicly released for use.
+This is the code for _Find benefits and services_, a product developed by VAC and CDS. The app is in beta and currently deployed at https://benefits-prestations.veterans.gc.ca. It is undergoing development and is not yet publicly released for use.
 
 The setup documentation can be found below. If you'd like to contribute to the project, we have more detailed documentation regarding our tech choices here: [doc](/doc/).
 
@@ -24,7 +24,6 @@ Contact other developers on the project for what values we're currently using.
 | `SENTRY_DSN`                 | save browser errors to Sentry                                                                                | production           |
 | `GA_UA`                      | track app usage with Google Analytics for VAC                                                                | production           |
 | `GA_UA_CDS`                  | track app usage with Google Analytics for CDS                                                                | production           |
-| `GITHUB_PUBLIC_ACCESS_TOKEN` | gather data from GitHub for the stats page                                                                   | production           |
 | `WEBHOOK_URL`                | Sends slack deployment notifications                                                                         | production           |
 | `BROWSERSTACK_USERNAME`      | run tests on Windows via BrowserStack                                                                        | locally              |
 | `BROWSERSTACK_ACCESS_KEY`    | run tests on Windows via BrowserStack                                                                        | locally              |
@@ -62,10 +61,9 @@ To add a new ENV variable to the source code, take the following steps:
     ```
 4.  Add another build argument to [config.yml](./.circleci/config.yml):
     `--build-arg YOUR_VARIABLE_NAME="${YOUR_VARIABLE_NAME}"`
-5.  Add the ENV variable to CircleCI through their web interface: https://circleci.com/gh/veteransaffairscanada/vac-benefits-directory -> Settings -> Environment Variables
+5.  Add the ENV variable to CircleCI through their web interface: https://circleci.com/gh/cds-snc/find-benefits-and-services -> Settings -> Environment Variables
 6.  Add the ENV variable to Heroku through their web interface.
-    It will need to be added to any production apps as well as the app that the pull request reviews are based on, namely
-    [vac-poc-staging](https://dashboard.heroku.com/apps/vac-poc-staging). Go to the apps, then the Settings tab, then "Reveal Config Vars"
+    It will need to be added to any production apps as well as the app that the pull request reviews are based on. Go to the apps, then the Settings tab, then "Reveal Config Vars"
     and set the variable.
 
 7.  Add `"YOUR_VARIABLE_NAME": { "required": true }` to the `env` object in [app.json](./app.json)
@@ -78,7 +76,7 @@ To add a new ENV variable to the source code, take the following steps:
   - node (`brew install node`)
   - yarn (`npm i yarn`)
 - Clone the repo
-  - `git clone git@github.com:cds-snc/vac-benefits-directory.git`
+  - `git clone git@github.com:cds-snc/find-benefits-and-services.git`
 - In the local repo directory:
   - `yarn install`
   - `yarn dev`
@@ -98,6 +96,10 @@ To add a new ENV variable to the source code, take the following steps:
 - If you run into syntax errors chances are there are missing packages/dependencies and you may want to try
   running a clean yarn install. Delete Node_modules folder and then re run `yarn install` in the main folder.
 
+## Airtable
+
+We've set up a [demo airtable base](link to come) so you can see how it is configured.
+
 ## Reference
 
 This application uses the following resources:
@@ -108,7 +110,7 @@ This application uses the following resources:
 
 ## ---------------------------------------------------------------------
 
-# Rechercher des avantages et des services
+# Rechercher des avantages et des services (Out of date)
 
 Il s’agit du code pour _Rechercher des avantages et des services_, un produit mis au point par Anciens Combattants Canada (ACC) et le Service numérique canadien (SNC). L’application est actuellement déployée à https://benefits-prestations.veterans.gc.ca/?lng=fr.
 
