@@ -2,7 +2,7 @@
   "name": "vac-poc",
   "scripts": {},
   "env": {
-    "AIRTABLE_READ_KEY": { "required": true },
+    "AIRTABLE_READ_KEY": { "required": false },
     "AIRTABLE_BASE_KEY": { "required": false }
   },
   "formation": {},
