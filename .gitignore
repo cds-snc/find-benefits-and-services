@@ -26,3 +26,5 @@ locales/en/common.missing.json
 #Eclipse specific
 .project
 .settings/*
+
+build-sizes.json
