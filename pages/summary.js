@@ -13,13 +13,14 @@ import BreadCrumbs from "../components/breadcrumbs";
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import { globalTheme } from "../theme";
-import { mutateUrl, getBenefitCountString, getPageName } from "../utils/common";
+import { mutateUrl, getBenefitCountString } from "../utils/common";
 import { connect } from "react-redux";
 import GuidedExperienceSummary from "../components/guided_experience_summary";
 import Body from "../components/typography/body";
 import { getFilteredBenefits } from "../selectors/benefits";
 import { getHomeUrl } from "../selectors/urls";
 import AlphaBanner from "../components/alpha_banner";
+import airtableConstants from "../utils/hardcoded_strings";
 
 const box = css`
   padding: 63px 63px 63px 63px;
@@ -48,7 +49,10 @@ export class Summary extends Component {
     } = this.props;
     const prevSection =
       reduxState.patronType === "organization" ? "patronType" : "needs";
-    const backUrl = mutateUrl(url, "/" + getPageName(prevSection));
+    const backUrl = mutateUrl(
+      url,
+      "/" + airtableConstants.getPageName(prevSection)
+    );
     const benefitsToConsider = getBenefitCountString(filteredBenefits, t);
     return (
       <Layout

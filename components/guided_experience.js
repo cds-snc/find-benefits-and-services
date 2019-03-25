@@ -12,11 +12,12 @@ import { globalTheme } from "../theme";
 import Paper from "./paper";
 import { mutateUrl } from "../utils/common";
 import { connect } from "react-redux";
-import { showQuestion, getPageName } from "../utils/common";
+import { showQuestion } from "../utils/common";
 import HeaderButton from "./header_button";
 import Button from "./button";
 import Link from "next/link";
 import { getHomeUrl } from "../selectors/urls";
+import airtableConstants from "../utils/hardcoded_strings";
 import { AlphaBanner } from "./alpha_banner";
 
 const greyBox = css`
@@ -129,7 +130,11 @@ export class GuidedExperience extends Component {
       nextQueryParams[id] = JSON.parse(JSON.stringify(reduxState[id]));
     }
 
-    return mutateUrl(url, "/" + getPageName(nextSection), nextQueryParams);
+    return mutateUrl(
+      url,
+      "/" + airtableConstants.getPageName(nextSection),
+      nextQueryParams
+    );
   }
 
   getSkipUrl() {
@@ -165,21 +170,26 @@ export class GuidedExperience extends Component {
       skipQueryParams[id] = "";
     }
 
-    return mutateUrl(url, "/" + getPageName(nextSection), skipQueryParams);
+    return mutateUrl(
+      url,
+      "/" + airtableConstants.getPageName(nextSection),
+      skipQueryParams
+    );
   }
 
   render() {
+    console.log(this.props.sectionOrder);
     const { t, url, id, reduxState, homeUrl } = this.props;
     const question = reduxState.questions.filter(
       x => x.variable_name === id
     )[0];
 
     const backUrl =
-      id === "patronType"
+      id === airtableConstants.question.index
         ? t("ge.home_link")
         : mutateUrl(
             url,
-            "/" + getPageName(this.getPrevSection()),
+            "/" + airtableConstants.getPageName(this.getPrevSection()),
             this.queryParamsToClearHiddenQuestions()
           );
 
@@ -196,13 +206,13 @@ export class GuidedExperience extends Component {
         <Paper padding="md" styles={box}>
           <AlphaBanner t={t} url={url} />
           <Grid container spacing={24} role="form">
-            {id === "patronType" ? (
+            {id === airtableConstants.question.index ? (
               <React.Fragment>
                 <Grid item xs={12}>
                   <Header size="xl" headingLevel="h1">
                     {t("ge.Find benefits and services")}
                   </Header>
-                  {id === "patronType" ? (
+                  {id === airtableConstants.question.index ? (
                     <React.Fragment>
                       <Body styles={greyBox}>
                         <p>{t("ge.intro_text_p1")}</p>

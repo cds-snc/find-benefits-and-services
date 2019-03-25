@@ -5,9 +5,10 @@ import { css, jsx } from "@emotion/core";
 import { Grid } from "@material-ui/core";
 import EditIcon from "./icons/Edit";
 import { globalTheme } from "../theme";
-import { mutateUrl, getPageName } from "../utils/common";
+import { mutateUrl } from "../utils/common";
 import HeaderLink from "./header_link";
 import { connect } from "react-redux";
+import airtableConstants from "../utils/hardcoded_strings";
 
 const rightAlign = css`
   text-align: right !important;
@@ -83,7 +84,10 @@ export class SummaryRow extends Component {
           </Grid>
           <Grid item xs={3} css={rightAlign}>
             <HeaderLink
-              href={mutateUrl(url, "/" + getPageName(questionName))}
+              href={mutateUrl(
+                url,
+                "/" + airtableConstants.getPageName(questionName)
+              )}
               css={font}
             >
               <EditIcon
