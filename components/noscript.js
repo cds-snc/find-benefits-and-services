@@ -20,7 +20,7 @@ const Modal = css`
 `;
 
 const ModalContent = css`
-  background: ${globalTheme.colour.salmon};
+  background: ${globalTheme.colour.alertModal};
   position: relative;
   z-index: 20;
   border-radius: 5px;
