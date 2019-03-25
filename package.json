@@ -68,6 +68,7 @@
     "universal-cookie": "^3.1.0"
   },
   "devDependencies": {
+    "cds-size-plugin": "^1.3.0",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
