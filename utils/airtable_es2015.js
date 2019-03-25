@@ -94,9 +94,10 @@ var hydrateFromAirtable = (exports.hydrateFromAirtable = async function hydrateF
   });
   await Promise.all(promises);
   dataStore["errors"] = [];
-  console.log(dataStore);
   airtableConstants.tableNames.forEach(function(tableName) {
-    fillEmptyValues(dataStore[tableName]);
+    if ([tableName].length > 0) {
+      fillEmptyValues(dataStore[tableName]);
+    }
   });
   // replace ids in linked records
   replaceId(

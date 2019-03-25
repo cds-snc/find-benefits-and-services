@@ -178,7 +178,6 @@ export class GuidedExperience extends Component {
   }
 
   render() {
-    console.log(this.props.sectionOrder);
     const { t, url, id, reduxState, homeUrl } = this.props;
     const question = reduxState.questions.filter(
       x => x.variable_name === id
