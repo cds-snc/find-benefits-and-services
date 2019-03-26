@@ -3,26 +3,32 @@
     {
       "vacNameEn": "Benefit 1",
       "oneLineDescriptionEn": "A great benefit.",
-      "availableIndependently": "Requires Gateway Benefit",
-      "sortingPriority": "medium",
       "benefitEligibility": ["recxsWSIH846g2TVp"],
-      "id": "reclO0wMapgJNMlAs"
+      "id": "reclO0wMapgJNMlAs",
+      "vacNameFr": "Prestation 1",
+      "benefitPageEn": "https://www.google.com/",
+      "benefitPageFr": "https://www.google.com/",
+      "oneLineDescriptionFr": "(fra) A great benefit."
     },
     {
       "vacNameEn": "Benefit 2",
       "oneLineDescriptionEn": "An even better benefit.",
       "benefitEligibility": ["reck1SbhOSzV7WcG2"],
       "id": "recoFRhS14rE9jt0v",
-      "availableIndependently": "",
-      "sortingPriority": ""
+      "vacNameFr": "Prestation 2",
+      "benefitPageEn": "https://www.google.com/",
+      "benefitPageFr": "https://www.google.com/",
+      "oneLineDescriptionFr": "(fra) An even better benefit."
     },
     {
       "vacNameEn": "Benefit 3",
       "oneLineDescriptionEn": "A pretty mediocre benefit.",
       "benefitEligibility": ["recBsf9UV2Hyw4G2G"],
       "id": "recCmW24kf7C1Wzg4",
-      "availableIndependently": "",
-      "sortingPriority": ""
+      "vacNameFr": "Prestation 3",
+      "benefitPageEn": "https://www.google.com/",
+      "benefitPageFr": "https://www.google.com/",
+      "oneLineDescriptionFr": "(fra) A pretty mediocre benefit."
     }
   ],
   "benefitEligibility": [
@@ -1710,5 +1716,5 @@
     }
   ],
   "errors": [],
-  "timestamp": 1553624137537
+  "timestamp": 1553624968795
 }
