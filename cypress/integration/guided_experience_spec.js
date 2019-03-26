@@ -1,5 +1,5 @@
-const patronTypeVeteran = "Benefits for Veterans";
-const serviceTypeCAF = "Canadian Armed Forces";
+const answer1 = "Answer 1";
+const answer4 = "Answer 4";
 
 describe("Guided Experience", function() {
   beforeEach(() => {
@@ -18,18 +18,15 @@ describe("Guided Experience", function() {
   });
 
   it("can choose some options and get to summary and benefits directory", () => {
-    cy.contains(patronTypeVeteran).click();
+    cy.contains(answer1).click();
     cy.get("#nextButton").click();
-    cy.url().should("include", "serviceType?");
-    cy.contains(serviceTypeCAF).click();
-    cy.get("#nextButton").click();
-    cy.url().should("include", "serviceHealthIssue?");
-    cy.contains("Yes").click();
+    cy.url().should("include", "another_question?");
+    cy.contains(answer4).click();
     cy.get("#nextButton").click();
     cy.url().should("include", "needs");
     cy.get("#nextButton").click();
     cy.url().should("include", "benefits-directory");
-    cy.contains(patronTypeVeteran);
+    cy.contains("Benefit 1");
   });
 
   it("can go back from summary and edit answer", () => {
