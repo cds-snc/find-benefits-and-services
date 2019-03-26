@@ -12,8 +12,8 @@ const cardTop = css`
   background-color: ${globalTheme.colour.backgroundFillColour2};
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   display: flex;
   justify-content: flex-start;
   align-items: center;

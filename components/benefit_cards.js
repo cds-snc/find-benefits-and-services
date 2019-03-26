@@ -23,16 +23,16 @@ const cardBody = css`
   box-shadow: none;
 `;
 const cardDescriptionText = css`
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   padding-top: 10px;
   @media only screen and (max-width: ${globalTheme.max.mobile}) {
     padding-top: 14px;
   }
 `;
 const buttonRow = css`
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   padding-bottom: 25px;
 `;
 const root = css`
@@ -40,16 +40,16 @@ const root = css`
   display: block;
 `;
 const benefitName = css`
-  padding-top: 35px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-top: ${globalTheme.cardPadding};
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   padding-bottom: 10px;
   display: flex;
 `;
 
 const padding = css`
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
 `;
 const flex = css`
   align-items: center;
