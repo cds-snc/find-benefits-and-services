@@ -20,7 +20,7 @@ import { getHomeUrl } from "../selectors/urls";
 import { AlphaBanner } from "./alpha_banner";
 
 const greyBox = css`
-  background-color: ${globalTheme.colour.paleGreyTwo};
+  background-color: ${globalTheme.colour.backgroundFillColour};
   margin-top: 34px;
   padding: 35px 43px;
   p:first-of-type {

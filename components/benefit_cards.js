@@ -19,7 +19,7 @@ import LearnMoreButton from "./learn_more_button";
 const cardBody = css`
   padding-top: 0px;
   border-top: none;
-  border: 1px solid ${globalTheme.colour.darkPaleGrey};
+  border: 1px solid ${globalTheme.colour.backgroundFillColour2};
   box-shadow: none;
 `;
 const cardDescriptionText = css`
@@ -67,7 +67,7 @@ const tagStyle = css`
   width: 12px;
   height: 12px;
   font-size: 12px !important;
-  color: ${globalTheme.colour.slateGrey} !important;
+  color: ${globalTheme.colour.accentFontColour2} !important;
   margin-right: 0.8em;
 `;
 

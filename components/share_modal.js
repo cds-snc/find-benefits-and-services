@@ -43,7 +43,7 @@ const modalCSS = css`
 `;
 
 const header = css`
-  background-color: ${globalTheme.colour.blackBlue};
+  background-color: ${globalTheme.colour.button1};
   color: ${globalTheme.colour.white};
   padding: 0.75em 1.1em;
   font-size: 22px;
@@ -65,14 +65,14 @@ const URLInputBox = styled("input")({
   border: 0,
   boxSizing: "border-box",
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.navy,
+  color: globalTheme.colour.button1Hover,
   fontWeight: "bold",
   textTransform: "none",
   fontSize: "18px",
   lineHeight: "1.5",
-  background: globalTheme.colour.paleGreyTwo,
+  background: globalTheme.colour.backgroundFillColour,
   borderRadius: 0,
-  boxShadow: "inset 0 0 0 9999px " + globalTheme.colour.paleGreyTwo, // keeps chrome autofill from changing background colour
+  boxShadow: "inset 0 0 0 9999px " + globalTheme.colour.backgroundFillColour, // keeps chrome autofill from changing background colour
   WebkitAppearance: "none",
   ":focus": {
     marginRight: "3px",
@@ -85,7 +85,7 @@ const URLInputBox = styled("input")({
 });
 
 const CopyButton = styled("button")({
-  backgroundColor: globalTheme.colour.blackBlue,
+  backgroundColor: globalTheme.colour.button1,
   cursor: "pointer",
   width: "100%",
   border: 0,
@@ -102,13 +102,13 @@ const CopyButton = styled("button")({
     outline: `3px solid ` + globalTheme.colour.focusColour
   },
   ":hover": {
-    backgroundColor: globalTheme.colour.navy
+    backgroundColor: globalTheme.colour.button1Hover
   }
 });
 
 const CloseButton = styled("button")({
   float: "right",
-  backgroundColor: globalTheme.colour.blackBlue,
+  backgroundColor: globalTheme.colour.button1,
   height: "100%",
   cursor: "pointer",
   fontSize: "24px",

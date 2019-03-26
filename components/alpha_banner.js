@@ -6,7 +6,7 @@ import { globalTheme } from "../theme";
 import Link from "next/link";
 
 const white = css`
-  color: ${globalTheme.colour.charcoalGrey};
+  color: ${globalTheme.colour.linkTextColour};
   :focus {
     outline: 3px solid ${globalTheme.colour.focusColour};
   }
@@ -22,8 +22,8 @@ const Banner = css`
   align-items: center;
   -ms-flex-align: center;
   padding-bottom: 24px;
-  border-bottom: 4px solid ${globalTheme.colour.darkPaleGrey};
-  color: ${globalTheme.colour.charcoalGrey};
+  border-bottom: 4px solid ${globalTheme.colour.backgroundFillColour2};
+  color: ${globalTheme.colour.linkTextColour};
   font-family: ${globalTheme.fontFamilySerif};
   span:first-of-type {
     font-weight: 700 !important;

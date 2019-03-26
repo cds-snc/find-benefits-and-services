@@ -11,7 +11,7 @@ const wrapper = css`
 `;
 const left = css`
   vertical-align: middle;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   font-size: 18px;
   padding-top: 11px;
 `;
@@ -33,7 +33,7 @@ const selectStyle = css`
   border-radius: 0;
   box-sizing: border-box;
   font-family: ${globalTheme.fontFamilySansSerif};
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   font-weight: normal;
   text-transform: none;
   font-size: 18px;

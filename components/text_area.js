@@ -18,7 +18,7 @@ const LabelText = styled("span")({
   fontWeight: 400,
   fontSize: "20px",
   lineHeight: "1.5",
-  color: globalTheme.colour.greyishBrown,
+  color: globalTheme.colour.fontColour,
   paddingBottom: "5px"
 });
 
@@ -29,7 +29,7 @@ const FooterText = styled("span")({
   fontWeight: 400,
   fontSize: "10px",
   lineHeight: "1.5",
-  color: globalTheme.colour.greyishBrown,
+  color: globalTheme.colour.fontColour,
   paddingTop: "3px"
 });
 
@@ -53,7 +53,7 @@ const TextAreaField = styled("textarea")({
   lineHeight: "1.5",
   width: "100%",
   padding: "5px 4px 4px",
-  border: `1px solid ${globalTheme.colour.warmGrey}`,
+  border: `1px solid ${globalTheme.colour.accentFontColour}`,
   ":focus": {
     outline: `3px solid ${globalTheme.colour.focusColour}`,
     outlineOffset: 0

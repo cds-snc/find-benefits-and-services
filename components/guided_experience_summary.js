@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 import SummaryRow from "./summary_row";
 
 const breadcrumbList = css`
-  border-bottom: 1px solid ${globalTheme.colour.warmGrey};
+  border-bottom: 1px solid ${globalTheme.colour.accentFontColour};
   padding-left: 0;
   width: 100%;
 `;

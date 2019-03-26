@@ -56,7 +56,7 @@ export class Summary extends Component {
         t={t}
         hideNoscript={false}
         title={t("titles.ge_summary")}
-        backgroundColor={globalTheme.colour.paleGreyTwo}
+        backgroundColor={globalTheme.colour.backgroundFillColour}
         skipLink="mainContent"
         url={url}
       >

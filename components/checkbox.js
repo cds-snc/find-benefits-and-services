@@ -47,11 +47,11 @@ const StyledLabel = styled("span")({
   cursor: "pointer",
   padding: "0px 0px 14px 8px",
   display: "block",
-  color: `${globalTheme.colour.greyishBrown}`,
+  color: `${globalTheme.colour.fontColour}`,
   "::before": {
     content: "''",
     display: "block",
-    border: `2px solid ${globalTheme.colour.greyishBrown}`,
+    border: `2px solid ${globalTheme.colour.fontColour}`,
     background: "transparent",
     overflow: "hidden",
     width: "24px",
@@ -63,7 +63,7 @@ const StyledLabel = styled("span")({
   "::after": {
     content: "''",
     border: "solid",
-    color: globalTheme.colour.greyishBrown,
+    color: globalTheme.colour.fontColour,
     borderWidth: "0 0 4px 4px",
     background: "transparent",
     borderTopColor: "transparent",

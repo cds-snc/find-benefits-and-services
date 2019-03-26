@@ -10,7 +10,7 @@ const SearchBoxWrapper = styled("div")({
   boxSizing: "border-box",
   display: "flex",
   width: "100%",
-  background: globalTheme.colour.paleGreyTwo,
+  background: globalTheme.colour.backgroundFillColour,
   borderStyle: "solid",
   borderWidth: "1px",
   borderColor: globalTheme.colour.boxBorderColour
@@ -24,14 +24,14 @@ const InputSearchBox = styled("input")({
   border: 0,
   boxSizing: "border-box",
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.navy,
+  color: globalTheme.colour.button1Hover,
   fontWeight: "bold",
   textTransform: "none",
   fontSize: "18px",
   lineHeight: "1.5",
-  background: globalTheme.colour.paleGreyTwo,
+  background: globalTheme.colour.backgroundFillColour,
   borderRadius: 0,
-  boxShadow: "inset 0 0 0 9999px " + globalTheme.colour.paleGreyTwo, // keeps chrome autofill from changing background colour
+  boxShadow: "inset 0 0 0 9999px " + globalTheme.colour.backgroundFillColour, // keeps chrome autofill from changing background colour
   WebkitAppearance: "none",
   ":focus": {
     marginRight: "3px",
@@ -44,11 +44,11 @@ const InputSearchBox = styled("input")({
 });
 
 const ClearButton = styled("button")({
-  backgroundColor: globalTheme.colour.paleGreyTwo,
+  backgroundColor: globalTheme.colour.backgroundFillColour,
   cursor: "pointer",
   border: 0,
   display: "block",
-  color: globalTheme.colour.navy,
+  color: globalTheme.colour.button1Hover,
   position: "absolute",
   left: "-50px",
   padding: "10px",
@@ -66,11 +66,11 @@ const ClearButton = styled("button")({
 });
 
 const SearchButton = styled("button")({
-  backgroundColor: globalTheme.colour.paleGreyTwo,
+  backgroundColor: globalTheme.colour.backgroundFillColour,
   cursor: "pointer",
   border: 0,
   display: "block",
-  color: globalTheme.colour.navy,
+  color: globalTheme.colour.button1Hover,
   position: "relative",
   padding: "10px",
   width: "45px",
@@ -87,9 +87,9 @@ const SearchButton = styled("button")({
 });
 
 const DisabledSearchButton = styled("button")({
-  backgroundColor: globalTheme.colour.paleGreyTwo,
+  backgroundColor: globalTheme.colour.backgroundFillColour,
   display: "block",
-  color: globalTheme.colour.navy,
+  color: globalTheme.colour.button1Hover,
   padding: "10px",
   width: "45px",
   height: "44px",

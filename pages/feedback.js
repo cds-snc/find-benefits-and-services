@@ -37,7 +37,7 @@ const textAreaStyle = css`
 const detailsStyle = css`
   margin-bottom: 30px;
   a {
-    color: ${globalTheme.colour.greyishBrown};
+    color: ${globalTheme.colour.fontColour};
   }
 `;
 const radioStyle = css`
@@ -83,7 +83,7 @@ export class Feedback extends Component {
         i18n={i18n}
         hideNoscript={false}
         title={t("feedback.page_title")}
-        backgroundColor={globalTheme.colour.paleGreyTwo}
+        backgroundColor={globalTheme.colour.backgroundFillColour}
         skipLink="#mainContent"
         url={url}
       >

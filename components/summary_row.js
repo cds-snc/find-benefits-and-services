@@ -14,7 +14,7 @@ const rightAlign = css`
   padding-top: 12px;
 `;
 const breadcrumbCss = css`
-  border-top: 1px solid ${globalTheme.colour.warmGrey};
+  border-top: 1px solid ${globalTheme.colour.accentFontColour};
   padding-bottom: 15px;
   padding-top: 15px;
   display: flex;

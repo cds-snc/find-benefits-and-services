@@ -17,7 +17,7 @@ const padding = css`
 `;
 const textStyle = css`
   fontfamily: ${globalTheme.fontFamilySansSerif};
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
@@ -38,7 +38,7 @@ export class FeedbackSubmitted extends Component {
         i18n={i18n}
         hideNoscript={false}
         title={t("feedback.page_title")}
-        backgroundColor={globalTheme.colour.paleGreyTwo}
+        backgroundColor={globalTheme.colour.backgroundFillColour}
         skipLink="#mainContent"
         url={url}
       >

@@ -7,7 +7,7 @@ import { globalTheme } from "../theme";
 import Body from "./typography/body";
 
 const Banner = css`
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   background-color: ${globalTheme.colour.paleBlue};
   border-left: 5px solid ${globalTheme.colour.cerulean};
   padding-left: 25px;
