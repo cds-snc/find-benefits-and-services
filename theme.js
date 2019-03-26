@@ -20,7 +20,7 @@ let theme = {
     lg: "1920px"
   },
   colour: {
-    blackish: "#3d3d3d",
+    textColour: "#3d3d3d",
     paleGrey: "#eaebed",
     backgroundFillColour: "#f4f7f9",
     backgroundFillColour2: "#d5e2e9",
@@ -30,7 +30,7 @@ let theme = {
     cerulean: "#006cc9",
     darkGreyBlue: "#284162",
     paleBlue: "#e3f2ff",
-    govukYellow: "#FFBF47",
+    focusColour: "#FFBF47",
     white: "#ffffff",
     black: "#000000",
     betaBlue: "#634f70",
@@ -47,10 +47,7 @@ let theme = {
   }
 };
 
-theme.colour.textColour = theme.colour.blackish;
-theme.colour.focusColour = theme.colour.govukYellow;
 theme.colour.linkColour = theme.colour.cerulean;
 theme.colour.linkHoverColour = theme.colour.cerulean;
-theme.colour.boxBorderColour = theme.colour.backgroundFillColour2;
 
 export const globalTheme = { ...theme };

@@ -8,7 +8,7 @@ import { globalTheme } from "../theme";
 const HintText = styled("span")({
   display: "block",
   marginBottom: "5px",
-  color: globalTheme.colour.blackish
+  color: globalTheme.colour.textColour
 });
 
 const LabelText = styled("span")({

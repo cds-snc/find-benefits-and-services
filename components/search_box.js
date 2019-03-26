@@ -13,7 +13,7 @@ const SearchBoxWrapper = styled("div")({
   background: globalTheme.colour.backgroundFillColour,
   borderStyle: "solid",
   borderWidth: "1px",
-  borderColor: globalTheme.colour.boxBorderColour
+  borderColor: globalTheme.colour.fillColour2
 });
 
 const InputSearchBox = styled("input")({
