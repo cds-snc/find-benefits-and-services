@@ -11,7 +11,7 @@ const style = css`
     font-size: 16px;
   }
   font-weight: normal;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   margin: 0px;
 `;
 

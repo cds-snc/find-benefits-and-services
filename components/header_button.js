@@ -12,7 +12,7 @@ const style = css`
   font-size: 24px;
   line-height: 44px;
   font-weight: bold;
-  color: ${globalTheme.colour.charcoalGrey};
+  color: ${globalTheme.colour.linkTextColour};
   background-color: transparent;
   border: none;
   text-decoration: none;
@@ -31,7 +31,7 @@ const style = css`
 `;
 
 const borderStyle = css`
-  border: thin solid ${globalTheme.colour.warmGrey};
+  border: thin solid ${globalTheme.colour.accentFontColour};
   line-height: 42px;
 `;
 
