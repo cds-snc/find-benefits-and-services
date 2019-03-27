@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import withI18N from "../lib/i18nHOC";
 import NeedButton from "../components/need_button";
 import WordMark from "../components/word_mark";
-import FIP from "../components/fip";
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
@@ -177,7 +176,7 @@ export class Print extends Component {
         <Grid container spacing={24}>
           <Grid item xs={12}>
             <div css={svgContainer}>
-              <FIP fillColor="black" t={this.props.t} />
+              <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
             </div>
           </Grid>
 
