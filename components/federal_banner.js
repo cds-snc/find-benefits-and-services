@@ -34,7 +34,7 @@ const black_bg = css`
 
 const container = css`
   margin: 0px;
-  padding: 1rem;
+  padding: 1rem 0;
   width: auto;
   justify-content: space-between;
   background-color: ${globalTheme.colour.greyishBrownTwo};
