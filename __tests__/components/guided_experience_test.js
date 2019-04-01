@@ -6,10 +6,22 @@ import { GuidedExperience } from "../../components/guided_experience";
 const { axe, toHaveNoViolations } = require("jest-axe");
 import multipleChoiceOptions from "../fixtures/multiple_choice_options_complex";
 import translate from "../fixtures/translate";
+import airtableConstants from "../../utils/hardcoded_strings";
 
 expect.extend(toHaveNoViolations);
 
 jest.mock("react-ga");
+airtableConstants.getPageName = x => {
+  const pageNameDict = {
+    patronType: "",
+    serviceType: "serviceType",
+    serviceHealthIssue: "serviceHealthIssue",
+    needs: "needs",
+    summary: "summary",
+    benefitsDirectory: "benefits-directory"
+  };
+  return pageNameDict[x];
+};
 
 describe("GuidedExperience", () => {
   let props;
