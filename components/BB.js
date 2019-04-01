@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Grid } from "@material-ui/core";
 import { connect } from "react-redux";
@@ -130,12 +130,16 @@ export class BB extends Component {
                   {t("titles.benefits_and_services")}
                 </Header>
               </div>
-              <div css={selectionsEditorMobileStyle}>
-                <SelectionsEditorMobile t={t} store={store} url={url} />
-              </div>
-              <div css={selectionsEditorStyle}>
-                <SelectionsEditor t={t} store={store} url={url} />
-              </div>
+              {url.query.sidebar && url.query.sidebar === "true" ? (
+                <React.Fragment>
+                  <div css={selectionsEditorMobileStyle}>
+                    <SelectionsEditorMobile t={t} store={store} url={url} />
+                  </div>
+                  <div css={selectionsEditorStyle}>
+                    <SelectionsEditor t={t} store={store} url={url} />
+                  </div>
+                </React.Fragment>
+              ) : null}
             </Grid>
             <Grid id="mainContent" item md={8} xs={12}>
               <Grid container spacing={16}>
