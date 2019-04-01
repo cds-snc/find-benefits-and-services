@@ -7,7 +7,7 @@ exports.hydrateFromAirtable = exports.writeFeedback = undefined;
 var airtableConstants = require("./hardcoded_strings");
 var readKey = process.env.AIRTABLE_READ_KEY;
 var writeKey = process.env.AIRTABLE_WRITE_KEY;
-var baseKey = process.env.AIRTABLE_BASE_KEY || "appr6qWKELrDdEsRf";
+var baseKey = process.env.AIRTABLE_BASE_KEY || "appGalp76Ewgr86Aq";
 
 var replaceId = function replaceId(
   sheet,
@@ -95,9 +95,10 @@ var hydrateFromAirtable = (exports.hydrateFromAirtable = async function hydrateF
   await Promise.all(promises);
   dataStore["errors"] = [];
   airtableConstants.tableNames.forEach(function(tableName) {
-    fillEmptyValues(dataStore[tableName]);
+    if ([tableName].length > 0) {
+      fillEmptyValues(dataStore[tableName]);
+    }
   });
-
   // replace ids in linked records
   replaceId(
     dataStore.questionDisplayLogic,
