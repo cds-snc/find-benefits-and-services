@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import LanguageButton from "./language_button";
 import { globalTheme } from "../theme";
 import SkipToMainContent from "./skip_to_main_content";
+import Container from "./container";
 
 export const breakpoints = {
   xs: 481,
@@ -69,13 +70,15 @@ class FederalBanner extends Component {
     const { t, skipLink, url } = this.props;
     return (
       <div css={black_bg}>
-        <SkipToMainContent skipLink={skipLink} t={t} />
-        <div css={container}>
-          <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
-          <div>
-            <LanguageButton t={t} url={url} />
+        <Container>
+          <SkipToMainContent skipLink={skipLink} t={t} />
+          <div css={container}>
+            <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
+            <div>
+              <LanguageButton t={t} url={url} />
+            </div>
           </div>
-        </div>
+        </Container>
       </div>
     );
   }
