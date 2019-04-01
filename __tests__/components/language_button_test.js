@@ -29,7 +29,8 @@ describe("LanguageButton", () => {
       i18n: {
         changeLanguage: () => {}
       },
-      t: translate
+      t: translate,
+      url: { route: "", query: {} }
     };
     _mountedLanguageButton = undefined;
   });
@@ -63,7 +64,7 @@ describe("LanguageButton", () => {
           .find("#changeLanguage")
           .at(0)
           .text()
-      ).toEqual("other-language_other-language-code_en");
+      ).toEqual("other-language_en");
     });
   });
 
