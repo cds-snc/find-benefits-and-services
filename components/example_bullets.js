@@ -28,7 +28,7 @@ const margin = css`
 `;
 
 const root = css`
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
 `;
 export class ExampleBullets extends React.Component {
   getExampleBullets = () => {

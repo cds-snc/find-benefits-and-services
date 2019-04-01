@@ -19,20 +19,20 @@ import LearnMoreButton from "./learn_more_button";
 const cardBody = css`
   padding-top: 0px;
   border-top: none;
-  border: 1px solid ${globalTheme.colour.darkPaleGrey};
+  border: 1px solid ${globalTheme.colour.backgroundFillColour2};
   box-shadow: none;
 `;
 const cardDescriptionText = css`
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   padding-top: 10px;
   @media only screen and (max-width: ${globalTheme.max.mobile}) {
     padding-top: 14px;
   }
 `;
 const buttonRow = css`
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   padding-bottom: 25px;
 `;
 const root = css`
@@ -40,16 +40,16 @@ const root = css`
   display: block;
 `;
 const benefitName = css`
-  padding-top: 35px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-top: ${globalTheme.cardPadding};
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   padding-bottom: 10px;
   display: flex;
 `;
 
 const padding = css`
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
 `;
 const flex = css`
   align-items: center;
@@ -67,7 +67,7 @@ const tagStyle = css`
   width: 12px;
   height: 12px;
   font-size: 12px !important;
-  color: ${globalTheme.colour.slateGrey} !important;
+  color: ${globalTheme.colour.accentFontColour2} !important;
   margin-right: 0.8em;
 `;
 

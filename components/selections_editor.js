@@ -16,7 +16,7 @@ import { logEvent } from "../utils/analytics";
 const root = css`
   font-family: ${globalTheme.fontFamilySansSerif};
   background-color: ${globalTheme.colour.white} !important;
-  border: thin solid ${globalTheme.colour.darkPaleGrey} !important;
+  border: thin solid ${globalTheme.colour.backgroundFillColour2} !important;
   box-shadow: none !important;
   margin-top: 30px;
   padding: 25px;
@@ -35,13 +35,13 @@ const clearButton = css`
 `;
 const filterTitle = css`
   font-size: 22px;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
 `;
 const profileStyle = css`
   padding-top: 15px;
 `;
 const divider = css`
-  border-top: 1px solid ${globalTheme.colour.darkPaleGrey};
+  border-top: 1px solid ${globalTheme.colour.backgroundFillColour2};
   width: 100%;
 `;
 

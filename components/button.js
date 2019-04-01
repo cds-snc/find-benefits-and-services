@@ -6,7 +6,7 @@ import { globalTheme } from "../theme";
 
 const StyledButton = styled("button")(
   {
-    backgroundColor: globalTheme.colour.blackBlue,
+    backgroundColor: globalTheme.colour.button1,
     border: "none",
     color: "white",
     cursor: "pointer",
@@ -23,17 +23,17 @@ const StyledButton = styled("button")(
     WebkitAppearance: "none",
     WebkitFontSmoothing: "antialiased",
     ":hover": {
-      backgroundColor: globalTheme.colour.navy,
+      backgroundColor: globalTheme.colour.button1Hover,
       color: "white"
     },
     ":focus": {
       color: "white",
-      backgroundColor: globalTheme.colour.navy
+      backgroundColor: globalTheme.colour.button1Hover
     },
     ":active": {
       position: "relative",
       top: "2px",
-      boxShadow: `0 0 0 ${globalTheme.colour.navy}`
+      boxShadow: `0 0 0 ${globalTheme.colour.button1Hover}`
     },
     ":visited": {
       color: "white"

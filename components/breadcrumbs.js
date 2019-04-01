@@ -9,22 +9,22 @@ const greyBanner = css`
   font-family: ${globalTheme.fontFamilySansSerif};
   margin: 30px 0;
   font-weight: 700;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   font-size: 16px;
-  background-color: ${globalTheme.colour.paleGreyTwo};
+  background-color: ${globalTheme.colour.backgroundFillColour};
   @media only screen and (max-width: ${globalTheme.max.xs}) {
     margin: 11px 0;
   }
 `;
 
 const separator = css`
-  color: ${globalTheme.colour.slateGrey};
+  color: ${globalTheme.colour.accentFontColour2};
   font-weight: normal;
   padding: 2px;
 `;
 
 const urlStyle = css`
-  color: ${globalTheme.colour.slateGrey};
+  color: ${globalTheme.colour.accentFontColour2};
   text-decoration: underline;
   font-size: 16px;
   font-weight: 700;
@@ -32,7 +32,7 @@ const urlStyle = css`
 `;
 
 const currentPageStyle = css`
-  color: ${globalTheme.colour.slateGrey};
+  color: ${globalTheme.colour.accentFontColour2};
   font-size: 16px;
   font-weight: 700;
   padding: 0;

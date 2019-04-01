@@ -25,7 +25,7 @@ export class BenefitsDirectory extends Component {
         t={this.props.t}
         hideNoscript={false}
         title={title + " | " + t("titles.benefits_directory")}
-        backgroundColor={globalTheme.colour.paleGreyTwo}
+        backgroundColor={globalTheme.colour.backgroundFillColour}
         skipLink="#mainContent"
         url={url}
       >

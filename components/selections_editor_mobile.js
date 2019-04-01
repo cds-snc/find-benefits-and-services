@@ -19,14 +19,14 @@ import { logEvent } from "../utils/analytics";
 
 const root = css`
   background-color: ${globalTheme.colour.white} !important;
-  border: thin solid ${globalTheme.colour.darkPaleGrey} !important;
+  border: thin solid ${globalTheme.colour.backgroundFillColour2} !important;
   box-shadow: none !important;
   margin-top: 30px;
 `;
 const summary = css`
   opacity: 1 !important;
   user-select: inherit;
-  color: ${globalTheme.colour.greyishBrown} !important;
+  color: ${globalTheme.colour.fontColour} !important;
 `;
 const clearButton = css`
   font-size: 16px;
@@ -40,10 +40,10 @@ const clearButton = css`
   text-decoration: underline;
 `;
 const filterTitle = css`
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
 `;
-const greyishBrown = css`
-  color: ${globalTheme.colour.greyishBrown};
+const fontColour = css`
+  color: ${globalTheme.colour.fontColour};
 `;
 const profileStyle = css`
   padding-top: 15px;
@@ -56,7 +56,7 @@ const needsStyle = css`
   padding-top: 15px;
 `;
 const divider = css`
-  border-top: 1px solid ${globalTheme.colour.darkPaleGrey};
+  border-top: 1px solid ${globalTheme.colour.backgroundFillColour2};
   width: 100%;
 `;
 export class SelectionsEditorMobile extends Component {
@@ -105,7 +105,7 @@ export class SelectionsEditorMobile extends Component {
       <ExpansionPanel css={root} defaultExpanded expanded={this.state.open}>
         <ExpansionPanelSummary
           css={summary}
-          expandIcon={<ExpandMoreIcon css={greyishBrown} />}
+          expandIcon={<ExpandMoreIcon css={fontColour} />}
           onClick={() => this.toggleOpenState()}
         >
           <Header headingLevel="h2" size="sm_md" styles={filterTitle}>

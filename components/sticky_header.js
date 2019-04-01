@@ -38,7 +38,7 @@ const savedListStyle = css`
   margin-left: 50px;
   padding: 0;
   font-size: 20px;
-  color: ${globalTheme.colour.navy};
+  color: ${globalTheme.colour.button1Hover};
   @media only screen and (max-width: ${globalTheme.max.sm}) {
     font-size: 12px !important;
     margin-left: 25px;
@@ -48,7 +48,7 @@ const savedListStyle = css`
 const editStyle = css`
   padding: 0;
   font-size: 20px;
-  color: ${globalTheme.colour.navy};
+  color: ${globalTheme.colour.button1Hover};
   @media only screen and (max-width: ${globalTheme.max.sm}) {
     font-size: 12px !important;
   }

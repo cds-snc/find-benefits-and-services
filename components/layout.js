@@ -24,11 +24,11 @@ const Content = styled("div")`
   min-height: calc(100vh - 165px);
 `;
 const black_bg = css`
-  background-color: ${globalTheme.colour.blackish2};
+  background-color: ${globalTheme.colour.headerBackground};
   padding-bottom: 6px;
 `;
 const backgoundColour1 = css`
-  background-color: ${globalTheme.colour.navy};
+  background-color: ${globalTheme.colour.button1Hover};
 `;
 const fontStyle = css`
   font-family: Montserrat;

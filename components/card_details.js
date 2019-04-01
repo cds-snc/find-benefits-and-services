@@ -10,7 +10,7 @@ const StyledDetails = styled("details")({
   fontSize: "inherit",
   fontFamily: globalTheme.fontFamilySansSerif,
   color: globalTheme.colour.textColour,
-  borderTop: `1px solid ${globalTheme.colour.darkPaleGrey}`
+  borderTop: `1px solid ${globalTheme.colour.backgroundFillColour2}`
 });
 
 const StyledSummary = styled("summary")({
@@ -23,7 +23,7 @@ const StyledSummary = styled("summary")({
   color: globalTheme.colour.textColour,
   cursor: "pointer",
   ":hover": {
-    backgroundColor: globalTheme.colour.blueish
+    backgroundColor: globalTheme.colour.hoverBackground
   },
   ":focus": {
     outline: `2px solid ${globalTheme.colour.focusColour}`,

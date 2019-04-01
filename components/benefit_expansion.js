@@ -15,7 +15,7 @@ const topBorder = css`
   padding-top: 1em;
   margin-bottom: 18px;
   details:last-child {
-    border-bottom: 1px solid ${globalTheme.colour.darkPaleGrey};
+    border-bottom: 1px solid ${globalTheme.colour.backgroundFillColour2};
   }
 `;
 

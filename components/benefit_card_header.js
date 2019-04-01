@@ -9,11 +9,11 @@ import CardHeaderImportantInfo from "./card_header_important_info";
 import AlertIcon from "./icons/alert_icon";
 
 const cardTop = css`
-  background-color: ${globalTheme.colour.darkPaleGrey};
+  background-color: ${globalTheme.colour.backgroundFillColour2};
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: ${globalTheme.cardPadding};
+  padding-right: ${globalTheme.cardPadding};
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -24,12 +24,12 @@ const headerDesc = css`
   box-sizing: border-box;
   margin-left: 20px;
   font-size: 18px;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   @media only screen and (max-width: ${globalTheme.max.mobile}) {
     font-size: 12px;
   }
   a {
-    color: ${globalTheme.colour.greyishBrown};
+    color: ${globalTheme.colour.fontColour};
   }
 `;
 

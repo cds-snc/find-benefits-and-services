@@ -21,13 +21,13 @@ const saveButton = css`
 `;
 
 const xButton = css`
-  color: ${globalTheme.colour.blackish2};
+  color: ${globalTheme.colour.button1};
   cursor: pointer;
   border: none;
   border-radius: 50%;
   padding: 0;
   :hover {
-    color: ${globalTheme.colour.navy};
+    color: ${globalTheme.colour.button1Hover};
   }
   :focus {
     outline: 3px solid ${globalTheme.colour.focusColour};

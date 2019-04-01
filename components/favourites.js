@@ -22,7 +22,7 @@ import QuickLinks from "./quick_links";
 import AlphaBanner from "./alpha_banner";
 
 const divider = css`
-  border-top: 2px solid ${globalTheme.colour.duckEggBlue};
+  border-top: 2px solid ${globalTheme.colour.divider};
   width: 100%;
 `;
 const innerDiv = css`

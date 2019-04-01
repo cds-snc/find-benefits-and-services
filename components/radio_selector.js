@@ -16,7 +16,7 @@ const formControl = css`
 `;
 const formLabel = css`
   margin-bottom: 10px;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   font-size: 16px;
   font-bold: normal;
   font-style: normal;
@@ -28,7 +28,7 @@ const radioOption = css`
 `;
 const underline = css`
   line-height: 160%;
-  border-bottom: 2px dotted ${globalTheme.colour.greyishBrown};
+  border-bottom: 2px dotted ${globalTheme.colour.fontColour};
 `;
 const leftIndent = css`
   margin-left: 40px;

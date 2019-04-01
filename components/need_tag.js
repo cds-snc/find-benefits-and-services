@@ -8,7 +8,7 @@ const needsTag = css`
   font-size: 14px;
   margin-right: ${globalTheme.unit};
   margin-bottom: ${globalTheme.unit};
-  color: ${globalTheme.colour.slateGrey};
+  color: ${globalTheme.colour.accentFontColour2};
   border-radius: 1;
   display: inline-flex;
   @media only screen and (max-width: ${globalTheme.max.mobile}) {

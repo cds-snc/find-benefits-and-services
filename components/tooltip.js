@@ -14,7 +14,7 @@ class Tooltip extends Component {
     visibility: hidden;
     width: ${this.props.width}px;
     background-color: ${globalTheme.colour.paleGrey};
-    color: ${globalTheme.colour.greyishBrown};
+    color: ${globalTheme.colour.fontColour};
     padding: ${padding}px;
     position: absolute;
     z-index: 1;

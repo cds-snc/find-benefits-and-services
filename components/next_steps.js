@@ -14,7 +14,7 @@ const whatsNextList = css`
   margin-top: 10px;
   width: 100%;
   font-family: ${globalTheme.fontFamilySansSerif};
-  color: ${globalTheme.colour.slateGrey};
+  color: ${globalTheme.colour.accentFontColour2};
   font-size: 18px;
 `;
 

@@ -23,7 +23,7 @@ import SelectionsEditor from "./selections_editor";
 import SelectionsEditorMobile from "./selections_editor_mobile";
 
 const divider = css`
-  border-top: 2px solid ${globalTheme.colour.duckEggBlue};
+  border-top: 2px solid ${globalTheme.colour.divider};
   width: 100%;
 `;
 const innerDiv = css`
