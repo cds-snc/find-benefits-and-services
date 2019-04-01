@@ -9,7 +9,14 @@
       "oneLineDescriptionEn": "A great benefit.",
       "oneLineDescriptionFr": "(fra) A great benefit.",
       "benefitEligibility": ["recxsWSIH846g2TVp"],
-      "id": "reclO0wMapgJNMlAs"
+      "id": "reclO0wMapgJNMlAs",
+      "benefitExamples": [
+        "recwZsEZEj0bPxLd6",
+        "recY4jfkkBNtvxjRZ",
+        "recymFq6OgUeYzQTX"
+      ],
+      "seeMoreSentenceEn": "Some examples of what this program may provide:",
+      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :"
     },
     {
       "vacNameEn": "Benefit 2",
@@ -20,7 +27,10 @@
       "oneLineDescriptionEn": "An even better benefit.",
       "oneLineDescriptionFr": "(fra) An even better benefit.",
       "benefitEligibility": ["reck1SbhOSzV7WcG2"],
-      "id": "recoFRhS14rE9jt0v"
+      "id": "recoFRhS14rE9jt0v",
+      "benefitExamples": ["recMQ0teAthpK2RIQ"],
+      "seeMoreSentenceEn": "Some examples of what this program may provide:",
+      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :"
     },
     {
       "vacNameEn": "Benefit 3",
@@ -31,7 +41,10 @@
       "oneLineDescriptionEn": "A pretty mediocre benefit.",
       "oneLineDescriptionFr": "(fra) A pretty mediocre benefit.",
       "benefitEligibility": ["recBsf9UV2Hyw4G2G"],
-      "id": "recCmW24kf7C1Wzg4"
+      "id": "recCmW24kf7C1Wzg4",
+      "benefitExamples": ["recjEqWCW3tGi5ot9", "recwZsEZEj0bPxLd6"],
+      "seeMoreSentenceEn": "Some examples of what this program may provide:",
+      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :"
     }
   ],
   "benefitEligibility": [
@@ -1725,7 +1738,33 @@
   "benefitExamples": [
     {
       "english": "example 1",
-      "id": "recwZsEZEj0bPxLd6"
+      "id": "recwZsEZEj0bPxLd6",
+      "linked_benefits": ["Benefit 1", "Benefit 3"],
+      "french": "(fra) example 1"
+    },
+    {
+      "id": "recY4jfkkBNtvxjRZ",
+      "english": "example 2",
+      "french": "(fra) example 2",
+      "linked_benefits": ["Benefit 1"]
+    },
+    {
+      "id": "recymFq6OgUeYzQTX",
+      "english": "example 3",
+      "french": "(fra) example 3",
+      "linked_benefits": ["Benefit 1"]
+    },
+    {
+      "id": "recMQ0teAthpK2RIQ",
+      "english": "example 4",
+      "french": "(fra) example 4",
+      "linked_benefits": ["Benefit 2"]
+    },
+    {
+      "id": "recjEqWCW3tGi5ot9",
+      "english": "example 5",
+      "french": "(fra) example 5",
+      "linked_benefits": ["Benefit 3"]
     }
   ],
   "nextSteps": [
@@ -1738,5 +1777,5 @@
     }
   ],
   "errors": [],
-  "timestamp": 1554127404364
+  "timestamp": 1554128676047
 }
