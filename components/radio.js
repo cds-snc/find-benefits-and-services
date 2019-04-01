@@ -31,7 +31,7 @@ const inputStyle = css({
 
 const labelStyle = css({
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.greyishBrown,
+  color: globalTheme.colour.fontColour,
   fontWeight: 300,
   textTransform: "none",
   fontSize: "24px",

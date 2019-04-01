@@ -21,9 +21,9 @@ import airtableConstants from "../utils/hardcoded_strings";
 import { AlphaBanner } from "./alpha_banner";
 
 const greyBox = css`
-  background-color: ${globalTheme.colour.paleGreyTwo};
+  background-color: ${globalTheme.colour.backgroundFillColour};
   margin-top: 34px;
-  padding: 35px 43px;
+  padding: ${globalTheme.cardPadding} 43px;
   p:first-of-type {
     margin-top: 0;
   }
@@ -37,7 +37,7 @@ const greyBox = css`
 `;
 
 const box = css`
-  padding: 35px;
+  padding: ${globalTheme.cardPadding};
   padding-top: 24px;
   @media only screen and (max-width: ${globalTheme.max.mobile}) {
     padding: 17px 26px 55px 26px;

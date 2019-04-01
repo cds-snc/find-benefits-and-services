@@ -9,7 +9,7 @@ const root = css`
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-  color: ${globalTheme.colour.navy};
+  color: ${globalTheme.colour.button1Hover};
   margin-bottom: 25px;
 `;
 

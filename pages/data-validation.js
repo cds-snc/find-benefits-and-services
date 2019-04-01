@@ -36,7 +36,7 @@ const tableCellRed = css`
 `;
 const envDetailsStyling = css`
   flex: 1;
-  color: ${globalTheme.colour.charcoalGrey};
+  color: ${globalTheme.colour.linkTextColour};
   font-weight: bold !important;
 `;
 
@@ -215,7 +215,7 @@ export class DataValidation extends Component {
         i18n={i18n}
         t={t}
         hideNoscript={true}
-        backgroundColor={globalTheme.colour.paleGreyTwo}
+        backgroundColor={globalTheme.colour.backgroundFillColour}
         skipLink="#mainContent"
         url={this.props.url}
       >

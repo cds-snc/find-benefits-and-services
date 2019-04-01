@@ -5,6 +5,7 @@
 ### Table of Contents
 
 - [Next.JS and Server Side Rendering](#nextjs-and-server-side-rendering)
+- [Styling the App](#styling-the-app)
 - [AirTable](/doc/en/AIRTABLE.md)
 - [Heroku](#using-heroku)
 - [CircleCI](#using-circleci)
@@ -44,6 +45,14 @@ Lastly, our initial evaluation of NextJS showed that it worked well with a numbe
 #### How can I get started?
 
 Check out the Quickstart documentation in our README.md. You can also look at the [Next.JS](https://nextjs.org/learn/ "Next.JS") tutorial site to learn more.
+
+### Styling The App
+
+Elements in the application are styled with [MaterialUI](https://material-ui.com/) themes and [Emotion](https://emotion.sh/docs/introduction) CSS-in-JS styles.
+
+The MaterialUI global [theme](https://material-ui.com/customization/themes/#themes) is customized in themes.js. The globalTheme variable can be imported and have its values be referenced in other components. Font families, theme colours, and screen size breakpoints are the most common uses of the globalTheme object.
+
+Individual component styling is handled by the Emotion library, through a combination of the [css prop](https://emotion.sh/docs/css-prop), and [styled components](https://emotion.sh/docs/styled).
 
 ### [AirTable](/doc/AIRTABLE.md)
 

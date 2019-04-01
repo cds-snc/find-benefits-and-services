@@ -8,7 +8,7 @@ const style = css`
   font-family: ${globalTheme.fontFamilySansSerif};
   font-size: 14px;
   line-height: 21px;
-  color: ${globalTheme.colour.greyishBrown};
+  color: ${globalTheme.colour.fontColour};
   margin: 0px;
 `;
 

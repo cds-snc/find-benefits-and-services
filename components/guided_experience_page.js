@@ -24,7 +24,7 @@ export class GuidedExperiencePage extends Component {
         t={t}
         hideNoscript={false}
         title={pageTitle}
-        backgroundColor={globalTheme.colour.paleGreyTwo}
+        backgroundColor={globalTheme.colour.backgroundFillColour}
         skipLink="#mainContent"
         url={url}
       >

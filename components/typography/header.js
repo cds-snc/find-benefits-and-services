@@ -45,7 +45,7 @@ class Header extends Component {
       font-size: ${0.8 * sizeDict[this.props.size].fontSize}px;
     }
     font-weight: ${sizeDict[this.props.size].fontWeight};
-    color: ${globalTheme.colour.greyishBrown};
+    color: ${globalTheme.colour.fontColour};
     margin: 0px;
     padding-top: ${this.props.paddingTop}px;
     outline: 0;
