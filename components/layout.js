@@ -11,28 +11,21 @@ import {
 import ErrorBoundary from "../components/error_boundary";
 import Head from "../components/head";
 import FeedbackBar from "../components/feedbackBar";
+import Footer from "../components/footer";
+import FederalBanner from "../components/federal_banner";
 import Noscript from "../components/noscript";
 import Container from "../components/container";
 import { globalTheme } from "../theme";
-import VacFooterEn from "./vac_footer_en";
-import VacFooterFr from "./vac_footer_fr";
-import VacHeaderEn from "./vac_header_en";
-import VacHeaderFr from "./vac_header_fr";
-import SkipToMainContent from "./skip_to_main_content";
 
 const Content = styled("div")`
   min-height: calc(100vh - 165px);
 `;
-const black_bg = css`
-  background-color: ${globalTheme.colour.headerBackground};
-  padding-bottom: 6px;
-`;
+
 const backgoundColour1 = css`
   background-color: ${globalTheme.colour.button1Hover};
 `;
-const fontStyle = css`
-  font-family: Montserrat;
-  line-height: 1.4375;
+const footerColour = css`
+  background-color: ${globalTheme.colour.headerBackground};
 `;
 const theme = createMuiTheme({
   breakpoints: {
@@ -81,14 +74,7 @@ class Layout extends Component {
           <Head title={title} t={t} />
           <ErrorBoundary>
             <Content>
-              <SkipToMainContent skipLink={skipLink} t={t} />
-              <div id="header_css" css={black_bg}>
-                {t("current-language-code") === "en" ? (
-                  <VacHeaderEn t={t} url={url} />
-                ) : (
-                  <VacHeaderFr t={t} url={url} />
-                )}
-              </div>
+              <FederalBanner skipLink={skipLink} t={t} url={url} />
               <main id="main">{this.props.children}</main>
             </Content>
             <div css={backgoundColour1}>
@@ -96,12 +82,10 @@ class Layout extends Component {
                 <FeedbackBar t={t} />
               </Container>
             </div>
-            <div id="footer_styles" css={fontStyle}>
-              {t("current-language-code") === "en" ? (
-                <VacFooterEn />
-              ) : (
-                <VacFooterFr />
-              )}
+            <div css={footerColour}>
+              <Container>
+                <Footer t={t} />
+              </Container>
             </div>
           </ErrorBoundary>
           {noScriptTag}
