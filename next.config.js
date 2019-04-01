@@ -1,5 +1,11 @@
 module.exports = {
-  webpack: (config, { dev }) => {
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    const SizePlugin = require("cds-size-plugin");
+    
+    config.plugins.push(new SizePlugin({cleanFileName:  (filename)=> {
+      return filename.replace(`/${buildId}`, "")
+    }}))
+
     if (process.env.BUNDLE_CHECK) {
       const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
         .BundleAnalyzerPlugin;
@@ -9,6 +15,7 @@ module.exports = {
         })
       );
     }
+
     const originalEntry = config.entry;
 
     config.entry = async () => {
