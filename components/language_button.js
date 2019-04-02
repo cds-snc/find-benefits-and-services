@@ -30,12 +30,14 @@ class LanguageButton extends Component {
     const { t, url, i18n } = this.props;
 
     return (
-      <Link href={mutateUrl(url, "", { lng: t("other-language-code") })}>
+      <Link
+        href={mutateUrl(url, "", { lng: t("other-language-code") })}
+        passHref
+      >
         <a
           id="changeLanguage"
           title={t("other-language-in-current-language")}
           css={desktopButton}
-          href={mutateUrl(url, "", { lng: t("other-language-code") })}
           onClick={() => {
             logEvent("Language change", t("other-language"));
             url.query.lng = t("other-language-code");
