@@ -12,7 +12,7 @@ import Header from "./typography/header";
 import Router from "next/router";
 import { mutateUrl } from "../utils/common";
 import { logEvent } from "../utils/analytics";
-import CardDetails from "./card_details";
+import SidebarDetails from "./sidebar_details";
 
 const root = css`
   font-family: ${globalTheme.fontFamilySansSerif};
@@ -45,14 +45,7 @@ const divider = css`
   border-top: 1px solid ${globalTheme.colour.backgroundFillColour2};
   width: 100%;
 `;
-const clicky = css`
-  pointer: hand;
-`;
 export class SelectionsEditor extends Component {
-  state = {
-    open: false
-  };
-
   countSelected = () => {
     let selectedProfileFilters = 0;
     this.props.profileQuestions.forEach(question => {
@@ -85,46 +78,41 @@ export class SelectionsEditor extends Component {
 
   render() {
     const { t, store, url } = this.props;
-
     return (
       <Grid container css={root}>
         <Grid item xs={12}>
-          <CardDetails
-            // css={clicky}
-            onClick={() => {
-              this.setState({ open: !this.state.open });
-            }}
+          <SidebarDetails
+            summary={
+              <Header size="sm_md" styles={filterTitle}>
+                {t("directory.edit_selections")}
+              </Header>
+            }
           >
-            <Header size="sm_md" styles={filterTitle}>
-              {t("directory.edit_selections")}
-            </Header>
-          </CardDetails>
-        </Grid>
-        {this.state.open ? (
-          <React.Fragment>
-            <Grid item xs={12}>
-              {this.countSelected() > 0 ? (
-                <HeaderButton
-                  id="ClearFilters"
-                  styles={clearButton}
-                  onClick={() => {
-                    this.clearFilters();
-                  }}
-                >
-                  {t("reset filters")}
-                </HeaderButton>
-              ) : null}
-            </Grid>
+            <React.Fragment>
+              <Grid item xs={12}>
+                {this.countSelected() > 0 ? (
+                  <HeaderButton
+                    id="ClearFilters"
+                    styles={clearButton}
+                    onClick={() => {
+                      this.clearFilters();
+                    }}
+                  >
+                    {t("reset filters")}
+                  </HeaderButton>
+                ) : null}
+              </Grid>
 
-            <Grid item xs={12} css={profileStyle}>
-              <ProfileSelector t={t} store={store} url={url} />
-            </Grid>
-            <div css={divider} />
-            <Grid item xs={12} css={profileStyle}>
-              <NeedsSelector t={t} store={store} url={url} />
-            </Grid>
-          </React.Fragment>
-        ) : null}
+              <Grid item xs={12} css={profileStyle}>
+                <ProfileSelector t={t} store={store} url={url} />
+              </Grid>
+              <div css={divider} />
+              <Grid item xs={12} css={profileStyle}>
+                <NeedsSelector t={t} store={store} url={url} />
+              </Grid>
+            </React.Fragment>
+          </SidebarDetails>
+        </Grid>
       </Grid>
     );
   }

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import PropTypes from "prop-types";
 import { Grid } from "@material-ui/core";
 import { connect } from "react-redux";
@@ -20,7 +20,6 @@ import QuickLinks from "./quick_links";
 import StickyHeader from "./sticky_header";
 import AlphaBanner from "./alpha_banner";
 import SelectionsEditor from "./selections_editor";
-import SelectionsEditorMobile from "./selections_editor_mobile";
 
 const divider = css`
   border-top: 2px solid ${globalTheme.colour.divider};
@@ -118,9 +117,7 @@ export class BB extends Component {
                   {t("titles.benefits_and_services")}
                 </Header>
               </div>
-              {url.query.sidebar && url.query.sidebar === "true" ? (
-                <SelectionsEditor t={t} store={store} url={url} />
-              ) : null}
+              <SelectionsEditor t={t} store={store} url={url} />
             </Grid>
             <Grid id="mainContent" item md={8} xs={12}>
               <Grid container spacing={16}>

@@ -4,13 +4,13 @@ import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/core";
 import { globalTheme } from "../theme";
 import ExpandMore from "./icons/ExpandMore";
+import Media from "react-media";
 
 const StyledDetails = styled("details")({
   display: "block",
   fontSize: "inherit",
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.textColour,
-  borderTop: `1px solid ${globalTheme.colour.backgroundFillColour2}`
+  color: globalTheme.colour.textColour
 });
 
 const StyledSummary = styled("summary")({
@@ -40,8 +40,6 @@ const StyledSummary = styled("summary")({
 });
 
 const DetailsText = styled("div")({
-  paddingTop: 5,
-  paddingBottom: 10,
   paddingLeft: 0,
   p: {
     marginTop: 0,
@@ -54,31 +52,33 @@ const DetailsText = styled("div")({
 });
 const flex2 = css({
   marginLeft: "auto",
-  paddingRight: "10px",
+  paddingTop: 5,
   order: 2,
   color: globalTheme.colour.textColour
 });
-const CardDetails = ({ summary, children, ...props }) => (
-  <StyledDetails {...props}>
-    <StyledSummary>
-      <div>{summary}</div>
-      <div css={flex2}>
-        <ExpandMore className="icon" />
-      </div>
-    </StyledSummary>
-    <DetailsText>{children}</DetailsText>
-  </StyledDetails>
+const SidebarDetails = ({ children, summary, ...props }) => (
+  <Media query={{ minWidth: globalTheme.min.sm }}>
+    {matches => (
+      <StyledDetails {...props} open={matches}>
+        <StyledSummary>
+          {summary}
+          <div css={flex2}>
+            <ExpandMore className="icon" />
+          </div>
+        </StyledSummary>
+        <DetailsText>{children}</DetailsText>
+      </StyledDetails>
+    )}
+  </Media>
 );
 
-CardDetails.defaultProps = {
-  children: undefined,
-  open: false
+SidebarDetails.defaultProps = {
+  children: undefined
 };
 
-CardDetails.propTypes = {
+SidebarDetails.propTypes = {
   children: PropTypes.node,
-  open: PropTypes.bool,
   summary: PropTypes.node
 };
 
-export default CardDetails;
+export default SidebarDetails;
