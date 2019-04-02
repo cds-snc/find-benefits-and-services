@@ -4,7 +4,6 @@ import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/core";
 import { globalTheme } from "../theme";
 import ExpandMore from "./icons/ExpandMore";
-import Media from "react-media";
 
 const StyledDetails = styled("details")({
   display: "block",
@@ -57,19 +56,15 @@ const flex2 = css({
   color: globalTheme.colour.textColour
 });
 const SidebarDetails = ({ children, summary, ...props }) => (
-  <Media query={{ minWidth: globalTheme.min.sm }}>
-    {matches => (
-      <StyledDetails {...props} open={matches}>
-        <StyledSummary>
-          {summary}
-          <div css={flex2}>
-            <ExpandMore className="icon" />
-          </div>
-        </StyledSummary>
-        <DetailsText>{children}</DetailsText>
-      </StyledDetails>
-    )}
-  </Media>
+  <StyledDetails {...props}>
+    <StyledSummary>
+      {summary}
+      <div css={flex2}>
+        <ExpandMore className="icon" />
+      </div>
+    </StyledSummary>
+    <DetailsText>{children}</DetailsText>
+  </StyledDetails>
 );
 
 SidebarDetails.defaultProps = {
