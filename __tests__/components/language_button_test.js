@@ -9,11 +9,7 @@ expect.extend(toHaveNoViolations);
 jest.mock("react-ga");
 
 describe("LanguageButton", () => {
-  Router.router = {
-    push: jest.fn(),
-    query: jest.fn(),
-    pathname: ""
-  };
+  Router.push = jest.fn().mockImplementation(() => new Promise(() => true));
 
   let props;
   let _mountedLanguageButton;
@@ -60,7 +56,7 @@ describe("LanguageButton", () => {
         .at(0)
         .simulate("click");
       expect(
-        mount(<LanguageButton {...props} />)
+        mountedLanguageButton()
           .find("#changeLanguage")
           .at(0)
           .text()
