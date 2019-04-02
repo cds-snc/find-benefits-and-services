@@ -13,6 +13,11 @@ import questionClearLogicFixture from "../fixtures/question_clear_logic";
 import responsesFixture from "../fixtures/responses";
 import Router from "next/router";
 
+window.matchMedia = () => ({
+  addListener: () => {},
+  removeListener: () => {}
+});
+
 describe("SelectionsEditor", () => {
   let props;
   let mockStore, reduxData;

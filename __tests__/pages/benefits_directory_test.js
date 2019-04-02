@@ -21,6 +21,11 @@ expect.extend(toHaveNoViolations);
 
 jest.mock("react-ga");
 
+window.matchMedia = () => ({
+  addListener: () => {},
+  removeListener: () => {}
+});
+
 describe("BenefitsDirectory", () => {
   Router.replace = jest.fn();
 
