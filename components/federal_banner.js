@@ -67,7 +67,7 @@ const container = css`
 
 class FederalBanner extends Component {
   render() {
-    const { t, skipLink, url } = this.props;
+    const { t, skipLink, url, i18n } = this.props;
     return (
       <div css={black_bg}>
         <Container>
@@ -75,7 +75,7 @@ class FederalBanner extends Component {
           <div css={container}>
             <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
             <div>
-              <LanguageButton t={t} url={url} />
+              <LanguageButton i18n={i18n} t={t} url={url} />
             </div>
           </div>
         </Container>
@@ -87,6 +87,7 @@ class FederalBanner extends Component {
 FederalBanner.propTypes = {
   url: PropTypes.object.isRequired,
   t: PropTypes.func.isRequired,
+  i18n: PropTypes.object,
   skipLink: PropTypes.string.isRequired
 };
 

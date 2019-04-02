@@ -66,7 +66,7 @@ class Layout extends Component {
   }
 
   render() {
-    const { t, title, skipLink, url } = this.props;
+    const { t, title, skipLink, url, i18n } = this.props;
     const noScriptTag = this.props.hideNoscript ? null : <Noscript t={t} />;
     return (
       <MuiThemeProvider theme={theme}>
@@ -74,7 +74,7 @@ class Layout extends Component {
           <Head title={title} t={t} />
           <ErrorBoundary>
             <Content>
-              <FederalBanner skipLink={skipLink} t={t} url={url} />
+              <FederalBanner skipLink={skipLink} t={t} url={url} i18n={i18n} />
               <main id="main">{this.props.children}</main>
             </Content>
             <div css={backgoundColour1}>
