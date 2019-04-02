@@ -1,48 +1,57 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import PropTypes from "prop-types";
-import FooterLink from "./typography/footer_link";
+import Link from "next/link";
 import { logEvent } from "../utils/analytics";
-import { css } from "emotion";
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core";
 import { globalTheme } from "../theme";
 import { mutateUrl } from "../utils/common";
 
 const desktopButton = css`
+  font-family: ${globalTheme.fontFamilySansSerif};
   font-size: 10px;
   text-transform: uppercase;
-  line-height: 23px;
-  letter-spacing: 2.5px;
-  svg {
-    margin-top: -4px;
-    vertical-align: middle;
-    padding-left: 5px;
-    color: ${globalTheme.colour.blueGrey};
+  font-weight: bold;
+  color: ${globalTheme.colour.white};
+  margin: 0px;
+  padding: 0 8px;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
+  :focus {
+    outline: 3px solid ${globalTheme.colour.focusColour};
   }
 `;
 
 class LanguageButton extends Component {
   render() {
-    const { t, url } = this.props;
+    const { t, url, i18n } = this.props;
 
     return (
-      <FooterLink
-        id="changeLanguage"
-        title={t("other-language-in-current-language")}
-        href={mutateUrl(url, "", { lng: t("other-language-code") })}
-        onClick={() => {
-          logEvent("Language change", t("other-language"));
-        }}
-        className={desktopButton}
-        lang={t("other-language-code")}
-      >
-        {t("other-language")}
-      </FooterLink>
+      <Link href={mutateUrl(url, "", {})}>
+        <a
+          id="changeLanguage"
+          title={t("other-language-in-current-language")}
+          css={desktopButton}
+          onClick={() => {
+            logEvent("Language change", t("other-language"));
+            i18n.changeLanguage();
+          }}
+          lang={t("other-language-code")}
+        >
+          {t("other-language")}
+        </a>
+      </Link>
     );
   }
 }
 
 LanguageButton.propTypes = {
   url: PropTypes.object.isRequired,
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
+  i18n: PropTypes.object.isRequired
 };
 
 export default LanguageButton;
