@@ -4,12 +4,6 @@ import styled from "@emotion/styled";
 import { css, jsx } from "@emotion/core";
 import { globalTheme } from "../theme";
 import ExpandMore from "./icons/ExpandMore";
-import Header from "./typography/header";
-
-const filterTitle = css`
-  font-size: 22px;
-  color: ${globalTheme.colour.fontColour};
-`;
 
 const StyledDetails = styled("details")({
   display: "block",
@@ -64,12 +58,10 @@ const flex2 = css({
   order: 2,
   color: globalTheme.colour.textColour
 });
-const CardDetails = ({ children, ...props }) => (
+const CardDetails = ({ summary, children, ...props }) => (
   <StyledDetails {...props}>
     <StyledSummary>
-      <Header size="sm_md" styles={filterTitle}>
-        {t("directory.edit_selections")}
-      </Header>
+      <div>{summary}</div>
       <div css={flex2}>
         <ExpandMore className="icon" />
       </div>
@@ -85,7 +77,8 @@ CardDetails.defaultProps = {
 
 CardDetails.propTypes = {
   children: PropTypes.node,
-  open: PropTypes.bool
+  open: PropTypes.bool,
+  summary: PropTypes.node
 };
 
 export default CardDetails;

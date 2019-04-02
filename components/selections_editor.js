@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import NeedsSelector from "./needs_selector";
 import ProfileSelector from "./profile_selector";
@@ -12,6 +12,7 @@ import Header from "./typography/header";
 import Router from "next/router";
 import { mutateUrl } from "../utils/common";
 import { logEvent } from "../utils/analytics";
+import CardDetails from "./card_details";
 
 const root = css`
   font-family: ${globalTheme.fontFamilySansSerif};
@@ -44,7 +45,9 @@ const divider = css`
   border-top: 1px solid ${globalTheme.colour.backgroundFillColour2};
   width: 100%;
 `;
-
+const clicky = css`
+  pointer: hand;
+`;
 export class SelectionsEditor extends Component {
   state = {
     open: false
@@ -86,31 +89,42 @@ export class SelectionsEditor extends Component {
     return (
       <Grid container css={root}>
         <Grid item xs={12}>
-          <Header size="sm_md" styles={filterTitle}>
-            {t("directory.edit_selections")}
-          </Header>
+          <CardDetails
+            // css={clicky}
+            onClick={() => {
+              this.setState({ open: !this.state.open });
+            }}
+          >
+            <Header size="sm_md" styles={filterTitle}>
+              {t("directory.edit_selections")}
+            </Header>
+          </CardDetails>
         </Grid>
-        <Grid item xs={12}>
-          {this.countSelected() > 0 ? (
-            <HeaderButton
-              id="ClearFilters"
-              styles={clearButton}
-              onClick={() => {
-                this.clearFilters();
-              }}
-            >
-              {t("reset filters")}
-            </HeaderButton>
-          ) : null}
-        </Grid>
+        {this.state.open ? (
+          <React.Fragment>
+            <Grid item xs={12}>
+              {this.countSelected() > 0 ? (
+                <HeaderButton
+                  id="ClearFilters"
+                  styles={clearButton}
+                  onClick={() => {
+                    this.clearFilters();
+                  }}
+                >
+                  {t("reset filters")}
+                </HeaderButton>
+              ) : null}
+            </Grid>
 
-        <Grid item xs={12} css={profileStyle}>
-          <ProfileSelector t={t} store={store} url={url} />
-        </Grid>
-        <div css={divider} />
-        <Grid item xs={12} css={profileStyle}>
-          <NeedsSelector t={t} store={store} url={url} />
-        </Grid>
+            <Grid item xs={12} css={profileStyle}>
+              <ProfileSelector t={t} store={store} url={url} />
+            </Grid>
+            <div css={divider} />
+            <Grid item xs={12} css={profileStyle}>
+              <NeedsSelector t={t} store={store} url={url} />
+            </Grid>
+          </React.Fragment>
+        ) : null}
       </Grid>
     );
   }

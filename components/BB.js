@@ -40,18 +40,6 @@ const stylingWithSidebar = css`
   margin-bottom: 30px;
 `;
 
-const selectionsEditorMobileStyle = css`
-  @media only screen and (min-width: ${globalTheme.min.sm}) {
-    display: none !important;
-  }
-`;
-
-const selectionsEditorStyle = css`
-  @media only screen and (max-width: ${globalTheme.max.sm}) {
-    display: none !important;
-  }
-`;
-
 export class BB extends Component {
   state = {
     showDisabledCookieBanner: false
@@ -131,14 +119,7 @@ export class BB extends Component {
                 </Header>
               </div>
               {url.query.sidebar && url.query.sidebar === "true" ? (
-                <React.Fragment>
-                  <div css={selectionsEditorMobileStyle}>
-                    <SelectionsEditorMobile t={t} store={store} url={url} />
-                  </div>
-                  <div css={selectionsEditorStyle}>
-                    <SelectionsEditor t={t} store={store} url={url} />
-                  </div>
-                </React.Fragment>
+                <SelectionsEditor t={t} store={store} url={url} />
               ) : null}
             </Grid>
             <Grid id="mainContent" item md={8} xs={12}>
