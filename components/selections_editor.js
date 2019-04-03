@@ -39,9 +39,6 @@ const filterTitle = css`
   font-size: 22px;
   color: ${globalTheme.colour.fontColour};
 `;
-const profileStyle = css`
-  padding-top: 15px;
-`;
 const divider = css`
   border-top: 1px solid ${globalTheme.colour.backgroundFillColour2};
   width: 100%;
@@ -116,11 +113,11 @@ export class SelectionsEditor extends Component {
                     ) : null}
                   </Grid>
 
-                  <Grid item xs={12} css={profileStyle}>
+                  <Grid item xs={12}>
                     <ProfileSelector t={t} store={store} url={url} />
                   </Grid>
                   <div css={divider} />
-                  <Grid item xs={12} css={profileStyle}>
+                  <Grid item xs={12}>
                     <NeedsSelector t={t} store={store} url={url} />
                   </Grid>
                 </React.Fragment>

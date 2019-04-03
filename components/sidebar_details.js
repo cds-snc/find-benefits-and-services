@@ -18,9 +18,9 @@ const StyledSummary = styled("summary")({
   width: "100%",
   boxSizing: "border-box",
   position: "relative",
-  padding: 10,
-  paddingLeft: 20,
-  paddingRight: 20,
+  padding: 15,
+  paddingLeft: 25,
+  paddingRight: 25,
   color: globalTheme.colour.textColour,
   cursor: "pointer",
   ":hover": {
@@ -40,8 +40,8 @@ const StyledSummary = styled("summary")({
 });
 
 const DetailsText = styled("div")({
-  paddingLeft: 20,
-  paddingRight: 20,
+  paddingLeft: 25,
+  paddingRight: 25,
   p: {
     marginTop: 0,
     marginBottom: 4 * 5
