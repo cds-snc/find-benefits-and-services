@@ -26,7 +26,7 @@ To create your own instance of this service, first you will need to install Yarn
   > EX: C:\dev ; C:\Node
 - `npm install -g yarn`
 
-## Steps
+## Running the App
 
 - Clone the repo
   - `git clone git@github.com:cds-snc/find-benefits-and-services.git`
@@ -36,11 +36,15 @@ To create your own instance of this service, first you will need to install Yarn
   - If you run into syntax errors chances are there are missing packages/dependencies and you may want to try
   running a clean yarn install. Delete node_modules folder and then re run `yarn install` in the main folder.
 - Now visit http://localhost:3000/ in your web browser and you should see an app that looks like [this](https://find-benefits-and-services.herokuapp.com/). Any changes you now make to your local version of the source code will be reflected on your localhost. 
-- Your local app is loading data from data/data.json. This includes which benefits are displayed, what the eligibility criteria is, which questions will be asked, and more! One way to modify this data is set up an instance of airtable, which is described below. Another way would be to write the data to a number of csv files and then covert it into the json format shown in data/data.json.
+- Your local app is loading data from data/data.json. This includes which benefits are displayed, what the eligibility criteria is, which questions will be asked, and more! One way to modify this data is set up an instance of AirTable, which is described below. Another way would be to write the data to a number of csv files and then covert it into the json format shown in data/data.json.
 
 ## Airtable
 
-We've set up a [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) so you can see how it is configured.
+By default, the application loads data from data/data.json as described in the previous section. We have also configured the application to read data from AirTable, which has an intuitive interface for entering / managing data.
+
+We've set up a [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) with some sample data. If you wish to enable AirTable as the source for your data, follow the instructions in this section.
+
+Begin by making a copy of the [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) under your own account. You will need the 
 
 ## Environment variables
 
@@ -49,15 +53,10 @@ Contact other developers on the project for what values we're currently using.
 
 | Variable                     | Use                                                                                                          | Where                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------- |
-| `AIRTABLE_READ_KEY`          | load data (benefits / translations / etc) from Airtable                                                      | production / locally |
-| `AIRTABLE_WRITE_KEY`         | write feedback form data to Airtable                                                                         | production           |
-| `AIRTABLE_BASE_KEY`          | This tells the app which Airtable base to pull data from. If it is not set, the CDS master base will be used | production / locally |
-| `SENTRY_DSN`                 | save browser errors to Sentry                                                                                | production           |
-| `GA_UA_CDS`                  | track app usage with Google Analytics for CDS                                                                | production           |
-| `WEBHOOK_URL`                | Sends slack deployment notifications                                                                         | production           |
-| `BROWSERSTACK_USERNAME`      | run tests on Windows via BrowserStack                                                                        | locally              |
-| `BROWSERSTACK_ACCESS_KEY`    | run tests on Windows via BrowserStack                                                                        | locally              |
-| `STAGING`    | `true` = pull data directly from airtable, `false` = pull data from data/data.json                                                                       | production / locally              |
+| `AIRTABLE_READ_KEY`          | load data (benefits / translations / etc) from Airtable. This value is your API Key for your account on AirTable. To generate this key, visit your account page in AirTable, and generate a key under the API section.                                                     | production / locally |
+| `AIRTABLE_WRITE_KEY`         | write feedback form data to Airtable. If the API key for your account has write permissions to your AirTable base, you can use the same value for this variable.                                                                         | production           |
+| `AIRTABLE_BASE_KEY`          | This tells the app which Airtable base to pull data from. To locate this key, visit the API Documentation page for your AirTable base. The key can be found in the URL for this page: https://airtable.com/COPY_THIS_VALUE/api/docs | production / locally |
+| `USE_AIRTABLE`    | `true` = pull data directly from airtable, `false` = pull data from data/data.json                                                                       | production / locally              |
 
 Note that CDS docker images are public, so you should not put any sensitive (ie write) keys in the docker image.
 
@@ -99,10 +98,9 @@ To add a new ENV variable to the source code, take the following steps:
 7.  Add `"YOUR_VARIABLE_NAME": { "required": true }` to the `env` object in [app.json](./app.json)
 
 
-If you'd like to contribute to the project, we have more detailed documentation regarding our tech choices here: [doc](/doc/).
-
-
 ## Reference
+
+If you'd like to contribute to the project, we have more detailed documentation regarding our tech choices here: [doc](/doc/).
 
 This application uses the following resources:
 
