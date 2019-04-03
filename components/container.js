@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 
-const vacStyle = css`
+const containerStyle = css`
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -30,8 +30,8 @@ const morePaddingIfBig = css`
 
 class Container extends Component {
   render() {
-    let css = vacStyle;
-    if (this.props.className) css = [vacStyle, this.props.className];
+    let css = containerStyle;
+    if (this.props.className) css = [containerStyle, this.props.className];
     return (
       <div css={css} id={this.props.id ? this.props.id : ""}>
         <div css={morePaddingIfBig}>{this.props.children}</div>
