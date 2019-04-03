@@ -3,7 +3,8 @@
   "scripts": {},
   "env": {
     "AIRTABLE_READ_KEY": { "required": false },
-    "AIRTABLE_BASE_KEY": { "required": false }
+    "AIRTABLE_BASE_KEY": { "required": false },
+    "USE_AIRTABLE": { "required": false }
   },
   "formation": {},
   "addons": [],

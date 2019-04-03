@@ -9,7 +9,7 @@ const fs = require("fs");
 const { parseUserAgent } = require("detect-browser");
 
 const dev = process.env.NODE_ENV !== "production";
-const staging = process.env.STAGING !== undefined;
+const USE_AIRTABLE = process.env.USE_AIRTABLE !== undefined;
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
@@ -32,8 +32,8 @@ const readJsonAsync = function(filename) {
 
 const getAllData = async function() {
   let airtableData;
-  if (staging) {
-    console.log("Staging environment, downloading from Airtable");
+  if (USE_AIRTABLE) {
+    console.log("USE_AIRTABLE environment, downloading from Airtable");
     airtableData = await airTable.hydrateFromAirtable();
   } else {
     console.log("Production environment, using static file");
@@ -54,7 +54,7 @@ const copyValidTables = (oldData, newData) => {
 Promise.resolve(getAllData()).then(allData => {
   let data = allData.airtableData;
 
-  if (staging) {
+  if (USE_AIRTABLE) {
     setInterval(function() {
       Promise.resolve(airTable.hydrateFromAirtable()).then(newData => {
         copyValidTables(data, newData);
@@ -131,10 +131,12 @@ Promise.resolve(getAllData()).then(allData => {
             source: "/server.js"
           });
         });
-      } else if (req.url.includes("data-validation") && !staging) {
+      } else if (req.url.includes("data-validation") && !USE_AIRTABLE) {
         res
           .status(404)
-          .send("The Data Validation page only exists on the staging app.");
+          .send(
+            "The Data Validation page only exists on the USE_AIRTABLE app."
+          );
       } else {
         const favouriteBenefits = new Cookies(req.headers.cookie).get(
           "favouriteBenefits"
