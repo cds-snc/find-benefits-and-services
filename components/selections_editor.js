@@ -21,7 +21,7 @@ const root = css`
   border: thin solid ${globalTheme.colour.backgroundFillColour2} !important;
   box-shadow: none !important;
   margin-top: 30px;
-  padding: 25px;
+  // padding: 25px;
 `;
 const clearButton = css`
   font-size: 16px;

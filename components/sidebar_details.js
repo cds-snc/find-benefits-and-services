@@ -18,15 +18,16 @@ const StyledSummary = styled("summary")({
   width: "100%",
   boxSizing: "border-box",
   position: "relative",
-  padding: 5,
+  padding: 10,
+  paddingLeft: 20,
+  paddingRight: 20,
   color: globalTheme.colour.textColour,
   cursor: "pointer",
   ":hover": {
     backgroundColor: globalTheme.colour.hoverBackground
   },
   ":focus": {
-    outline: `2px solid ${globalTheme.colour.focusColour}`,
-    outlineOffset: -3
+    outline: `2px solid ${globalTheme.colour.focusColour}`
   },
   "::-webkit-details-marker": {
     display: "none"
@@ -39,7 +40,8 @@ const StyledSummary = styled("summary")({
 });
 
 const DetailsText = styled("div")({
-  paddingLeft: 0,
+  paddingLeft: 20,
+  paddingRight: 20,
   p: {
     marginTop: 0,
     marginBottom: 4 * 5
