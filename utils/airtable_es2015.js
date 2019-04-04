@@ -55,9 +55,6 @@ var fetchTableFromAirtable = async function fetchTableFromAirtable(table) {
     });
   }
 
-  // if(jsonRecords.length === 0) {
-  //   return [];
-  // }
   return jsonRecords.map(function(item) {
     return item.fields;
   });
