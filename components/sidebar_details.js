@@ -9,8 +9,7 @@ const StyledDetails = styled("details")({
   display: "block",
   fontSize: "inherit",
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.textColour,
-  borderTop: `1px solid ${globalTheme.colour.backgroundFillColour2}`
+  color: globalTheme.colour.textColour
 });
 
 const StyledSummary = styled("summary")({
@@ -19,15 +18,16 @@ const StyledSummary = styled("summary")({
   width: "100%",
   boxSizing: "border-box",
   position: "relative",
-  padding: 5,
+  padding: 15,
+  paddingLeft: 25,
+  paddingRight: 25,
   color: globalTheme.colour.textColour,
   cursor: "pointer",
   ":hover": {
     backgroundColor: globalTheme.colour.hoverBackground
   },
   ":focus": {
-    outline: `2px solid ${globalTheme.colour.focusColour}`,
-    outlineOffset: -3
+    outline: `2px solid ${globalTheme.colour.focusColour}`
   },
   "::-webkit-details-marker": {
     display: "none"
@@ -40,9 +40,8 @@ const StyledSummary = styled("summary")({
 });
 
 const DetailsText = styled("div")({
-  paddingTop: 5,
-  paddingBottom: 10,
-  paddingLeft: 0,
+  paddingLeft: 25,
+  paddingRight: 25,
   p: {
     marginTop: 0,
     marginBottom: 4 * 5
@@ -54,15 +53,14 @@ const DetailsText = styled("div")({
 });
 const flex2 = css({
   marginLeft: "auto",
-  paddingRight: "10px",
   paddingTop: 5,
   order: 2,
   color: globalTheme.colour.textColour
 });
-const CardDetails = ({ children, summary, ...props }) => (
+const SidebarDetails = ({ children, summary, ...props }) => (
   <StyledDetails {...props}>
     <StyledSummary>
-      <div>{summary}</div>
+      {summary}
       <div css={flex2}>
         <ExpandMore className="icon" />
       </div>
@@ -71,15 +69,13 @@ const CardDetails = ({ children, summary, ...props }) => (
   </StyledDetails>
 );
 
-CardDetails.defaultProps = {
-  children: undefined,
-  open: false
+SidebarDetails.defaultProps = {
+  children: undefined
 };
 
-CardDetails.propTypes = {
+SidebarDetails.propTypes = {
   children: PropTypes.node,
-  open: PropTypes.bool,
   summary: PropTypes.node
 };
 
-export default CardDetails;
+export default SidebarDetails;
