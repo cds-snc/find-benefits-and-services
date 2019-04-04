@@ -1,138 +1,85 @@
 {
   "benefits": [
     {
-      "vacNameEn": "Subsidy for senior's fitness classes",
-      "vacNameFr": "(fra) Subsidy for senior's fitness classes",
+      "vacNameEn": "Benefit 1",
+      "vacNameFr": "Prestation 1",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWFZGPEbgMtNbbz"],
       "oneLineDescriptionEn": "A great benefit.",
       "oneLineDescriptionFr": "(fra) A great benefit.",
+      "benefitEligibility": ["recxsWSIH846g2TVp"],
+      "id": "reclO0wMapgJNMlAs",
       "benefitExamples": [
         "recwZsEZEj0bPxLd6",
         "recY4jfkkBNtvxjRZ",
         "recymFq6OgUeYzQTX"
       ],
-      "benefitEligibility": ["recxsWSIH846g2TVp"],
       "seeMoreSentenceEn": "Some examples of what this program may provide:",
-      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :",
-      "id": "reclO0wMapgJNMlAs",
-      "childBenefits": ["recv5CmS6utSJYHiM"]
+      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :"
     },
     {
-      "vacNameFr": "(fra) Help to file your tax benefit",
+      "vacNameEn": "Benefit 2",
+      "vacNameFr": "Prestation 2",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
-      "needs": ["recWJA8VGxtunsYBY"],
+      "needs": ["recWJA8VGxtunsYBY", "recWFZGPEbgMtNbbz"],
       "oneLineDescriptionEn": "An even better benefit.",
       "oneLineDescriptionFr": "(fra) An even better benefit.",
-      "benefitExamples": ["recMQ0teAthpK2RIQ"],
       "benefitEligibility": ["reck1SbhOSzV7WcG2"],
-      "seeMoreSentenceEn": "Some examples of what this program may provide:",
-      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :",
       "id": "recoFRhS14rE9jt0v",
-      "vacNameEn": "Help to file your tax benefit",
-      "childBenefits": ["recCmW24kf7C1Wzg4"]
+      "benefitExamples": ["recMQ0teAthpK2RIQ"],
+      "seeMoreSentenceEn": "Some examples of what this program may provide:",
+      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :"
     },
     {
-      "vacNameEn": "Financial advice",
-      "vacNameFr": "(fra) Financial advice",
+      "vacNameEn": "Benefit 3",
+      "vacNameFr": "Prestation 3",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWJA8VGxtunsYBY"],
       "oneLineDescriptionEn": "A pretty mediocre benefit.",
       "oneLineDescriptionFr": "(fra) A pretty mediocre benefit.",
+      "benefitEligibility": ["recBsf9UV2Hyw4G2G"],
+      "id": "recCmW24kf7C1Wzg4",
       "benefitExamples": ["recjEqWCW3tGi5ot9", "recwZsEZEj0bPxLd6"],
       "seeMoreSentenceEn": "Some examples of what this program may provide:",
-      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :",
-      "id": "recCmW24kf7C1Wzg4",
-      "benefitEligibility": [],
-      "childBenefits": []
-    },
-    {
-      "id": "rec3w95vV4Bj7i8kr",
-      "vacNameEn": "Subsidy for home accessibility",
-      "oneLineDescriptionEn": "Home accessibility",
-      "vacNameFr": "(fra) Subsidy for home accessibility",
-      "oneLineDescriptionFr": "(fra) Home accessibility",
-      "benefitPageEn": "https://www.google.com/",
-      "benefitPageFr": "https://www.google.com/",
-      "needs": ["recrFaqBTcCoYsRCt"],
-      "seeMoreSentenceEn": "Some examples of what this program may provide:",
-      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :",
-      "benefitExamples": [],
-      "benefitEligibility": [],
-      "childBenefits": []
-    },
-    {
-      "id": "recv5CmS6utSJYHiM",
-      "vacNameEn": "Stay healthy services",
-      "vacNameFr": "(fra) Stay healthy services",
-      "oneLineDescriptionEn": "Cycling, walking, swimming classes",
-      "oneLineDescriptionFr": "(fra) Cycling, walking, swimming classes",
-      "benefitPageEn": "https://www.google.com/",
-      "benefitPageFr": "https://www.google.com/",
-      "needs": ["recWFZGPEbgMtNbbz"],
-      "seeMoreSentenceEn": "Some examples of what this program may provide:",
-      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :",
-      "benefitExamples": [],
-      "benefitEligibility": [],
-      "childBenefits": []
-    },
-    {
-      "id": "rec03713ExoD8JVNc",
-      "vacNameEn": "Find a doctor abroad",
-      "vacNameFr": "(fra) Find a doctor abroad",
-      "oneLineDescriptionEn": "Get help finding a doctor away from home",
-      "oneLineDescriptionFr": "(fra) Get help finding a doctor away from home",
-      "benefitPageEn": "https://www.google.com/",
-      "benefitPageFr": "https://www.google.com/",
-      "needs": ["recWFZGPEbgMtNbbz"],
-      "seeMoreSentenceEn": "Some examples of what this program may provide:",
-      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :",
-      "benefitExamples": [],
-      "benefitEligibility": [],
-      "childBenefits": []
+      "seeMoreSentenceFr": "Quelques exemples de ce que ce programme peut fournir :"
     }
   ],
   "benefitEligibility": [
     {
       "benefit": ["reclO0wMapgJNMlAs"],
       "patronType": ["recMBfIiDsvy7DtqP"],
-      "patronLocation": ["recyQBe7DxlBDhxm4"],
+      "question2": ["recyQBe7DxlBDhxm4"],
       "Name": "recxsWSIH846g2TVp"
     },
     {
       "benefit": ["recoFRhS14rE9jt0v"],
       "patronType": ["recUEwhpkEmPKlY24"],
       "Name": "reck1SbhOSzV7WcG2",
-      "patronLocation": []
+      "question2": []
+    },
+    {
+      "benefit": ["recCmW24kf7C1Wzg4"],
+      "question2": ["recaSBaETNQIUvPPB"],
+      "Name": "recBsf9UV2Hyw4G2G",
+      "patronType": []
     }
   ],
   "needs": [
     {
-      "nameEn": "Health support",
-      "benefits": [
-        "reclO0wMapgJNMlAs",
-        "recv5CmS6utSJYHiM",
-        "rec03713ExoD8JVNc"
-      ],
-      "nameFr": "(fra) Health support",
+      "nameEn": "Need 1",
+      "benefits": ["reclO0wMapgJNMlAs", "recoFRhS14rE9jt0v"],
+      "nameFr": "(fra) Need 1",
       "colour": "#f0b5b5",
       "id": "recWFZGPEbgMtNbbz"
     },
     {
-      "nameEn": "Financial assistance",
+      "nameEn": "Need 2",
       "benefits": ["recoFRhS14rE9jt0v", "recCmW24kf7C1Wzg4"],
-      "nameFr": "(fra) Financial assistance",
+      "nameFr": "(fra) Need 2",
       "id": "recWJA8VGxtunsYBY",
-      "colour": ""
-    },
-    {
-      "id": "recrFaqBTcCoYsRCt",
-      "nameEn": "Home support",
-      "nameFr": "(fra) Home support",
-      "benefits": ["rec3w95vV4Bj7i8kr"],
       "colour": ""
     }
   ],
@@ -1449,7 +1396,7 @@
     {
       "section": "beta_banner",
       "key": "main",
-      "English": "This tool is under development and is for testing purposes only.",
+      "English": "This tool is under development and is for testing purposes only. We're working to ensure accurate results. ",
       "French": "Cet outil fait l’objet d’un développement continu et est conçu à des fins de test. Nous nous efforçons d’obtenir des résultats exacts.  ",
       "id": "beta_banner.main"
     },
@@ -1532,42 +1479,32 @@
         "recMr2OPtvGBAIiIW",
         "recUEwhpkEmPKlY24"
       ],
-      "display_text_english": "Select the one that best fits your situation.",
-      "display_text_french": "(fra) Select the one that best fits your situation.",
-      "guided_experience_english": "Select the one that best fits your situation.",
-      "guided_experience_french": "(fra) Select the one that best fits your situation.",
+      "display_text_english": "question 1",
+      "display_text_french": "(fra) question 1",
+      "question display logic": ["recFvhhnlL14hmO4j"],
+      "guided_experience_english": "Question 1",
+      "guided_experience_french": "(fra) Question 1",
+      "questionClearLogic": ["recFXvRoEAuAEHA7y"],
       "guided_experience_page_title_english": "Question 1 Page Title",
       "guided_experience_page_title_french": "(fra) Question 1 Page Title",
       "breadcrumb_english": "Question 1",
       "breadcrumb_french": "(fra) Question 1",
       "summary_english": "Question 1",
       "summary_french": "(fra) Question 1",
-      "id": "recO1FIN3qAzL84Wd",
-      "question display logic": ["recAf6Llfq3HFyKnt"]
+      "id": "recO1FIN3qAzL84Wd"
     },
     {
-      "id": "rectN9zvVDSgznXsr",
-      "variable_name": "patronAge",
-      "display_text_english": "question 3",
-      "display_text_french": "(fra) question 3",
-      "multiple_choice_options": ["recWQlTdT9kWHFPM1", "recpNltZpIREESJcR"],
-      "guided_experience_english": "How old are you?",
-      "guided_experience_french": "(fra) How old are you?",
-      "question display logic 2": ["recAf6Llfq3HFyKnt"],
-      "guided_experience_page_title_english": "Question 1 Page Title",
-      "guided_experience_page_title_french": "(fra) Question 1 Page Title",
-      "breadcrumb_english": "Question 1",
-      "breadcrumb_french": "(fra) Question 1",
-      "summary_english": "Question 1",
-      "summary_french": "(fra) Question 1",
-      "question display logic": []
-    },
-    {
-      "variable_name": "patronLocation",
-      "multiple_choice_options": ["recyQBe7DxlBDhxm4", "recSf3ZeRvc0UVjM2"],
+      "variable_name": "question2",
+      "multiple_choice_options": [
+        "recyQBe7DxlBDhxm4",
+        "recSf3ZeRvc0UVjM2",
+        "recaSBaETNQIUvPPB"
+      ],
+      "display_text_english": "question 2",
       "display_text_french": "(fra) question 2",
-      "guided_experience_english": "Where are you located?",
-      "guided_experience_french": "(fra) Where are you located?",
+      "guided_experience_english": "Question 2",
+      "guided_experience_french": "(fra) Question 2",
+      "questionClearLogic 2": ["recFXvRoEAuAEHA7y"],
       "guided_experience_page_title_english": "Question 2 Page Title",
       "guided_experience_page_title_french": "(fra) Question 2 Page Title",
       "breadcrumb_english": "Question 2",
@@ -1575,8 +1512,8 @@
       "summary_english": "Question 2",
       "summary_french": "(fra) Question 2",
       "id": "rechSuiuveVbVL86F",
-      "display_text_english": "question 2",
-      "question display logic": []
+      "question display logic": [],
+      "questionClearLogic": []
     },
     {
       "variable_name": "needs",
@@ -1594,7 +1531,8 @@
       "summary_french": "Catégories d’avantages :",
       "id": "recJNbeB9ngXXE3Xo",
       "multiple_choice_options": [],
-      "question display logic": []
+      "question display logic": [],
+      "questionClearLogic": []
     },
     {
       "variable_name": "feedback",
@@ -1608,73 +1546,61 @@
       "display_text_english": "Overall, how was your experience with this online tool?",
       "display_text_french": "Dans l’ensemble, quelle a été votre expérience avec cet outil en ligne? ",
       "id": "recW0LNhldcOFIajO",
+      "question display logic": [],
       "guided_experience_english": "",
       "guided_experience_french": "",
+      "questionClearLogic": [],
       "guided_experience_page_title_english": "",
       "guided_experience_page_title_french": "",
       "breadcrumb_english": "",
       "breadcrumb_french": "",
       "summary_english": "",
-      "summary_french": "",
-      "question display logic": []
-    },
-    {
-      "variable_name": "question2",
-      "id": "rechrjtXOSQYaF5Tq",
-      "multiple_choice_options": [],
-      "display_text_english": "",
-      "display_text_french": "",
-      "guided_experience_english": "",
-      "guided_experience_french": "",
-      "guided_experience_page_title_english": "",
-      "guided_experience_page_title_french": "",
-      "breadcrumb_english": "",
-      "breadcrumb_french": "",
-      "summary_english": "",
-      "summary_french": "",
-      "question display logic": []
+      "summary_french": ""
     }
   ],
   "multipleChoiceOptions": [
     {
-      "display_text_english": "I am currently retired.",
-      "display_text_french": "(fra) I am currently retired.",
+      "display_text_english": "Answer 1",
+      "display_text_french": "(fra) Answer 1",
       "linked_question": ["patronType"],
-      "variable_name": "retired",
+      "question display logic": ["recFvhhnlL14hmO4j"],
+      "questionClearLogic": ["recFXvRoEAuAEHA7y"],
+      "variable_name": "answer1",
       "benefits": "Assistance Fund , Attendance Allowance, Career Transition Services, Career Impact Allowance, Clothing Allowance, Critical Injury Benefit, Detention Benefits, Disability Award, Education and Training Benefit, Exceptional Incapacity Allowance, Group Health Insurance, Jobs in the federal government, Treatment Benefits, Pastoral Outreach , Veteran Family Program, Disability Pension",
       "benefitEligibility": "recfWHf1YmVfz0ppj, rec6ejmokDXrYAUqT, recGR0KBNakgQbLG5, recR4crMdLtxDz0cf, recl8EQBaoPvkUs1y, rec3LMYRHMRfFdc2E, recxyzl32f531NaOr, recBwJVJsjz3KF2kz, recoWEBTf2fHKxO8T, recNbQZ8omQdO5FhH, recLCU5pg8cn8v6cO, recmwLUgfMCQyfiDd, rece9Xkt73rx6IOOw, recI2JIvA0Mtvna2v, recmsrOwzHKCsUNl6, recQBzCRl2D8B7lxu, recgi1wg3Z0xhI0KC, rec9M3lN0KwS8CJmj, recAz6FLY6qy3GkHd, recyyVwXzhgcX14IC, recJDGon9UpIRv1C6, recg7V3k3ol4FLAMh, recxq80Dbs1ijRlaE, recaVVZzKjrd2Duj8, recGkh4BgTTH4ibVq, recxc6T4F7Ft3bF0t, recmRtb7mI9XaukBw, recEfRVYLpvWvqISx, recs1qwbmkLwDiA7Z, recefz1kpLFu7Vkxh, rec6vIdu4K8xl1nxi, recnz9qP2cSNgBzE8, recqM9VdRHwdy35Xf, recwtgBef5LIpUifM",
       "benefitEligibility 2": ["recxsWSIH846g2TVp"],
-      "key (DO NOT EDIT)": "retired",
+      "key (DO NOT EDIT)": "answer1",
       "id": "recMBfIiDsvy7DtqP",
-      "admin_display": "patronType = retired",
-      "question display logic": ["recAf6Llfq3HFyKnt"]
+      "admin_display": "patronType = answer1"
     },
     {
-      "display_text_english": "I will be retiring soon.",
-      "display_text_french": "(fra) I will be retiring soon.",
+      "display_text_english": "Answer 2",
+      "display_text_french": "(fra) Answer 2",
       "linked_question": ["patronType"],
-      "variable_name": "retiring",
+      "variable_name": "answer2",
       "benefits": "Career Transition Services, Career Impact Allowance, Critical Injury Benefit, Detention Benefits, Disability Award, Group Health Insurance, Jobs in the federal government, Veteran Family Program, Disability Pension",
       "benefitEligibility": "recR4crMdLtxDz0cf, recl8EQBaoPvkUs1y, recoWEBTf2fHKxO8T, recNbQZ8omQdO5FhH, recLCU5pg8cn8v6cO, recI2JIvA0Mtvna2v, recPwgIAvnOrF9CZE, rec9M3lN0KwS8CJmj, recAz6FLY6qy3GkHd, recJDGon9UpIRv1C6, recg7V3k3ol4FLAMh, recGkh4BgTTH4ibVq, recefz1kpLFu7Vkxh",
       "benefitEligibility 2": ["reck1SbhOSzV7WcG2"],
       "nextSteps": ["rec96wtbm5Zpuu8FJ"],
-      "key (DO NOT EDIT)": "retiring",
+      "key (DO NOT EDIT)": "answer2",
       "id": "recUEwhpkEmPKlY24",
-      "admin_display": "patronType = retiring",
-      "question display logic": []
+      "admin_display": "patronType = answer2",
+      "question display logic": [],
+      "questionClearLogic": []
     },
     {
-      "display_text_english": "I am part of an organization that helps people who are retired.",
-      "display_text_french": "(fra) I am part of an organization that helps people who are retired.",
+      "display_text_english": "Answer 3",
+      "display_text_french": "(fra) Answer 3",
       "linked_question": ["patronType"],
-      "variable_name": "organization",
+      "variable_name": "answer3",
       "benefits": "Caregiver Zone, Death Benefit, Educational Assistance for children, Family Peer Support (OSISS), Pastoral Outreach , Survivor's Pension, Veteran Family Program, Vocational Assistance, Funeral and Burial Assistance",
       "benefitEligibility": "recOVWkhp1IfbFnRU, recC1BOsrEwQQT7Tr, recXSg015decd4TOq, recWmF49cJ0evYv0F, reclYWjGKy8oabUkO, rechaKl1wJhKe0lnF, recpCQ81MXjUrrerT, recdtaTP1HL6hgId7, recIKNddEHsrPobsJ, recvSEet4Pf5xm2Ng, rechEoLL5pBxeHcGN, recoztJkT5J9MYX2G, recRligLod0I0IhcP, rece3ZFiriZxO63e4, recxq80Dbs1ijRlaE, rec0AZCo8gx3HzLy1, recBr3SAQU0GijleA, recDSeANhF5XrVRcr, recgsVRR5F96KoQvT, recGSaT5q7VLKIDtA, receBHaEdQ29Qid3n, recdzam05SfCt5PqJ, rec6vIdu4K8xl1nxi, rechrkjJpnl8ZEamI, recQKuvUeQib6xDlk, recxiPnxu1B8Xq1HX, recwtgBef5LIpUifM",
-      "key (DO NOT EDIT)": "organization",
+      "key (DO NOT EDIT)": "answer3",
       "id": "recMr2OPtvGBAIiIW",
-      "admin_display": "patronType = organization",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "admin_display": "patronType = answer3",
+      "question display logic": [],
+      "questionClearLogic": [],
+      "benefitEligibility 2": []
     },
     {
       "display_text_english": "Great",
@@ -1684,10 +1610,11 @@
       "key (DO NOT EDIT)": "great",
       "id": "recDFBzFgGoIjLfEv",
       "admin_display": "feedback = great",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
       "display_text_english": "Good",
@@ -1697,10 +1624,11 @@
       "key (DO NOT EDIT)": "good",
       "id": "recsy6gOfqFNYKj1e",
       "admin_display": "feedback = good",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
       "display_text_english": "OK",
@@ -1710,10 +1638,11 @@
       "key (DO NOT EDIT)": "ok",
       "id": "recra3ilZxoNMk9sa",
       "admin_display": "feedback = ok",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
       "display_text_english": "Bad",
@@ -1723,10 +1652,11 @@
       "key (DO NOT EDIT)": "bad",
       "id": "recx0BM3gnBMR6wNG",
       "admin_display": "feedback = bad",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
       "display_text_english": "Terrible",
@@ -1736,119 +1666,116 @@
       "key (DO NOT EDIT)": "terrible",
       "id": "recdfRUcFtPjZgFpK",
       "admin_display": "feedback = terrible",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
-      "display_text_english": "I live inside of Canada.",
-      "display_text_french": "(fra) I live inside of Canada.",
-      "linked_question": ["patronLocation"],
-      "variable_name": "insideCanada",
+      "display_text_english": "Answer 4",
+      "display_text_french": "(fra) Answer 4",
+      "linked_question": ["question2"],
+      "questionClearLogic 2": ["recFXvRoEAuAEHA7y"],
+      "variable_name": "answer4",
       "benefitEligibility 3": ["recxsWSIH846g2TVp"],
-      "key (DO NOT EDIT)": "insideCanada",
+      "key (DO NOT EDIT)": "answer4",
       "id": "recyQBe7DxlBDhxm4",
-      "admin_display": "patronLocation = insideCanada",
+      "admin_display": "question2 = answer4",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
-      "display_text_english": "I live outside of Canada.",
-      "display_text_french": "(fra) I live outside of Canada.",
-      "linked_question": ["patronLocation"],
-      "variable_name": "outsideCanada",
-      "key (DO NOT EDIT)": "outsideCanada",
+      "display_text_english": "Answer 5",
+      "display_text_french": "(fra) Answer 5",
+      "linked_question": ["question2"],
+      "variable_name": "answer5",
+      "key (DO NOT EDIT)": "answer5",
       "id": "recSf3ZeRvc0UVjM2",
-      "admin_display": "patronLocation = outsideCanada",
+      "admin_display": "question2 = answer5",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     },
     {
-      "key (DO NOT EDIT)": "over65",
-      "id": "recWQlTdT9kWHFPM1",
-      "admin_display": "patronAge = over65",
-      "variable_name": "over65",
-      "display_text_english": "I am over the age of 65. ",
-      "linked_question": ["patronAge"],
-      "display_text_french": "(fra) I am over the age of 65.",
+      "display_text_english": "Answer 6",
+      "display_text_french": "(fra) Answer 6",
+      "linked_question": ["question2"],
+      "variable_name": "answer6",
+      "benefitEligibility 3": ["recBsf9UV2Hyw4G2G"],
+      "key (DO NOT EDIT)": "answer6",
+      "id": "recaSBaETNQIUvPPB",
+      "admin_display": "question2 = answer6",
+      "question display logic": [],
+      "questionClearLogic": [],
       "benefits": "",
       "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
-    },
-    {
-      "key (DO NOT EDIT)": "under65",
-      "id": "recpNltZpIREESJcR",
-      "admin_display": "patronAge = under65",
-      "variable_name": "under65",
-      "display_text_english": "I am retiring early under the age of 65.",
-      "linked_question": ["patronAge"],
-      "display_text_french": "(fra) I am retiring early under the age of 65.",
-      "benefits": "",
-      "benefitEligibility": "",
-      "benefitEligibility 2": [],
-      "question display logic": []
+      "benefitEligibility 2": []
     }
   ],
   "questionDisplayLogic": [
     {
-      "Name": "patronType = retired",
-      "id": "recAf6Llfq3HFyKnt",
       "question": ["patronType"],
-      "has value": ["retired"],
-      "exclude questions": ["rectN9zvVDSgznXsr"]
+      "has value": ["answer1"],
+      "Name": "patronType = answer1",
+      "id": "recFvhhnlL14hmO4j"
     }
   ],
-  "questionClearLogic": [],
+  "questionClearLogic": [
+    {
+      "Name": "rule1",
+      "Question": ["patronType"],
+      "Response": ["answer1"],
+      "Previous Response": ["answer4"],
+      "Clear Questions": ["question2"]
+    }
+  ],
   "benefitExamples": [
     {
       "english": "example 1",
-      "french": "(fra) example 1",
-      "linked_benefits": [
-        "Subsidy for senior's fitness classes",
-        "Financial advice"
-      ],
-      "id": "recwZsEZEj0bPxLd6"
+      "id": "recwZsEZEj0bPxLd6",
+      "linked_benefits": ["Benefit 1", "Benefit 3"],
+      "french": "(fra) example 1"
     },
     {
+      "id": "recY4jfkkBNtvxjRZ",
       "english": "example 2",
       "french": "(fra) example 2",
-      "linked_benefits": ["Subsidy for senior's fitness classes"],
-      "id": "recY4jfkkBNtvxjRZ"
+      "linked_benefits": ["Benefit 1"]
     },
     {
+      "id": "recymFq6OgUeYzQTX",
       "english": "example 3",
       "french": "(fra) example 3",
-      "linked_benefits": ["Subsidy for senior's fitness classes"],
-      "id": "recymFq6OgUeYzQTX"
+      "linked_benefits": ["Benefit 1"]
     },
     {
+      "id": "recMQ0teAthpK2RIQ",
       "english": "example 4",
       "french": "(fra) example 4",
-      "linked_benefits": ["Help to file your tax benefit"],
-      "id": "recMQ0teAthpK2RIQ"
+      "linked_benefits": ["Benefit 2"]
     },
     {
+      "id": "recjEqWCW3tGi5ot9",
       "english": "example 5",
       "french": "(fra) example 5",
-      "linked_benefits": ["Financial advice"],
-      "id": "recjEqWCW3tGi5ot9"
+      "linked_benefits": ["Benefit 3"]
     }
   ],
   "nextSteps": [
     {
       "bullet_name": "step1",
       "english": "Step 1 is to [search google](https://www.google.com).",
-      "french": "(fra) Step 1 is to [search google](https://www.google.com).",
       "patronType": ["recUEwhpkEmPKlY24"],
-      "id": "rec96wtbm5Zpuu8FJ"
+      "id": "rec96wtbm5Zpuu8FJ",
+      "french": "(fra) Step 1 is to [search google](https://www.google.com)."
     }
   ],
   "errors": [],
-  "timestamp": 1554408973171
+  "timestamp": 1554128676047
 }
