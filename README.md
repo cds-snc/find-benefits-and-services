@@ -88,7 +88,7 @@ Congratulations! You should now be viewing content pulled directly from your new
 - navigate to the benefits table
 - change the 1st row 1st column "Benefit 1" to "My Awesome Benefit"
 - navigate to http://localhost:3000/data-validation
-- click "refresh cashe"
+- click "refresh cache"
 - visit http://localhost:3000/benefits-directory
 - You should see your new name displayed on the 1st benefit card
 
