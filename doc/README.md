@@ -255,7 +255,7 @@ We are currently using [React Styleguidist](https://react-styleguidist.js.org/) 
 ### Contributing to GitHub repo
 
 Download GitHub desktop @ https://desktop.github.com/.
-Go to https://github.com/veteransaffairscanada/vac-benefits-directory
+Go to https://github.com/cds-snc/find-benefits-and-services
 click "Clone or download" button and select open in desktop.
 Select where you would like to save the project locally.
 
@@ -263,7 +263,7 @@ When making changes first make a new branch.
 Click Branch in the top left corner, then new branch.
 
 After making your changes commit those changes in GitHub desktop then select push changes in the top right corner.
-Navigate over to the GitHub page https://github.com/veteransaffairscanada/vac-benefits-directory and find the branch. Then create a new pull request to better explain what changes you have implemented.
+Navigate over to the GitHub page https://github.com/cds-snc/find-benefits-and-services and find the branch. Then create a new pull request to better explain what changes you have implemented.
 After that the pull request will be available for reviewers to look at and make sure everything looks good before merging it into master.
 
 ### Pair programming
@@ -302,7 +302,7 @@ Deployment notifications are automated messages that we send to our internal Sla
 
 #### How do they work?
 
-Upon server start the the application will send a JSON payload to a [Slack incoming webhook](https://api.slack.com/incoming-webhooks "Incoming Webhook"). The webhook then translates the information into a nicely formatted slack message that all developers can see. You can learn more about how they exactly work [here](https://github.com/veteransaffairscanada/vac-benefits-directory/blob/master/utils/deploy_notification.js). Important is that you set a `WEBHOOK_URL` environmental variable which is the URL of your Slack Webhook.
+Upon server start the the application will send a JSON payload to a [Slack incoming webhook](https://api.slack.com/incoming-webhooks "Incoming Webhook"). The webhook then translates the information into a nicely formatted slack message that all developers can see. You can learn more about how they exactly work [here](https://github.com/cds-snc/find-benefits-and-services/blob/master/utils/deploy_notification.js). Important is that you set a `WEBHOOK_URL` environmental variable which is the URL of your Slack Webhook.
 
 #### What do we use them for?
 

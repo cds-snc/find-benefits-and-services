@@ -44,21 +44,22 @@ By default, the application loads data from data/data.json as described in the p
 
 We've set up a [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) with some sample data. If you wish to enable AirTable as the source for your data, follow the instructions in this section.
 
-Begin by making a copy of the [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) under your own account. You will need the 
+- Visit our [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) and click "Copy base"
+- If you don't already have an airtable account, you'll be prompted to create one
+- Add the base to one of your workspaces
+
+Now you'll need to set up some local environment variables to get the content from your airtable base into your app. 
 
 ## Environment variables
 
-Some are also required for testing. You will also need some of these set for local development
-Contact other developers on the project for what values we're currently using.
+Add the following 4 environment variables using the steps below.
 
-| Variable                     | Use                                                                                                          | Where                |
+| Variable                     | Use                                                                                                          | Required                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------- |
-| `AIRTABLE_READ_KEY`          | load data (benefits / translations / etc) from Airtable. This value is your API Key for your account on AirTable. To generate this key, visit your account page in AirTable, and generate a key under the API section.                                                     | production / locally |
-| `AIRTABLE_WRITE_KEY`         | write feedback form data to Airtable. If the API key for your account has write permissions to your AirTable base, you can use the same value for this variable.                                                                         | production           |
-| `AIRTABLE_BASE_KEY`          | This tells the app which Airtable base to pull data from. To locate this key, visit the API Documentation page for your AirTable base. The key can be found in the URL for this page: https://airtable.com/COPY_THIS_VALUE/api/docs | production / locally |
-| `USE_AIRTABLE`    | `true` = pull data directly from airtable, `false` = pull data from data/data.json                                                                       | production / locally              |
-
-Note that CDS docker images are public, so you should not put any sensitive (ie write) keys in the docker image.
+| `AIRTABLE_READ_KEY`          | load data (benefits / translations / etc) from Airtable. This value is your API Key for your account on AirTable. To generate this key, visit your account page in AirTable, and generate a key under the API section.                                                     | yes |
+| `AIRTABLE_BASE_KEY`          | This tells the app which Airtable base to pull data from. To locate this key, visit the API Documentation page for your AirTable base. The key can be found in the URL for this page: https://airtable.com/AIRTABLE_BASE_KEY/api/docs | yes |
+| `USE_AIRTABLE`    | `true` = pull data directly from airtable, `false` = pull data from data/data.json                                                                       | yes              |
+| `AIRTABLE_WRITE_KEY`         | write feedback form data to Airtable. If the API key for your account has write permissions to your AirTable base, you can use the same value for this variable.                                                                         | only if you want the feedback feature to work           |
 
 ### Adding a new environment locally (OS X)
 
@@ -77,25 +78,19 @@ Variable Name = AIRTABLE_READ_KEY
 Contact other developers on the project for what values we're currently using.
 restart Command Prompt, echo %AIRTABLE_READ_KEY% to check if value is setup properly
 
-### Adding a new environment variable to the source code
+## Make a content change using Airtable
 
-To add a new ENV variable to the source code, take the following steps:
+- run `yarn dev`
+- visit http://localhost:3000/
 
-1.  Follow the steps above to add it locally
-2.  Reference it in the source code with `process.env.YOUR_VARIABLE_NAME`
-3.  Add the following lines to [Dockerfile](./Dockerfile):
-    ```
-    ARG YOUR_VARIABLE_NAME
-    ENV YOUR_VARIABLE_NAME ${YOUR_VARIABLE_NAME}
-    ```
-4.  Add another build argument to [config.yml](./.circleci/config.yml):
-    `--build-arg YOUR_VARIABLE_NAME="${YOUR_VARIABLE_NAME}"`
-5.  Add the ENV variable to CircleCI through their web interface: https://circleci.com/gh/cds-snc/find-benefits-and-services -> Settings -> Environment Variables
-6.  Add the ENV variable to Heroku through their web interface.
-    It will need to be added to any production apps as well as the app that the pull request reviews are based on. Go to the apps, then the Settings tab, then "Reveal Config Vars"
-    and set the variable.
+Congratulations! You should now be viewing content pulled directly from your new airtable base. To test that it's working, change the name of one of the benefits.
 
-7.  Add `"YOUR_VARIABLE_NAME": { "required": true }` to the `env` object in [app.json](./app.json)
+- navigate to the benefits table
+- change the 1st row 1st column "Benefit 1" to "My Awesome Benefit"
+- navigate to http://localhost:3000/data-validation
+- click "refresh cache"
+- visit http://localhost:3000/benefits-directory
+- You should see your new name displayed on the 1st benefit card
 
 
 ## Reference
