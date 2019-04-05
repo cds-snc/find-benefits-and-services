@@ -26,14 +26,21 @@ const cardDescriptionText = css`
   padding-left: ${globalTheme.cardPadding};
   padding-right: ${globalTheme.cardPadding};
   padding-top: 10px;
-  @media only screen and (max-width: ${globalTheme.max.mobile}) {
+  @media only screen and (max-width: ${globalTheme.min.xs}) {
     padding-top: 14px;
+    padding-left: ${globalTheme.cardPaddingMobile};
+    padding-right: ${globalTheme.cardPaddingMobile};
   }
 `;
 const buttonRow = css`
   padding-left: ${globalTheme.cardPadding};
   padding-right: ${globalTheme.cardPadding};
   padding-bottom: 25px;
+  @media only screen and (max-width: ${globalTheme.min.xs}) {
+    padding-left: ${globalTheme.cardPaddingMobile};
+    padding-right: ${globalTheme.cardPaddingMobile};
+    padding-bottom: 9px;
+  }
 `;
 const root = css`
   width: 100%;
@@ -45,11 +52,20 @@ const benefitName = css`
   padding-right: ${globalTheme.cardPadding};
   padding-bottom: 10px;
   display: flex;
+  @media only screen and (max-width: ${globalTheme.min.xs}) {
+    padding-top: ${globalTheme.cardPaddingMobile};
+    padding-left: ${globalTheme.cardPaddingMobile};
+    padding-right: ${globalTheme.cardPaddingMobile};
+  }
 `;
 
 const padding = css`
   padding-left: ${globalTheme.cardPadding};
   padding-right: ${globalTheme.cardPadding};
+  @media only screen and (max-width: ${globalTheme.min.xs}) {
+    padding-left: ${globalTheme.cardPaddingMobile};
+    padding-right: ${globalTheme.cardPaddingMobile};
+  }
 `;
 const flex = css`
   align-items: center;

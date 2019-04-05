@@ -41,8 +41,9 @@ class Header extends Component {
   style = css`
     font-family: ${sizeDict[this.props.size].fontFamily};
     font-size: ${sizeDict[this.props.size].fontSize}px;
-    @media only screen and (max-width: ${globalTheme.max.mobile}) {
+    @media only screen and (max-width: ${globalTheme.max.xs}) {
       font-size: ${0.8 * sizeDict[this.props.size].fontSize}px;
+      line-height: 1.2;
     }
     font-weight: ${sizeDict[this.props.size].fontWeight};
     color: ${globalTheme.colour.fontColour};
