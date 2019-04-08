@@ -1,6 +1,3 @@
-const answer1 = "Answer 1";
-const answer4 = "Answer 4";
-
 describe("Guided Experience", function() {
   beforeEach(() => {
     cy.visit("/");
@@ -18,15 +15,15 @@ describe("Guided Experience", function() {
   });
 
   it("can choose some options and get to summary and benefits directory", () => {
-    cy.contains(answer1).click();
+    cy.contains("retired").click();
     cy.get("#nextButton").click();
-    cy.url().should("include", "another_question?");
-    cy.contains(answer4).click();
+    cy.url().should("include", "patronLocation?");
+    cy.contains("inside").click();
     cy.get("#nextButton").click();
     cy.url().should("include", "needs");
     cy.get("#nextButton").click();
     cy.url().should("include", "benefits-directory");
-    cy.contains("Benefit 1");
+    cy.contains("Find a doctor");
   });
 
   it("can go back from summary and edit answer", () => {
