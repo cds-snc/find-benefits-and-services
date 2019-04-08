@@ -35,7 +35,8 @@ To create your own instance of this service, first you will need to install Yarn
   - `yarn dev`
   - If you run into syntax errors chances are there are missing packages/dependencies and you may want to try
   running a clean yarn install. Delete node_modules folder and then re run `yarn install` in the main folder.
-- Now visit http://localhost:3000/ in your web browser and you should see an app that looks like [this](https://find-benefits-and-services.herokuapp.com/). Any changes you now make to your local version of the source code will be reflected on your localhost. 
+- Now visit http://localhost:3000/ in your web browser and you should see an app that looks like [this](http://benefits-avantages.cds-snc.ca
+). Any changes you now make to your local version of the source code will be reflected on your localhost. 
 - Your local app is loading data from data/data.json. This includes which benefits are displayed, what the eligibility criteria is, which questions will be asked, and more! One way to modify this data is set up an instance of AirTable, which is described below. Another way would be to write the data to a number of csv files and then covert it into the json format shown in data/data.json.
 
 ## Airtable
