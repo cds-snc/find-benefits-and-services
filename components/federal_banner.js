@@ -6,8 +6,15 @@ import LanguageButton from "./language_button";
 import { globalTheme } from "../theme";
 import SkipToMainContent from "./skip_to_main_content";
 import Container from "./container";
+import FIP from "./fip";
 
-export const breakpoints = globalTheme.max;
+export const breakpoints = {
+  xs: 481,
+  sm: 578,
+  md: 764,
+  base: 764,
+  lg: 992
+};
 
 const mediaQuery = Object.keys(breakpoints).reduce((accumulator, label) => {
   let prefix = "max-width:";
@@ -28,7 +35,7 @@ const black_bg = css`
 
 const container = css`
   margin: 0px;
-  padding: 1rem 0;
+  padding: 1rem 0rem 0.5rem 0rem;
   width: auto;
   justify-content: space-between;
   background-color: ${globalTheme.colour.greyishBrownTwo};
@@ -47,7 +54,6 @@ const container = css`
     fill: white;
   }
   ${mediaQuery.xs(css`
-    display: block;
     .svg-container {
       width: 220px;
       height: 30px;
@@ -74,7 +80,9 @@ class FederalBanner extends Component {
         <Container>
           <SkipToMainContent skipLink={skipLink} t={t} />
           <div css={container}>
-            <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
+            <div className="svg-container">
+              <FIP fillColor="white" t={t} />
+            </div>
             <div css={mobileAlign}>
               <LanguageButton i18n={i18n} t={t} url={url} />
             </div>
