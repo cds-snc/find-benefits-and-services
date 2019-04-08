@@ -41,7 +41,7 @@ const Inner = css`
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-  @media (max-width: 400px) {
+  @media (max-width: ${globalTheme.max.xs}) {
     font-size: 16px;
     button {
       margin-top: 10px;
@@ -221,7 +221,7 @@ export class FeedbackBar extends Component {
                     {t("feedback-prompt")}
                   </Header>
                 </Grid>
-                <Grid item md={3} xs={12}>
+                <Grid item md={3} xs={4}>
                   <FooterButton
                     id="feedbackYes"
                     onClick={() => this.sendFeedback("Yes")}
@@ -236,7 +236,7 @@ export class FeedbackBar extends Component {
                     {t("no")}
                   </FooterButton>
                 </Grid>
-                <Grid item md={4} xs={12}>
+                <Grid item md={4} xs={8}>
                   <Header size="sm" headingLevel="h2" styles={fileBugHeader}>
                     <FooterButton
                       id="feedbackBug"

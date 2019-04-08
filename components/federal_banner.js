@@ -6,6 +6,7 @@ import LanguageButton from "./language_button";
 import { globalTheme } from "../theme";
 import SkipToMainContent from "./skip_to_main_content";
 import Container from "./container";
+import FIP from "./fip";
 
 export const breakpoints = {
   xs: 481,
@@ -16,7 +17,7 @@ export const breakpoints = {
 };
 
 const mediaQuery = Object.keys(breakpoints).reduce((accumulator, label) => {
-  let prefix = typeof breakpoints[label] === "string" ? "" : "max-width:";
+  let prefix = "max-width:";
   let suffix = typeof breakpoints[label] === "string" ? "" : "px";
   accumulator[label] = cls =>
     css`
@@ -34,7 +35,7 @@ const black_bg = css`
 
 const container = css`
   margin: 0px;
-  padding: 1rem 0;
+  padding: 1rem 0rem 0.5rem 0rem;
   width: auto;
   justify-content: space-between;
   background-color: ${globalTheme.colour.greyishBrownTwo};
@@ -65,6 +66,12 @@ const container = css`
   `)};
 `;
 
+const mobileAlign = css`
+  ${mediaQuery.xs(css`
+    text-align: right;
+  `)};
+`;
+
 class FederalBanner extends Component {
   render() {
     const { t, skipLink, url, i18n } = this.props;
@@ -73,8 +80,10 @@ class FederalBanner extends Component {
         <Container>
           <SkipToMainContent skipLink={skipLink} t={t} />
           <div css={container}>
-            <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
-            <div>
+            <div className="svg-container">
+              <FIP fillColor="white" t={t} />
+            </div>
+            <div css={mobileAlign}>
               <LanguageButton i18n={i18n} t={t} url={url} />
             </div>
           </div>

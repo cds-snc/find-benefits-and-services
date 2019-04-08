@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import { logEvent } from "../utils/analytics";
@@ -7,9 +7,9 @@ import { css, jsx } from "@emotion/core";
 import { globalTheme } from "../theme";
 import { mutateUrl } from "../utils/common";
 
-const desktopButton = css`
+const buttonStyle = css`
   font-family: ${globalTheme.fontFamilySansSerif};
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
   color: ${globalTheme.colour.white};
@@ -17,6 +17,7 @@ const desktopButton = css`
   padding: 0 8px;
   letter-spacing: 0.25em;
   text-decoration: none;
+  cursor: pointer;
   :hover {
     text-decoration: underline;
   }
@@ -25,29 +26,66 @@ const desktopButton = css`
   }
 `;
 
+const desktopButton = css`
+  @media only screen and (max-width: ${globalTheme.max.xs}) {
+    display: none !important;
+  }
+`;
+const mobileButton = css`
+  font-size: 14px;
+  @media only screen and (min-width: ${globalTheme.max.xs}) {
+    display: none !important;
+  }
+`;
+
 class LanguageButton extends Component {
+  titleCase = word => {
+    return word[0].toUpperCase() + word.substr(1);
+  };
+
   render() {
     const { t, url, i18n } = this.props;
 
     return (
-      <Link
-        href={mutateUrl(url, "", { lng: t("other-language-code") })}
-        passHref
-      >
-        <a
-          id="changeLanguage"
-          title={t("other-language-in-current-language")}
-          css={desktopButton}
-          onClick={() => {
-            logEvent("Language change", t("other-language"));
-            url.query.lng = t("other-language-code");
-            i18n.changeLanguage();
-          }}
-          lang={t("other-language-code")}
-        >
-          {t("other-language")}
-        </a>
-      </Link>
+      <React.Fragment>
+        <div title={t("other-language-in-current-language")}>
+          <Link
+            id="changeLanguage"
+            href={mutateUrl(url, "", { lng: t("other-language-code") })}
+          >
+            <a
+              title={t("other-language-in-current-language")}
+              css={[buttonStyle, desktopButton]}
+              onClick={() => {
+                logEvent("Language change", t("other-language"));
+                url.query.lng = t("other-language-code");
+                i18n.changeLanguage();
+              }}
+              lang={t("other-language-code")}
+            >
+              {t("other-language")}
+            </a>
+          </Link>
+
+          <Link
+            id="changeLanguageMobile"
+            href={mutateUrl(url, "", { lng: t("other-language-code") })}
+          >
+            <a
+              title={t("other-language-in-current-language")}
+              css={[buttonStyle, mobileButton]}
+              onClick={() => {
+                logEvent("Language change", t("other-language"));
+                url.query.lng = t("other-language-code");
+                i18n.changeLanguage();
+              }}
+              lang={t("other-language-code")}
+            >
+              {this.titleCase(t("other-language-code"))}
+            </a>
+          </Link>
+        </div>
+      </React.Fragment>
     );
   }
 }
