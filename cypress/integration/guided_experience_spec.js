@@ -17,9 +17,6 @@ describe("Guided Experience", function() {
   it("can choose some options and get to summary and benefits directory", () => {
     cy.contains("retired").click();
     cy.get("#nextButton").click();
-    cy.url().should("include", "patronAge?");
-    cy.contains("over").click();
-    cy.get("#nextButton").click();
     cy.url().should("include", "patronLocation?");
     cy.contains("inside").click();
     cy.get("#nextButton").click();
