@@ -182,9 +182,10 @@ export class GuidedExperience extends Component {
     const question = reduxState.questions.filter(
       x => x.variable_name === id
     )[0];
+    const indexSection = "patronType";
 
     const backUrl =
-      id === airtableConstants.question.index
+      id === indexSection
         ? t("ge.home_link")
         : mutateUrl(
             url,
@@ -205,13 +206,13 @@ export class GuidedExperience extends Component {
         <Paper padding="md" styles={box}>
           <AlphaBanner t={t} url={url} />
           <Grid container spacing={24} role="form">
-            {id === airtableConstants.question.index ? (
+            {id === indexSection ? (
               <React.Fragment>
                 <Grid item xs={12}>
                   <Header size="xl" headingLevel="h1">
                     {t("ge.Find benefits and services")}
                   </Header>
-                  {id === airtableConstants.question.index ? (
+                  {id === indexSection ? (
                     <React.Fragment>
                       <Body styles={greyBox}>
                         <p>{t("ge.intro_text_p1")}</p>
