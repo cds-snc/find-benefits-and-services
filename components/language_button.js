@@ -54,7 +54,6 @@ class LanguageButton extends Component {
             href={mutateUrl(url, "", { lng: t("other-language-code") })}
           >
             <a
-              id="changeLanguage"
               title={t("other-language-in-current-language")}
               css={[buttonStyle, desktopButton]}
               onClick={() => {
@@ -73,7 +72,6 @@ class LanguageButton extends Component {
             href={mutateUrl(url, "", { lng: t("other-language-code") })}
           >
             <a
-              id="changeLanguage"
               title={t("other-language-in-current-language")}
               css={[buttonStyle, mobileButton]}
               onClick={() => {
