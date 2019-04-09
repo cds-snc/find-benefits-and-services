@@ -5,7 +5,7 @@
 
 # Find benefits and services
 
-This is the code for _Find benefits and services_, a product developed by VAC and CDS. The app is in beta and currently deployed at https://benefits-prestations.veterans.gc.ca. It is undergoing development and is not yet publicly released for use.
+This is generic version of _Find benefits and services_, a product developed by the Canadian Digital Service (CDS) and Veterans Affairs Canada (VAC). The generic version of the app is currently deployed [here](http://benefits-avantages.cds-snc.ca), and the VAC instance of the app is [here](https://benefits-avantages.veterans.gc.ca).
 
 To create your own instance of this service, first you will need to install Yarn: 
 
@@ -19,12 +19,10 @@ To create your own instance of this service, first you will need to install Yarn
 ## Install Yarn on Windows
 
 - Download Node.JS of version 9 or newer(as .zip since .msi is blocked)
-- Following steps required tp set up the newly installed Node cmd line commands such as npm globally
-  > Start menu > Control Panel > User accounts > user accounts > change my environment variables >
-  > select path > Edit > Now enter the location of where you have Node installed with a ; to separate
-  > between any other entries here.
-  > EX: C:\dev ; C:\Node
-- `npm install -g yarn`
+- To set up your newly installed Node command line tools such as npm globally:
+  - Start menu > Control Panel > User accounts > user accounts > change my environment variables > select path > Edit
+  - Now enter the location where you have Node installed with a ; to separate between any other entries here. For example:  `C:\dev ; C:\Node`
+- Run `npm install -g yarn`
 
 ## Running the App
 
@@ -51,7 +49,7 @@ We've set up a [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) with
 
 Now you'll need to set up some local environment variables to get the content from your airtable base into your app. 
 
-## Environment variables
+## Adding environment variables
 
 Add the following 4 environment variables using the steps below.
 
@@ -74,12 +72,9 @@ Repeat these steps for each of the 4 environment variables in the table above.
 
 ### Adding a new environment locally (Windows 7)
 
-Start Menu > Control Panel > User Accounts > User Accounts > Change my environment variables > New...
-
-Example setup:
-Variable Name = AIRTABLE_READ_KEY
-Contact other developers on the project for what values we're currently using.
-restart Command Prompt, `echo %AIRTABLE_READ_KEY%` to check if value is setup properly
+1. Visit: Start Menu > Control Panel > User Accounts > User Accounts > Change my environment variables > New...
+2. Add a variable called `AIRTABLE_READ_KEY`
+3. Restart the Command Prompt, run `echo %AIRTABLE_READ_KEY%` to check if the new varaible exists
 
 Repeat these steps for each of the 4 environment variables in the table above.
 
