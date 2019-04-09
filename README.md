@@ -35,7 +35,8 @@ To create your own instance of this service, first you will need to install Yarn
   - `yarn dev`
   - If you run into syntax errors chances are there are missing packages/dependencies and you may want to try
   running a clean yarn install. Delete node_modules folder and then re run `yarn install` in the main folder.
-- Now visit http://localhost:3000/ in your web browser and you should see an app that looks like [this](https://find-benefits-and-services.herokuapp.com/). Any changes you now make to your local version of the source code will be reflected on your localhost. 
+- Now visit http://localhost:3000/ in your web browser and you should see an app that looks like [this](http://benefits-avantages.cds-snc.ca
+). Any changes you now make to your local version of the source code will be reflected on your localhost. 
 - Your local app is loading data from data/data.json. This includes which benefits are displayed, what the eligibility criteria is, which questions will be asked, and more! One way to modify this data is set up an instance of AirTable, which is described below. Another way would be to write the data to a number of csv files and then covert it into the json format shown in data/data.json.
 
 ## Airtable
@@ -56,10 +57,10 @@ Add the following 4 environment variables using the steps below.
 
 | Variable                     | Use                                                                                                          | Required                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------- |
-| `AIRTABLE_READ_KEY`          | load data (benefits / translations / etc) from Airtable. This value is your API Key for your account on AirTable. To generate this key, visit your account page in AirTable, and generate a key under the API section.                                                     | yes |
-| `AIRTABLE_BASE_KEY`          | This tells the app which Airtable base to pull data from. To locate this key, visit the API Documentation page for your AirTable base. The key can be found in the URL for this page: https://airtable.com/AIRTABLE_BASE_KEY/api/docs | yes |
+| `AIRTABLE_READ_KEY`          | Load data (benefits / translations / etc) from Airtable. This value is your API Key for your account on AirTable. To generate this key, visit your [account page](https://airtable.com/account) and click on the  “Generate my API key”                                                     | yes |
+| `AIRTABLE_BASE_KEY`          | This tells the app which Airtable base to pull data from. To locate this key, visit your AirTable base and click: help > API documentation. Then copy the base key from your current URL, which will have the format: `https://airtable.com/AIRTABLE_BASE_KEY/api/docs` | yes |
 | `USE_AIRTABLE`    | `true` = pull data directly from airtable, `false` = pull data from data/data.json                                                                       | yes              |
-| `AIRTABLE_WRITE_KEY`         | write feedback form data to Airtable. If the API key for your account has write permissions to your AirTable base, you can use the same value for this variable.                                                                         | only if you want the feedback feature to work           |
+| `AIRTABLE_WRITE_KEY`         | Write feedback form data to Airtable. If the API key for your account has write permissions to your AirTable base, you can use the same value for this variable.                                                                         | only if you want the feedback feature to work           |
 
 ### Adding a new environment locally (OS X)
 
@@ -69,6 +70,8 @@ Add the following 4 environment variables using the steps below.
 4.  `source ~/.bash_profile` (or `source ~/.zshrc`)
 5.  `echo $AIRTABLE_READ_KEY` to make sure it is set
 
+Repeat these steps for each of the 4 environment variables in the table above.
+
 ### Adding a new environment locally (Windows 7)
 
 Start Menu > Control Panel > User Accounts > User Accounts > Change my environment variables > New...
@@ -76,7 +79,9 @@ Start Menu > Control Panel > User Accounts > User Accounts > Change my environme
 Example setup:
 Variable Name = AIRTABLE_READ_KEY
 Contact other developers on the project for what values we're currently using.
-restart Command Prompt, echo %AIRTABLE_READ_KEY% to check if value is setup properly
+restart Command Prompt, `echo %AIRTABLE_READ_KEY%` to check if value is setup properly
+
+Repeat these steps for each of the 4 environment variables in the table above.
 
 ## Make a content change using Airtable
 
