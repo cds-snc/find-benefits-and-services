@@ -76,6 +76,11 @@ class Footer extends Component {
                   this.props.t("current-language-code") +
                   "-v2.svg"
                 }
+                alt={
+                  this.props.t("current-language-code") == "en"
+                    ? "Canadian Digital Service"
+                    : "Service numérique canadien"
+                }
               />
             </a>
           </div>
