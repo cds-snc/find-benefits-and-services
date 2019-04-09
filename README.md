@@ -74,12 +74,9 @@ Repeat these steps for each of the 4 environment variables in the table above.
 
 ### Adding a new environment locally (Windows 7)
 
-Start Menu > Control Panel > User Accounts > User Accounts > Change my environment variables > New...
-
-Example setup:
-Variable Name = AIRTABLE_READ_KEY
-Contact other developers on the project for what values we're currently using.
-restart Command Prompt, `echo %AIRTABLE_READ_KEY%` to check if value is setup properly
+1. Visit: Start Menu > Control Panel > User Accounts > User Accounts > Change my environment variables > New...
+2. Add a variable called `AIRTABLE_READ_KEY`
+3. Restart the Command Prompt, run `echo %AIRTABLE_READ_KEY%` to check if the new varaible exists
 
 Repeat these steps for each of the 4 environment variables in the table above.
 
