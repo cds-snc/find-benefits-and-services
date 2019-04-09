@@ -7,6 +7,7 @@ import NeedButton from "../components/need_button";
 import WordMark from "../components/word_mark";
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import FIP from "../components/fip";
 
 const root = css`
   font-family: Merriweather, serif;
@@ -176,7 +177,7 @@ export class Print extends Component {
         <Grid container spacing={24}>
           <Grid item xs={12}>
             <div css={svgContainer}>
-              <img src="../static/goc--header-logo.svg" alt={t("titles.fip")} />
+              <FIP t={t} alt={t("titles.fip")} />
             </div>
           </Grid>
 
