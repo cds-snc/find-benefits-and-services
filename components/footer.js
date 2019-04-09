@@ -23,15 +23,9 @@ const envDetailsStyling = css`
   flex: 1;
   color: ${globalTheme.colour.white};
 `;
-
-const wordMark = css`
-  height: 80px;
-  line-height: 50px;
-  vertical-align: middle;
-`;
 const cdsLogo = css`
   height: 80px;
-  margin-left: 1em;
+  margin-right: 1em;
 `;
 
 class Footer extends Component {
@@ -43,6 +37,27 @@ class Footer extends Component {
     return (
       <div css={root} role="navigation">
         <Toolbar css={toolbar}>
+          <a
+            href={
+              this.props.t("current-language-code") == "en"
+                ? "https://digital.canada.ca"
+                : "https://numerique.canada.ca"
+            }
+          >
+            <img
+              css={cdsLogo}
+              src={
+                "/static/cds-logo-" +
+                this.props.t("current-language-code") +
+                "-v2.svg"
+              }
+              alt={
+                this.props.t("current-language-code") == "en"
+                  ? "Canadian Digital Service"
+                  : "Service numérique canadien"
+              }
+            />
+          </a>
           <FooterLink
             id="privacy"
             href={this.props.t("privacy-link")}
@@ -52,37 +67,8 @@ class Footer extends Component {
             {this.props.t("Privacy")}
           </FooterLink>
           <p css={envDetailsStyling}>Build: {envDetails}</p>
-          <div css={wordMark}>
-            <WordMark
-              css={css`
-                padding-bottom: 25px;
-              `}
-              height="25px"
-              width="6em"
-              flag="#fff"
-              text="#fff"
-            />
-            <a
-              href={
-                this.props.t("current-language-code") == "en"
-                  ? "https://digital.canada.ca"
-                  : "https://numerique.canada.ca"
-              }
-            >
-              <img
-                css={cdsLogo}
-                src={
-                  "/static/cds-logo-" +
-                  this.props.t("current-language-code") +
-                  "-v2.svg"
-                }
-                alt={
-                  this.props.t("current-language-code") == "en"
-                    ? "Canadian Digital Service"
-                    : "Service numérique canadien"
-                }
-              />
-            </a>
+          <div>
+            <WordMark height="25px" width="6em" flag="#fff" text="#fff" />
           </div>
         </Toolbar>
       </div>
