@@ -19,12 +19,10 @@ To create your own instance of this service, first you will need to install Yarn
 ## Install Yarn on Windows
 
 - Download Node.JS of version 9 or newer(as .zip since .msi is blocked)
-- Following steps required tp set up the newly installed Node cmd line commands such as npm globally
-  > Start menu > Control Panel > User accounts > user accounts > change my environment variables >
-  > select path > Edit > Now enter the location of where you have Node installed with a ; to separate
-  > between any other entries here.
-  > EX: C:\dev ; C:\Node
-- `npm install -g yarn`
+- To set up your newly installed Node command line tools such as npm globally:
+  - Start menu > Control Panel > User accounts > user accounts > change my environment variables > select path > Edit
+  - Now enter the location where you have Node installed with a ; to separate between any other entries here. For example:  `C:\dev ; C:\Node`
+- Run `npm install -g yarn`
 
 ## Running the App
 
