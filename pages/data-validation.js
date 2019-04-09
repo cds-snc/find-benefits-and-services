@@ -45,7 +45,8 @@ export class DataValidation extends Component {
     super(props);
     // Names in airtable are stored under "benefitNameEn" and "benefitNameFr"
     let langCode = this.props.t("current-language-code");
-    langCode = "vacName" + langCode.charAt(0).toUpperCase() + langCode.slice(1);
+    langCode =
+      "benefitName" + langCode.charAt(0).toUpperCase() + langCode.slice(1);
     this.state = {
       invalidUrls: [],
       urlState: undefined,

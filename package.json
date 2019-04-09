@@ -1,13 +1,13 @@
 {
-  "name": "vac-poc",
+  "name": "fbs",
   "license": "MIT",
-  "description": "Proof of concept for VAC benefits navigator",
+  "description": "Proof of concept for a benefits navigator",
   "engines": {
     "node": ">=10.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cds-snc/vac-benefits-directory"
+    "url": "https://github.com/cds-snc/find-benefits-and-services"
   },
   "scripts": {
     "dev": "node server.js",
