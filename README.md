@@ -5,7 +5,7 @@
 
 # Find benefits and services
 
-This is the code for _Find benefits and services_, a product developed by VAC and CDS. The app is in beta and currently deployed at https://benefits-prestations.veterans.gc.ca. It is undergoing development and is not yet publicly released for use.
+This is generic version of _Find benefits and services_, a product developed by the Canadian Digital Service (CDS) and Veterans Affairs Canada (VAC). The generic version of the app is currently deployed [here](http://benefits-avantages.cds-snc.ca), and the VAC instance of the app is [here](https://benefits-avantages.veterans.gc.ca).
 
 To create your own instance of this service, first you will need to install Yarn: 
 
@@ -51,7 +51,7 @@ We've set up a [demo airtable base](https://airtable.com/shr5bRGUxt32qiqRm) with
 
 Now you'll need to set up some local environment variables to get the content from your airtable base into your app. 
 
-## Environment variables
+## Adding environment variables
 
 Add the following 4 environment variables using the steps below.
 
