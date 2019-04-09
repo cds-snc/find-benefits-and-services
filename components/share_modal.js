@@ -65,7 +65,7 @@ const URLInputBox = styled("input")({
   border: 0,
   boxSizing: "border-box",
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.button1Hover,
+  color: globalTheme.colour.fontColour,
   fontWeight: "bold",
   textTransform: "none",
   fontSize: "18px",
