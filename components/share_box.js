@@ -12,8 +12,11 @@ import { uuidv4 } from "../utils/common";
 import { logEvent } from "../utils/analytics";
 
 const shareBoxItem = css`
-  color: ${globalTheme.colour.darkGreyBlue};
+  color: ${globalTheme.colour.button1};
   margin-left: 5px;
+  :hover {
+    color: ${globalTheme.colour.button1Hover};
+  }
 `;
 const shareText = css`
   font-family: ${globalTheme.fontFamilySansSerif};
