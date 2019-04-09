@@ -47,12 +47,12 @@ describe("BenefitExpansion", () => {
     expect(await axe(html)).toHaveNoViolations();
   });
 
-  it("contains the 2 ChildBenefitList components", () => {
+  it("contains the ChildBenefitList component", () => {
     expect(
       mount(<BenefitExpansion {...props} {...reduxData} />).find(
         "ChildBenefitList"
       ).length
-    ).toEqual(2);
+    ).toEqual(1);
   });
 
   describe("getAlsoEligibleBenefits", () => {
@@ -75,20 +75,6 @@ describe("BenefitExpansion", () => {
         "Treatment Benefits",
         "Veterans Independence Program"
       ]);
-    });
-
-    it("returns the correct family benefits", () => {
-      const childBenefits = props.benefit.childBenefits
-        ? reduxData.benefits.filter(
-            ab => props.benefit.childBenefits.indexOf(ab.id) > -1
-          )
-        : [];
-      expect(
-        mount(<BenefitExpansion {...props} {...reduxData} />)
-          .instance()
-          .getAlsoEligibleBenefits(childBenefits, "family")
-          .map(x => x.benefitNameEn)
-      ).toEqual([]);
     });
   });
 });
