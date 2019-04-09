@@ -76,8 +76,8 @@ export class FavouriteButton extends Component {
     );
     const benefitName =
       t("current-language-code") === "en"
-        ? benefit.vacNameEn
-        : benefit.vacNameFr;
+        ? benefit.benefitNameEn
+        : benefit.benefitNameFr;
 
     return (
       <Tooltip

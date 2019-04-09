@@ -83,7 +83,7 @@ describe("DataValidation", () => {
   });
 
   it("fails if a benefit is missing english or french text", () => {
-    props.benefits[0].vacNameEn = "";
+    props.benefits[0].benefitNameEn = "";
     expect(mountedDataValidation().html()).toContain("Fail");
   });
 
@@ -103,18 +103,18 @@ describe("DataValidation", () => {
   });
 
   it("fails if checkBenefitsFields doesn't find empty fields", () => {
-    props.benefits[0].vacNameEn = "";
+    props.benefits[0].benefitNameEn = "";
     const instance = shallow(<DataValidation {...props} />).instance();
     expect(instance.checkMissingNeeds(props.benefits[0], 0)).toContain(
-      props.benefits[0].vacNameEn
+      props.benefits[0].benefitNameEn
     );
   });
 
   it("fails if checkTranslationsFields doesn't find empty fields", () => {
-    props.translations[0].vacNameEn = "";
+    props.translations[0].benefitNameEn = "";
     const instance = shallow(<DataValidation {...props} />).instance();
     expect(instance.checkMissingNeeds(props.translations[0], 0)).toContain(
-      props.translations[0].vacNameEn
+      props.translations[0].benefitNameEn
     );
   });
 
@@ -122,7 +122,7 @@ describe("DataValidation", () => {
     props.benefits[0].needs = "";
     const instance = shallow(<DataValidation {...props} />).instance();
     expect(instance.checkMissingNeeds(props.benefits[0], 0)).toContain(
-      props.benefits[0].vacNameEn
+      props.benefits[0].benefitNameEn
     );
   });
 

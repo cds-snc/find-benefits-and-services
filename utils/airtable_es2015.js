@@ -152,7 +152,7 @@ var hydrateFromAirtable = (exports.hydrateFromAirtable = async function hydrateF
     dataStore.benefitExamples,
     "linked_benefits",
     dataStore.benefits,
-    "vacNameEn"
+    "benefitNameEn"
   );
 
   dataStore.timestamp = await Date.now();

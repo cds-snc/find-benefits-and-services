@@ -36,21 +36,21 @@ To do anything in Airtable, always take the following steps:
 5. Locate the row that contains the text you want to change
 6. Enter in your new text in the English and French columns
 
-| Text you want to change                                      | Airtable Sheet                                                                    | English Column Name                  | French Column Name                  |
-| ------------------------------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------ | ----------------------------------- |
-| Benefit name                                                 | benefits              | vacNameEn                            | vacNameFr                           |
+| Text you want to change                                      | Airtable Sheet        | English Column Name                  | French Column Name                  |
+| ------------------------------------------------------------ | --------------------- | ------------------------------------ | ----------------------------------- |
+| Benefit name                                                 | benefits              | benefitNameEn                        | benefitNameFr                       |
 | one line description                                         | benefits              | oneLineDescriptionEn                 | oneLineDescriptionFr                |
 | VAC Learn more link                                          | benefits              | benefitPageEn                        | benefitPageFr                       |
 | important info in card header                                | benefits              | noteEn                               | noteFr                              |
 | see more content description                                 | benefits              | seeMoreSentenceEn                    | seeMoreSentenceFr                   |
 | question text in benefits-directory                          | questions             | display_text_english                 | display_text_french                 |
-| question text in guided experience                           | questions          | guided_experience_english            | guided_experience_french            |
-| guided experience page title                                 | questions         | guided_experience_page_title_english | guided_experience_page_title_french |
-| health issue tooltip text                                    | questions           | tooltip_english                      | tooltip_french                      |
+| question text in guided experience                           | questions             | guided_experience_english            | guided_experience_french            |
+| guided experience page title                                 | questions             | guided_experience_page_title_english | guided_experience_page_title_french |
+| health issue tooltip text                                    | questions             | tooltip_english                      | tooltip_french                      |
 | multiple choice option text                                  | multipleChoiceOptions | display_text_english                 | display_text_french                 |
 | guided experience breadcrumb/link text                       | multipleChoiceOptions | ge_breadcrumb_english                | ge_breadcrumb_french                |
 | Checkbox options in guided experience and benefits-directory | needs                 | nameEn                               | nameFr                              |
-| All other text                                               | translations         | English                              | French                              |
+| All other text                                               | translations          | English                              | French                              |
 
 ### Changing the eligibility criteria for a benefit
 

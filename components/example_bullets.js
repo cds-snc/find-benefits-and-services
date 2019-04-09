@@ -38,7 +38,7 @@ export class ExampleBullets extends React.Component {
     return benefitExamples
       .filter(x => {
         if ("linked_benefits" in x) {
-          return x.linked_benefits.indexOf(benefit.vacNameEn) > -1;
+          return x.linked_benefits.indexOf(benefit.benefitNameEn) > -1;
         }
         return false;
       })

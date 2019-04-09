@@ -57,8 +57,8 @@ export class BenefitList extends React.Component {
     let sorting_fn = (a, b) => {
       if (a.sortingNumber === b.sortingNumber) {
         // sort alphabetically
-        let nameA = a.vacNameEn.toUpperCase();
-        let nameB = b.vacNameEn.toUpperCase(); // ignore upper and lowercase
+        let nameA = a.benefitNameEn.toUpperCase();
+        let nameB = b.benefitNameEn.toUpperCase(); // ignore upper and lowercase
         if (nameA < nameB) {
           return -1;
         }
@@ -98,8 +98,8 @@ export class BenefitList extends React.Component {
             key={benefit.id}
             aria-label={
               this.props.t("current-language-code") === "en"
-                ? benefit.vacNameEn
-                : benefit.vacNameFr
+                ? benefit.benefitNameEn
+                : benefit.benefitNameFr
             }
           >
             <BenefitCard

@@ -1,7 +1,7 @@
 const benefits = [
   {
-    vacNameEn: "Assistance Fund ",
-    vacNameFr: "Fonds de secours",
+    benefitNameEn: "Assistance Fund ",
+    benefitNameFr: "Fonds de secours",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/war-veterans-allowance/assistance-fund",
     benefitPageFr:
@@ -20,8 +20,8 @@ const benefits = [
     id: "rec7vYqDWYPQnDcRK"
   },
   {
-    vacNameEn: "Attendance Allowance",
-    vacNameFr: "Allocation pour soins",
+    benefitNameEn: "Attendance Allowance",
+    benefitNameFr: "Allocation pour soins",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/after-injury/disability-benefits/related-allowances",
     benefitPageFr:
@@ -43,8 +43,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Canadian Forces Income Support",
-    vacNameFr: "Soutien du revenu des Forces canadiennes",
+    benefitNameEn: "Canadian Forces Income Support",
+    benefitNameFr: "Soutien du revenu des Forces canadiennes",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/cf-income-support",
     benefitPageFr:
@@ -64,8 +64,8 @@ const benefits = [
     id: "recMguNzAXgdpEDOJ"
   },
   {
-    vacNameEn: "Career Impact Allowance",
-    vacNameFr: "Allocation pour incidence sur la carri\u00e8re",
+    benefitNameEn: "Career Impact Allowance",
+    benefitNameFr: "Allocation pour incidence sur la carri\u00e8re",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/rehabilitation/career-impact-allowance",
     benefitPageFr:
@@ -93,8 +93,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Career Transition Services",
-    vacNameFr: "Services de r\u00e9orientation professionnelle",
+    benefitNameEn: "Career Transition Services",
+    benefitNameFr: "Services de r\u00e9orientation professionnelle",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/career-transition-services",
     benefitPageFr:
@@ -121,8 +121,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Caregiver Recognition Benefit",
-    vacNameFr: "Allocation de reconnaissance pour aidant",
+    benefitNameEn: "Caregiver Recognition Benefit",
+    benefitNameFr: "Allocation de reconnaissance pour aidant",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/caregiver-recognition-benefit",
     benefitPageFr:
@@ -157,8 +157,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Caregiver Zone",
-    vacNameFr: "Espace aidants",
+    benefitNameEn: "Caregiver Zone",
+    benefitNameFr: "Espace aidants",
     benefitPageEn: "https://caregiverzone.ca/",
     benefitPageFr: "https://caregiverzone.ca/",
     needs: ["recmmMZPP4DI6Nq0a"],
@@ -184,8 +184,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Case management",
-    vacNameFr: "Gestion de cas",
+    benefitNameEn: "Case management",
+    benefitNameFr: "Gestion de cas",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/case-management",
     benefitPageFr:
@@ -215,8 +215,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Clothing Allowance",
-    vacNameFr: "Allocation vestimentaire",
+    benefitNameEn: "Clothing Allowance",
+    benefitNameFr: "Allocation vestimentaire",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/after-injury/disability-benefits/related-allowances",
     benefitPageFr:
@@ -236,8 +236,8 @@ const benefits = [
     id: "rec6osa4YoZNwJcNW"
   },
   {
-    vacNameEn: "Community Engagement Fund",
-    vacNameFr: "Engagement communautaire",
+    benefitNameEn: "Community Engagement Fund",
+    benefitNameFr: "Engagement communautaire",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/remembrance/funding-programs/commemorative-partnership/engagement",
     benefitPageFr:
@@ -264,8 +264,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Community War Memorial Fund",
-    vacNameFr: "Monuments comm\u00e9moratifs",
+    benefitNameEn: "Community War Memorial Fund",
+    benefitNameFr: "Monuments comm\u00e9moratifs",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/remembrance/funding-programs/commemorative-partnership/community-war-memorial",
     benefitPageFr:
@@ -289,8 +289,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Critical Injury Benefit",
-    vacNameFr: "Indemnit\u00e9 pour blessure grave",
+    benefitNameEn: "Critical Injury Benefit",
+    benefitNameFr: "Indemnit\u00e9 pour blessure grave",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/after-injury/critical-injury-benefit",
     benefitPageFr:
@@ -313,8 +313,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Death Benefit",
-    vacNameFr: "Indemnit\u00e9 de d\u00e9c\u00e8s",
+    benefitNameEn: "Death Benefit",
+    benefitNameFr: "Indemnit\u00e9 de d\u00e9c\u00e8s",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/death-benefit",
     benefitPageFr:
@@ -336,8 +336,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Detention Benefits",
-    vacNameFr: "Indemnit\u00e9 de captivit\u00e9",
+    benefitNameEn: "Detention Benefits",
+    benefitNameFr: "Indemnit\u00e9 de captivit\u00e9",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/detention-benefits",
     benefitPageFr:
@@ -358,8 +358,8 @@ const benefits = [
     id: "recDU2iSRQ300ixBt"
   },
   {
-    vacNameEn: "Disability Benefits",
-    vacNameFr: "Prestations d'invalidit\u00e9",
+    benefitNameEn: "Disability Benefits",
+    benefitNameFr: "Prestations d'invalidit\u00e9",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/after-injury/disability-benefits/disability-award",
     benefitPageFr:
@@ -388,8 +388,8 @@ const benefits = [
     id: "rec0jzif5VceIWKh3"
   },
   {
-    vacNameEn: "Earnings Loss Benefit",
-    vacNameFr: "Allocation pour perte de revenus",
+    benefitNameEn: "Earnings Loss Benefit",
+    benefitNameFr: "Allocation pour perte de revenus",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/rehabilitation/earnings-loss",
     benefitPageFr:
@@ -422,8 +422,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Earnings Loss Benefit for survivors or children",
-    vacNameFr:
+    benefitNameEn: "Earnings Loss Benefit for survivors or children",
+    benefitNameFr:
       "Allocation pour perte de revenus accord\u00e9e aux survivants ou aux orphelins",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/information-for/families-and-survivors/earnings-loss",
@@ -437,8 +437,8 @@ const benefits = [
     id: "recXrrmxgZ66BoiK3"
   },
   {
-    vacNameEn: "Education and Training Benefit",
-    vacNameFr: "Allocation pour \u00e9tudes et formation",
+    benefitNameEn: "Education and Training Benefit",
+    benefitNameFr: "Allocation pour \u00e9tudes et formation",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/education-training-benefit",
     benefitPageFr:
@@ -472,8 +472,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Educational Assistance for children",
-    vacNameFr: "Aide \u00e0 l'\u00e9ducation",
+    benefitNameEn: "Educational Assistance for children",
+    benefitNameFr: "Aide \u00e0 l'\u00e9ducation",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/information-for/families-and-survivors/education-assistance",
     benefitPageFr:
@@ -494,8 +494,8 @@ const benefits = [
     id: "recg5zjkXaddMWQEf"
   },
   {
-    vacNameEn: "Exceptional Incapacity Allowance",
-    vacNameFr: "Allocation d'incapacit\u00e9 exceptionnelle",
+    benefitNameEn: "Exceptional Incapacity Allowance",
+    benefitNameFr: "Allocation d'incapacit\u00e9 exceptionnelle",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/after-injury/disability-benefits/exceptional-incapacity-allowance",
     benefitPageFr:
@@ -515,8 +515,8 @@ const benefits = [
     id: "recCkQL77l0KZ2u7Y"
   },
   {
-    vacNameEn: "Family Peer Support (OSISS)",
-    vacNameFr: "Soutien par les pairs pour les familles (SSBSO)",
+    benefitNameEn: "Family Peer Support (OSISS)",
+    benefitNameFr: "Soutien par les pairs pour les familles (SSBSO)",
     benefitPageEn:
       "https://www.cfmws.com/en/AboutUs/DCSM/OSISS/Pages/Families.aspx",
     benefitPageFr:
@@ -533,8 +533,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Funeral and Burial Assistance",
-    vacNameFr: "Programme de frais de fun\u00e9railles et d'inhumations",
+    benefitNameEn: "Funeral and Burial Assistance",
+    benefitNameFr: "Programme de frais de fun\u00e9railles et d'inhumations",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/funeral-burial",
     benefitPageFr:
@@ -557,8 +557,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Grave Marker Maintenance",
-    vacNameFr: "Entretien des st\u00e8les fun\u00e9raires",
+    benefitNameEn: "Grave Marker Maintenance",
+    benefitNameFr: "Entretien des st\u00e8les fun\u00e9raires",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/grave-marker",
     benefitPageFr:
@@ -574,8 +574,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Group Health Insurance",
-    vacNameFr: "Assurance collective des soins de sant\u00e9",
+    benefitNameEn: "Group Health Insurance",
+    benefitNameFr: "Assurance collective des soins de sant\u00e9",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/group-health-insurance",
     benefitPageFr:
@@ -598,8 +598,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "HOPE Program",
-    vacNameFr: "Programme ESPOIR",
+    benefitNameEn: "HOPE Program",
+    benefitNameFr: "Programme ESPOIR",
     benefitPageEn:
       "https://www.cafconnection.ca/National/Programs-Services/For-Families-of-the-Fallen/Shoulder-to-Shoulder/Peer-Support/HOPE-Program.aspx",
     benefitPageFr:
@@ -617,8 +617,8 @@ const benefits = [
     id: "reczzwPrtckHy81oY"
   },
   {
-    vacNameEn: "Jobs in the federal government",
-    vacNameFr: "Priorit\u00e9 d\u2019embauche",
+    benefitNameEn: "Jobs in the federal government",
+    benefitNameFr: "Priorit\u00e9 d\u2019embauche",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/ps-hiring/before-you-start",
     benefitPageFr:
@@ -649,8 +649,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Long Term Care",
-    vacNameFr: "Soins de longue dur\u00e9e",
+    benefitNameEn: "Long Term Care",
+    benefitNameFr: "Soins de longue dur\u00e9e",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/long-term-care",
     benefitPageFr:
@@ -671,8 +671,8 @@ const benefits = [
     id: "recKZD7EgawQUTf98"
   },
   {
-    vacNameEn: "Operational Stress Injury clinics",
-    vacNameFr:
+    benefitNameEn: "Operational Stress Injury clinics",
+    benefitNameFr:
       "Cliniques pour traumatismes li\u00e9s au stress op\u00e9rationnel ",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/mental-health/understanding-mental-health/clinics",
@@ -697,8 +697,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Pastoral Outreach ",
-    vacNameFr: "Service de pastorale",
+    benefitNameEn: "Pastoral Outreach ",
+    benefitNameFr: "Service de pastorale",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/pastoral-outreach",
     benefitPageFr:
@@ -716,8 +716,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Prisoner of War Compensation",
-    vacNameFr: "Indemnit\u00e9 des prisonnier de guerre",
+    benefitNameEn: "Prisoner of War Compensation",
+    benefitNameFr: "Indemnit\u00e9 des prisonnier de guerre",
     benefitPageEn: "http://www.veterans.gc.ca/eng/services/financial/pow",
     benefitPageFr: "http://www.veterans.gc.ca/fra/services/financial/pow",
     needs: ["recpN4AgAGiH3x7KZ"],
@@ -737,8 +737,8 @@ const benefits = [
     id: "reccTUqI8ybL1aHQR"
   },
   {
-    vacNameEn: "Rehabilitation Services",
-    vacNameFr: "Services de r\u00e9adaptation",
+    benefitNameEn: "Rehabilitation Services",
+    benefitNameFr: "Services de r\u00e9adaptation",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/rehabilitation/services",
     benefitPageFr:
@@ -781,8 +781,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Retirement Income Security Benefit",
-    vacNameFr: "Allocation de s\u00e9curit\u00e9 du revenu retraite",
+    benefitNameEn: "Retirement Income Security Benefit",
+    benefitNameFr: "Allocation de s\u00e9curit\u00e9 du revenu retraite",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/retirement-income-security-benefit",
     benefitPageFr:
@@ -811,8 +811,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Supplementary Retirement Benefit",
-    vacNameFr: "Prestation de retraite suppl\u00e9mentaire",
+    benefitNameEn: "Supplementary Retirement Benefit",
+    benefitNameFr: "Prestation de retraite suppl\u00e9mentaire",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/rehabilitation/retirement-benefit",
     benefitPageFr:
@@ -840,8 +840,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Survivor's Pension",
-    vacNameFr: "Pension de survivant",
+    benefitNameEn: "Survivor's Pension",
+    benefitNameFr: "Pension de survivant",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/after-injury/disability-benefits/disability-pension/survivor-benefits",
     benefitPageFr:
@@ -861,8 +861,8 @@ const benefits = [
     id: "recBSXP6pYDS8xJJH"
   },
   {
-    vacNameEn: "Transition Interview",
-    vacNameFr: "Entrevue de transition",
+    benefitNameEn: "Transition Interview",
+    benefitNameFr: "Entrevue de transition",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/interview",
     benefitPageFr:
@@ -877,8 +877,8 @@ const benefits = [
     id: "recoqXJ7Tx3XaDdFE"
   },
   {
-    vacNameEn: "Treatment Benefits",
-    vacNameFr: "Avantages pour soins de sant\u00e9",
+    benefitNameEn: "Treatment Benefits",
+    benefitNameFr: "Avantages pour soins de sant\u00e9",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/treatment-benefits",
     benefitPageFr:
@@ -912,8 +912,8 @@ const benefits = [
     id: "recewrfxHbTWEVPig"
   },
   {
-    vacNameEn: "VAC Assistance Service",
-    vacNameFr: "Service d\u2019aide d\u2019ACC",
+    benefitNameEn: "VAC Assistance Service",
+    benefitNameFr: "Service d\u2019aide d\u2019ACC",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/contact/vac-assistance-service",
     benefitPageFr:
@@ -934,8 +934,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Veteran and Family Well-Being Fund",
-    vacNameFr:
+    benefitNameEn: "Veteran and Family Well-Being Fund",
+    benefitNameFr:
       "Le Fonds pour le bien-\u00eatre des v\u00e9t\u00e9rans et de leur famille",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/information-for/families-and-survivors/well-being-fund",
@@ -951,8 +951,8 @@ const benefits = [
     id: "rec8GCHaN2UirvW8H"
   },
   {
-    vacNameEn: "Veteran Family Program",
-    vacNameFr: "Programme pour les familles des v\u00e9t\u00e9rans",
+    benefitNameEn: "Veteran Family Program",
+    benefitNameFr: "Programme pour les familles des v\u00e9t\u00e9rans",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/information-for/families-and-survivors/veteran-family-program",
     benefitPageFr:
@@ -972,8 +972,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Veterans Emergency Fund",
-    vacNameFr: "Fonds d'urgence pour les v\u00e9t\u00e9rans",
+    benefitNameEn: "Veterans Emergency Fund",
+    benefitNameFr: "Fonds d'urgence pour les v\u00e9t\u00e9rans",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/veterans-emergency-fund",
     benefitPageFr:
@@ -997,8 +997,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Veterans Independence Program",
-    vacNameFr: "Programme pour l\u2019autonomie des anciens combattants",
+    benefitNameEn: "Veterans Independence Program",
+    benefitNameFr: "Programme pour l\u2019autonomie des anciens combattants",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/health/veterans-independence-program",
     benefitPageFr:
@@ -1038,8 +1038,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Vocational Assistance",
-    vacNameFr: "Assistance professionnelle",
+    benefitNameEn: "Vocational Assistance",
+    benefitNameFr: "Assistance professionnelle",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/transition/rehabilitation",
     benefitPageFr:
@@ -1066,8 +1066,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "Vocational Rehabilitation",
-    vacNameFr: "R\u00e9adaptation professionnelle",
+    benefitNameEn: "Vocational Rehabilitation",
+    benefitNameFr: "R\u00e9adaptation professionnelle",
     benefitPageEn: "http://www.cvvrs.com/",
     benefitPageFr: "http://www.cvvrs.com/",
     needs: ["recFX7O3dYwg44kpM", "rec1pKJ7uJYwqVOLx"],
@@ -1089,8 +1089,8 @@ const benefits = [
     seeMoreSentenceFr: "Quelques exemples de ce que ce programme peut fournir :"
   },
   {
-    vacNameEn: "War Veterans Allowance",
-    vacNameFr: "Allocation d'ancien combattant",
+    benefitNameEn: "War Veterans Allowance",
+    benefitNameFr: "Allocation d'ancien combattant",
     benefitPageEn:
       "http://www.veterans.gc.ca/eng/services/financial/war-veterans-allowance",
     benefitPageFr:

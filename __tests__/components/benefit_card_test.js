@@ -72,7 +72,9 @@ describe("BenefitCard", () => {
   });
 
   it("contains the name", () => {
-    expect(mountedBenefitCard().text()).toContain(benefitsFixture[1].vacNameEn);
+    expect(mountedBenefitCard().text()).toContain(
+      benefitsFixture[1].benefitNameEn
+    );
   });
 
   it("contains the description", () => {
@@ -105,7 +107,7 @@ describe("BenefitCard", () => {
 
     it("contains the French name", () => {
       expect(mountedBenefitCard().text()).toContain(
-        benefitsFixture[1].vacNameFr
+        benefitsFixture[1].benefitNameFr
       );
     });
 

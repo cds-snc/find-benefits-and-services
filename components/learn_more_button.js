@@ -19,7 +19,9 @@ const LearnMoreButton = props => {
       : benefit.benefitPageFr;
 
   const benefitName =
-    t("current-language-code") === "en" ? benefit.vacNameEn : benefit.vacNameFr;
+    t("current-language-code") === "en"
+      ? benefit.benefitNameEn
+      : benefit.benefitNameFr;
 
   return (
     <a

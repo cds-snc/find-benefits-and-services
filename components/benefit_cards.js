@@ -120,8 +120,8 @@ export class BenefitCard extends Component {
                 autoEscape={true}
                 textToHighlight={
                   this.props.currentLanguage === "en"
-                    ? benefit.vacNameEn
-                    : benefit.vacNameFr
+                    ? benefit.benefitNameEn
+                    : benefit.benefitNameFr
                 }
               />
               {this.props.savedList === false ? (

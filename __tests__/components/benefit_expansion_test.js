@@ -20,7 +20,7 @@ describe("BenefitExpansion", () => {
     props = {
       t: () => "en",
       benefit: benefitsFixture.filter(
-        x => x.vacNameEn === "Disability Benefits"
+        x => x.benefitNameEn === "Disability Benefits"
       )[0]
     };
     mockStore = configureStore();
@@ -66,7 +66,7 @@ describe("BenefitExpansion", () => {
         mount(<BenefitExpansion {...props} {...reduxData} />)
           .instance()
           .getAlsoEligibleBenefits(childBenefits, "veteran")
-          .map(x => x.vacNameEn)
+          .map(x => x.benefitNameEn)
       ).toEqual([
         "Attendance Allowance",
         "Career Impact Allowance",
@@ -87,7 +87,7 @@ describe("BenefitExpansion", () => {
         mount(<BenefitExpansion {...props} {...reduxData} />)
           .instance()
           .getAlsoEligibleBenefits(childBenefits, "family")
-          .map(x => x.vacNameEn)
+          .map(x => x.benefitNameEn)
       ).toEqual([]);
     });
   });

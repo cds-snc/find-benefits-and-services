@@ -38,12 +38,7 @@ export const DisabledCookiesBanner = ({ t, onClose }) => (
     <button css={CloseIcon} aria-label="Hide cookie warning" onClick={onClose}>
       <Close />
     </button>
-    <span>
-      {t("B3.disabled_cookies_text")}
-      {/*<a href={t("B3.disabled_cookies_link")}>*/}
-      {/*{t("B3.disabled_cookies_link_text")}*/}
-      {/*</a>*/}
-    </span>
+    <span>{t("B3.disabled_cookies_text")}</span>
   </Body>
 );
 

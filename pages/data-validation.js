@@ -43,7 +43,7 @@ const envDetailsStyling = css`
 export class DataValidation extends Component {
   constructor(props) {
     super(props);
-    // Names in airtable are stored under "vacNameEn" and "vacNameFr"
+    // Names in airtable are stored under "benefitNameEn" and "benefitNameFr"
     let langCode = this.props.t("current-language-code");
     langCode = "vacName" + langCode.charAt(0).toUpperCase() + langCode.slice(1);
     this.state = {
@@ -61,8 +61,8 @@ export class DataValidation extends Component {
 
   checkBenefitsFields = (b, i) => {
     if (
-      !(b.vacNameEn && b.vacNameEn != "") ||
-      !(b.vacNameFr && b.vacNameFr != "") ||
+      !(b.benefitNameEn && b.benefitNameEn != "") ||
+      !(b.benefitNameFr && b.benefitNameFr != "") ||
       !(b.oneLineDescriptionEn && b.oneLineDescriptionEn != "") ||
       !(b.oneLineDescriptionFr && b.oneLineDescriptionFr != "") ||
       !(b.benefitPageEn && b.benefitPageEn != "") ||

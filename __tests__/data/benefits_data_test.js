@@ -12,8 +12,8 @@ describe("Benefits data", () => {
 
   it("has required fields in all rows", () => {
     data.forEach(b => {
-      expect(b.vacNameEn).toBeTruthy();
-      expect(b.vacNameFr).toBeTruthy();
+      expect(b.benefitNameEn).toBeTruthy();
+      expect(b.benefitNameFr).toBeTruthy();
       expect(b.oneLineDescriptionEn).toBeTruthy();
       expect(b.oneLineDescriptionFr).toBeTruthy();
       //expect(b.benefitPageEn).toBeTruthy()  currently failing
