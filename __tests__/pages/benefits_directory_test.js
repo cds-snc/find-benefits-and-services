@@ -62,38 +62,38 @@ describe("BenefitsDirectory", () => {
       benefitEligibility: benefitEligibilityFixture,
       enIdx: JSON.stringify({
         version: lunr.version,
-        fields: ["vacNameEn", "oneLineDescriptionEn"],
+        fields: ["benefitNameEn", "oneLineDescriptionEn"],
         fieldVectors: [
-          ["vacNameEn/1", [0, 0.288]],
+          ["benefitNameEn/1", [0, 0.288]],
           ["oneLineDescriptionEn/1", [1, 0.288]]
         ],
         invertedIndex: [
           [
             "biz",
-            { _index: 1, vacNameEn: {}, oneLineDescriptionEn: { "1": {} } }
+            { _index: 1, benefitNameEn: {}, oneLineDescriptionEn: { "1": {} } }
           ],
           [
             "fiz",
-            { _index: 0, vacNameEn: { "1": {} }, oneLineDescriptionEn: {} }
+            { _index: 0, benefitNameEn: { "1": {} }, oneLineDescriptionEn: {} }
           ]
         ],
         pipeline: ["stemmer"]
       }),
       frIdx: JSON.stringify({
         version: lunr.version,
-        fields: ["vacNameFr", "oneLineDescriptionFr"],
+        fields: ["benefitNameFr", "oneLineDescriptionFr"],
         fieldVectors: [
-          ["vacNameFr/1", [0, 0.288]],
+          ["benefitNameFr/1", [0, 0.288]],
           ["oneLineDescriptionFr/1", [1, 0.288]]
         ],
         invertedIndex: [
           [
             "biz",
-            { _index: 1, vacNameFr: {}, oneLineDescriptionFr: { "1": {} } }
+            { _index: 1, benefitNameFr: {}, oneLineDescriptionFr: { "1": {} } }
           ],
           [
             "fiz",
-            { _index: 0, vacNameFr: { "1": {} }, oneLineDescriptionFr: {} }
+            { _index: 0, benefitNameFr: { "1": {} }, oneLineDescriptionFr: {} }
           ]
         ],
         pipeline: ["stemmer"]

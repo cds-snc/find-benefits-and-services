@@ -51,9 +51,9 @@ describe("Favourites Page", () => {
       multipleChoiceOptions: multipleChoiceOptionsFixture,
       enIdx: JSON.stringify({
         version: lunr.version,
-        fields: ["vacNameEn", "oneLineDescriptionEn"],
+        fields: ["benefitNameEn", "oneLineDescriptionEn"],
         fieldVectors: [
-          ["vacNameEn/benefit_1", [0, 0.288]],
+          ["benefitNameEn/benefit_1", [0, 0.288]],
           ["oneLineDescriptionEn/benefit_1", [1, 0.288]]
         ],
         invertedIndex: [
@@ -61,7 +61,7 @@ describe("Favourites Page", () => {
             "biz",
             {
               _index: 1,
-              vacNameEn: {},
+              benefitNameEn: {},
               oneLineDescriptionEn: { benefit_1: {} }
             }
           ],
@@ -69,7 +69,7 @@ describe("Favourites Page", () => {
             "fiz",
             {
               _index: 0,
-              vacNameEn: { benefit_1: {} },
+              benefitNameEn: { benefit_1: {} },
               oneLineDescriptionEn: {}
             }
           ]
@@ -78,9 +78,9 @@ describe("Favourites Page", () => {
       }),
       frIdx: JSON.stringify({
         version: lunr.version,
-        fields: ["vacNameFr", "oneLineDescriptionFr"],
+        fields: ["benefitNameFr", "oneLineDescriptionFr"],
         fieldVectors: [
-          ["vacNameFr/benefit_1", [0, 0.288]],
+          ["benefitNameFr/benefit_1", [0, 0.288]],
           ["oneLineDescriptionFr/benefit_1", [1, 0.288]]
         ],
         invertedIndex: [
@@ -88,7 +88,7 @@ describe("Favourites Page", () => {
             "biz",
             {
               _index: 1,
-              vacNameFr: {},
+              benefitNameFr: {},
               oneLineDescriptionFr: { benefit_1: {} }
             }
           ],
@@ -96,7 +96,7 @@ describe("Favourites Page", () => {
             "fiz",
             {
               _index: 0,
-              vacNameFr: { benefit_1: {} },
+              benefitNameFr: { benefit_1: {} },
               oneLineDescriptionFr: {}
             }
           ]

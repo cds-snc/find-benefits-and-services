@@ -56,7 +56,7 @@ export class BenefitExpansion extends Component {
     const { t, benefit, benefits, reduxState, store } = this.props;
     const language = t("current-language-code");
     const benefitName =
-      language === "en" ? benefit.vacNameEn : benefit.vacNameFr;
+      language === "en" ? benefit.benefitNameEn : benefit.benefitNameFr;
     const childBenefits = benefit.childBenefits
       ? benefits.filter(ab => benefit.childBenefits.indexOf(ab.id) > -1)
       : [];

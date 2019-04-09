@@ -18,8 +18,8 @@ export class CardHeaderParentInfo extends Component {
 
   benefitTitle = benefit => {
     return this.props.t("current-language-code") === "en"
-      ? benefit.vacNameEn
-      : benefit.vacNameFr;
+      ? benefit.benefitNameEn
+      : benefit.benefitNameFr;
   };
 
   get_benefit_a_elements = parentBenefits => {

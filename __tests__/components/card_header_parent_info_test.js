@@ -23,7 +23,7 @@ describe("CardHeaderParentInfo", () => {
 
   it("contains the name", () => {
     expect(mount(<CardHeaderParentInfo {...props} />).text()).toContain(
-      benefitsFixture[1].vacNameEn
+      benefitsFixture[1].benefitNameEn
     );
   });
 
@@ -44,7 +44,7 @@ describe("CardHeaderParentInfo", () => {
       mount(<CardHeaderParentInfo {...props} />)
         .find("a")
         .text()
-    ).toEqual(benefitsFixture[1].vacNameEn);
+    ).toEqual(benefitsFixture[1].benefitNameEn);
   });
 
   describe("when language is French", () => {
@@ -54,7 +54,7 @@ describe("CardHeaderParentInfo", () => {
 
     it("contains the French name", () => {
       expect(mount(<CardHeaderParentInfo {...props} />).text()).toContain(
-        benefitsFixture[1].vacNameFr
+        benefitsFixture[1].benefitNameFr
       );
     });
 
@@ -68,7 +68,7 @@ describe("CardHeaderParentInfo", () => {
         mount(<CardHeaderParentInfo {...props} />)
           .find("a")
           .text()
-      ).toEqual(benefitsFixture[1].vacNameFr);
+      ).toEqual(benefitsFixture[1].benefitNameFr);
     });
   });
 

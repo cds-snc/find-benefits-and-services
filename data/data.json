@@ -1,8 +1,8 @@
 {
   "benefits": [
     {
-      "vacNameEn": "Active seniors benefit",
-      "vacNameFr": "(fra) Active seniors benefit",
+      "benefitNameEn": "Active seniors benefit",
+      "benefitNameFr": "(fra) Active seniors benefit",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWFZGPEbgMtNbbz"],
@@ -16,8 +16,8 @@
       "id": "reclO0wMapgJNMlAs"
     },
     {
-      "vacNameEn": "File taxes benefit",
-      "vacNameFr": "(fra) File taxes benefit",
+      "benefitNameEn": "File taxes benefit",
+      "benefitNameFr": "(fra) File taxes benefit",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWJA8VGxtunsYBY"],
@@ -31,8 +31,8 @@
       "id": "recoFRhS14rE9jt0v"
     },
     {
-      "vacNameEn": "Financial advice",
-      "vacNameFr": "(fra) Financial advice",
+      "benefitNameEn": "Financial advice",
+      "benefitNameFr": "(fra) Financial advice",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWJA8VGxtunsYBY"],
@@ -47,8 +47,8 @@
       "childBenefits": []
     },
     {
-      "vacNameEn": "Home accessibility benefit",
-      "vacNameFr": "(fra) Home accessibility benefit",
+      "benefitNameEn": "Home accessibility benefit",
+      "benefitNameFr": "(fra) Home accessibility benefit",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recrFaqBTcCoYsRCt"],
@@ -69,8 +69,8 @@
       "childBenefits": []
     },
     {
-      "vacNameEn": "Fitness services",
-      "vacNameFr": "(fra) Fitness services",
+      "benefitNameEn": "Fitness services",
+      "benefitNameFr": "(fra) Fitness services",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWFZGPEbgMtNbbz"],
@@ -89,8 +89,8 @@
       "childBenefits": []
     },
     {
-      "vacNameEn": "Find a doctor abroad",
-      "vacNameFr": "(fra) Find a doctor abroad",
+      "benefitNameEn": "Find a doctor abroad",
+      "benefitNameFr": "(fra) Find a doctor abroad",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "needs": ["recWFZGPEbgMtNbbz"],
@@ -104,8 +104,8 @@
       "childBenefits": []
     },
     {
-      "vacNameEn": "Retirement funding",
-      "vacNameFr": "(fra) Retirement funding",
+      "benefitNameEn": "Retirement funding",
+      "benefitNameFr": "(fra) Retirement funding",
       "benefitPageEn": "https://www.google.com/",
       "benefitPageFr": "https://www.google.com/",
       "oneLineDescriptionEn": "Funding for organizations to provide services to retirees.",

@@ -42,7 +42,7 @@ export const reducer = (state = initialState, action) => {
       });
       enIdx = lunr(function() {
         this.ref("id");
-        this.field("vacNameEn");
+        this.field("benefitNameEn");
         this.field("oneLineDescriptionEn");
         this.field("benefitExamplesEn");
         benefits.forEach(function(doc) {
@@ -53,7 +53,7 @@ export const reducer = (state = initialState, action) => {
       frIdx = lunr(function() {
         this.ref("id");
         this.use(lunr.fr);
-        this.field("vacNameFr");
+        this.field("benefitNameFr");
         this.field("oneLineDescriptionFr");
         this.field("benefitExamplesFr");
         benefits.forEach(function(doc) {

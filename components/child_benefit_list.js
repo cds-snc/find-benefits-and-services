@@ -54,7 +54,7 @@ const ChildBenefitList = props => {
                     return true;
                   }}
                 >
-                  {language === "en" ? cb.vacNameEn : cb.vacNameFr}
+                  {language === "en" ? cb.benefitNameEn : cb.benefitNameFr}
                 </HeaderLink>
               </li>
             ))}

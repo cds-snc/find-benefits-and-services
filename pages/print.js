@@ -109,9 +109,9 @@ export class Print extends Component {
     let sorting_fn = (a, b) => {
       if (a.sortingNumber === b.sortingNumber) {
         // sort alphabetically
-        let vacName = language === "en" ? "vacNameEn" : "vacNameFr";
-        let nameA = a[vacName].toUpperCase();
-        let nameB = b[vacName].toUpperCase(); // ignore upper and lowercase
+        let benefitName = language === "en" ? "benefitNameEn" : "benefitNameFr";
+        let nameA = a[benefitName].toUpperCase();
+        let nameB = b[benefitName].toUpperCase(); // ignore upper and lowercase
         if (nameA < nameB) {
           return -1;
         }
@@ -227,8 +227,8 @@ export class Print extends Component {
                       <div>
                         <b>
                           {t("current-language-code") == "en"
-                            ? b.vacNameEn
-                            : b.vacNameFr}
+                            ? b.benefitNameEn
+                            : b.benefitNameFr}
                         </b>
                       </div>
                       <div>

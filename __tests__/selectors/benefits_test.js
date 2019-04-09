@@ -106,10 +106,10 @@ describe("Benefits Selectors", () => {
   describe("getFilteredBenefitsWithoutSearch", () => {
     it("displays all benefits if nothing selected", () => {
       let allBenefitNames = new Set(
-        getFilteredBenefitsWithoutSearch(state, props).map(b => b.vacNameEn)
+        getFilteredBenefitsWithoutSearch(state, props).map(b => b.benefitNameEn)
       );
       expect(allBenefitNames).toEqual(
-        new Set(state.benefits.map(x => x.vacNameEn))
+        new Set(state.benefits.map(x => x.benefitNameEn))
       );
     });
 
@@ -128,11 +128,11 @@ describe("Benefits Selectors", () => {
         "Veteran and Family Well-Being Fund"
       ];
       const relevant_benefits = state.benefits.filter(x => {
-        return nameEnList.indexOf(x.vacNameEn) > -1;
+        return nameEnList.indexOf(x.benefitNameEn) > -1;
       });
       expect(
-        getFilteredBenefitsWithoutSearch(state, props).map(x => x.vacNameEn)
-      ).toEqual(relevant_benefits.map(x => x.vacNameEn));
+        getFilteredBenefitsWithoutSearch(state, props).map(x => x.benefitNameEn)
+      ).toEqual(relevant_benefits.map(x => x.benefitNameEn));
     });
 
     it("returns benefits based on selectedNeeds", () => {
@@ -141,7 +141,7 @@ describe("Benefits Selectors", () => {
       )[0];
       state.selectedNeeds = { [selectedNeed.id]: selectedNeed.id };
       let returnValue = getFilteredBenefitsWithoutSearch(state, props).map(
-        x => x.vacNameEn
+        x => x.benefitNameEn
       );
       expect(returnValue).toEqual(["Veterans Emergency Fund"]);
     });
@@ -150,10 +150,10 @@ describe("Benefits Selectors", () => {
   describe("getFilteredBenefits", () => {
     it("displays all benefits if nothing selected", () => {
       let allBenefitNames = new Set(
-        getFilteredBenefits(state, props).map(b => b.vacNameEn)
+        getFilteredBenefits(state, props).map(b => b.benefitNameEn)
       );
       expect(allBenefitNames).toEqual(
-        new Set(state.benefits.map(x => x.vacNameEn))
+        new Set(state.benefits.map(x => x.benefitNameEn))
       );
     });
 
@@ -172,11 +172,11 @@ describe("Benefits Selectors", () => {
         "Veteran and Family Well-Being Fund"
       ];
       const relevant_benefits = state.benefits.filter(x => {
-        return nameEnList.indexOf(x.vacNameEn) > -1;
+        return nameEnList.indexOf(x.benefitNameEn) > -1;
       });
-      expect(getFilteredBenefits(state, props).map(x => x.vacNameEn)).toEqual(
-        relevant_benefits.map(x => x.vacNameEn)
-      );
+      expect(
+        getFilteredBenefits(state, props).map(x => x.benefitNameEn)
+      ).toEqual(relevant_benefits.map(x => x.benefitNameEn));
     });
 
     it("returns benefits based on selectedNeeds", () => {
@@ -184,7 +184,9 @@ describe("Benefits Selectors", () => {
         x => x.nameEn === "Emergency funds"
       )[0];
       state.selectedNeeds = { [selectedNeed.id]: selectedNeed.id };
-      let returnValue = getFilteredBenefits(state, props).map(x => x.vacNameEn);
+      let returnValue = getFilteredBenefits(state, props).map(
+        x => x.benefitNameEn
+      );
       expect(returnValue).toEqual(["Veterans Emergency Fund"]);
     });
 
@@ -212,9 +214,9 @@ describe("Benefits Selectors", () => {
 
     it("returns a results if user searches see more content", () => {
       state.searchString = "inpatient";
-      expect(getFilteredBenefits(state, props).map(x => x.vacNameEn)).toEqual([
-        "Disability Benefits"
-      ]);
+      expect(
+        getFilteredBenefits(state, props).map(x => x.benefitNameEn)
+      ).toEqual(["Disability Benefits"]);
     });
   });
 

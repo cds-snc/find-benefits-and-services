@@ -7,14 +7,18 @@ const checkBenefitUrls = b => {
   Promise.resolve(urlCheck.fetchUrl(b.benefitPageEn)).then(result => {
     if (!result) {
       console.log(
-        `${b.vacNameEn}: Error connecting to benefitPageEn (${b.benefitPageEn})`
+        `${b.benefitNameEn}: Error connecting to benefitPageEn (${
+          b.benefitPageEn
+        })`
       );
     }
   });
   Promise.resolve(urlCheck.fetchUrl(b.benefitPageFr)).then(result => {
     if (!result) {
       console.log(
-        `${b.vacNameEn}: Error connecting to benefitPageFr (${b.benefitPageFr})`
+        `${b.benefitNameEn}: Error connecting to benefitPageFr (${
+          b.benefitPageFr
+        })`
       );
     }
   });

@@ -60,6 +60,6 @@ describe("LearnMoreButton", () => {
         .find("a")
         .at(0)
         .prop("aria-label")
-    ).toEqual("benefits_b.learn_more" + props.benefit.vacNameEn);
+    ).toEqual("benefits_b.learn_more" + props.benefit.benefitNameEn);
   });
 });
