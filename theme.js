@@ -1,6 +1,6 @@
 let theme = {
   fontFamilySerif: "Georgia",
-  fontFamilySansSerif: "Montserrat",
+  fontFamilySansSerif: "Fira Sans",
   marginTop: "25px", //used in place of theme.spacing.unit *3
   unit: "8px",
   cardPadding: "35px",
