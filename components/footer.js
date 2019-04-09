@@ -10,7 +10,7 @@ import { globalTheme } from "../theme";
 const root = css`
   width: 100%;
   background-color: ${globalTheme.colour.headerBackground};
-  height: 65px;
+  height: 100px;
   text-align: center;
 `;
 
@@ -25,7 +25,13 @@ const envDetailsStyling = css`
 `;
 
 const wordMark = css`
-  height: 25px;
+  height: 80px;
+  line-height: 50px;
+  vertical-align: middle;
+`;
+const cdsLogo = css`
+  height: 80px;
+  margin-left: 1em;
 `;
 
 class Footer extends Component {
@@ -47,7 +53,31 @@ class Footer extends Component {
           </FooterLink>
           <p css={envDetailsStyling}>Build: {envDetails}</p>
           <div css={wordMark}>
-            <WordMark width="6em" flag="#fff" text="#fff" />
+            <WordMark
+              css={css`
+                padding-bottom: 25px;
+              `}
+              height="25px"
+              width="6em"
+              flag="#fff"
+              text="#fff"
+            />
+            <a
+              href={
+                this.props.t("current-language-code") == "en"
+                  ? "https://digital.canada.ca"
+                  : "https://numerique.canada.ca"
+              }
+            >
+              <img
+                css={cdsLogo}
+                src={
+                  "/static/cds-logo-" +
+                  this.props.t("current-language-code") +
+                  "-v2.svg"
+                }
+              />
+            </a>
           </div>
         </Toolbar>
       </div>

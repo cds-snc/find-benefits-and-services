@@ -1,5 +1,5 @@
 let theme = {
-  fontFamilySerif: "Georgia",
+  fontFamilySerif: "Fira Sans",
   fontFamilySansSerif: "Fira Sans",
   marginTop: "25px", //used in place of theme.spacing.unit *3
   unit: "8px",
@@ -39,7 +39,7 @@ let theme = {
     alertModal: "#ff6961",
     paleBlueGrey: "#f1f7fc",
     darkBlueGrey: "#d8dee2",
-    borderGreen: "#ffcc33",
+    borderGreen: "#fff",
     linkTextColour: "#066169",
     divider: "#E1E4E7",
     hoverBackground: "#f6f9fa",
