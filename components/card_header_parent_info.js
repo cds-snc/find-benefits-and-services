@@ -62,10 +62,7 @@ export class CardHeaderParentInfo extends Component {
         <span>{t("benefits_b.card_header_1") + " "}</span>
         {this.get_benefit_a_elements(parentBenefits)}{" "}
         <span>
-          {t("benefits_b.card_header_2") +
-            " " +
-            this.benefitTitle(benefit) +
-            "."}
+          {t("benefits_b.card_header_3", { x: this.benefitTitle(benefit) })}
         </span>
       </span>
     );
