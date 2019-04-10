@@ -8,6 +8,7 @@ import WordMark from "../components/word_mark";
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import FIP from "../components/fip";
+import { globalTheme } from "../theme";
 
 const root = css`
   font-family: Merriweather, serif;
@@ -177,7 +178,11 @@ export class Print extends Component {
         <Grid container spacing={24}>
           <Grid item xs={12}>
             <div css={svgContainer}>
-              <FIP t={t} alt={t("titles.fip")} />
+              <FIP
+                t={t}
+                alt={t("titles.fip")}
+                fillColor={globalTheme.colour.black}
+              />
             </div>
           </Grid>
 
