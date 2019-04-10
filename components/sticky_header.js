@@ -38,7 +38,7 @@ const savedListStyle = css`
   margin-left: 50px;
   padding: 0;
   font-size: 20px;
-  color: ${globalTheme.colour.button1Hover};
+  color: ${globalTheme.colour.button1};
   @media only screen and (max-width: ${globalTheme.max.sm}) {
     font-size: 12px !important;
     margin-left: 25px;

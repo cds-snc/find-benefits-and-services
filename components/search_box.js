@@ -24,7 +24,7 @@ const InputSearchBox = styled("input")({
   border: 0,
   boxSizing: "border-box",
   fontFamily: globalTheme.fontFamilySansSerif,
-  color: globalTheme.colour.button1Hover,
+  color: globalTheme.colour.fontColour,
   fontWeight: "bold",
   textTransform: "none",
   fontSize: "18px",
@@ -48,7 +48,7 @@ const ClearButton = styled("button")({
   cursor: "pointer",
   border: 0,
   display: "block",
-  color: globalTheme.colour.button1Hover,
+  color: globalTheme.colour.button1,
   position: "absolute",
   left: "-50px",
   padding: "10px",
@@ -61,7 +61,7 @@ const ClearButton = styled("button")({
     outline: `3px solid ` + globalTheme.colour.focusColour
   },
   ":hover": {
-    color: globalTheme.colour.black
+    color: globalTheme.colour.button1Hover
   }
 });
 
@@ -70,7 +70,7 @@ const SearchButton = styled("button")({
   cursor: "pointer",
   border: 0,
   display: "block",
-  color: globalTheme.colour.button1Hover,
+  color: globalTheme.colour.button1,
   position: "relative",
   padding: "10px",
   width: "45px",
@@ -82,14 +82,14 @@ const SearchButton = styled("button")({
     outline: `3px solid ` + globalTheme.colour.focusColour
   },
   ":hover": {
-    backgroundColor: globalTheme.colour.black
+    backgroundColor: globalTheme.colour.button1Hover
   }
 });
 
 const DisabledSearchButton = styled("button")({
   backgroundColor: globalTheme.colour.backgroundFillColour,
   display: "block",
-  color: globalTheme.colour.button1Hover,
+  color: globalTheme.colour.button1,
   padding: "10px",
   width: "45px",
   height: "44px",

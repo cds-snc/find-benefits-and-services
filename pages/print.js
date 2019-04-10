@@ -177,7 +177,7 @@ export class Print extends Component {
         <Grid container spacing={24}>
           <Grid item xs={12}>
             <div css={svgContainer}>
-              <FIP t={t} alt={t("titles.fip")} />
+              <FIP t={t} fillColor="white" alt={t("titles.fip")} />
             </div>
           </Grid>
 
