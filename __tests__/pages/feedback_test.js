@@ -70,9 +70,4 @@ describe("Feedback", () => {
       .simulate("click");
     expect(mounted.instance().sendFeedback).toBeCalled();
   });
-  it("contains the details component", async () => {
-    expect(
-      mount(<Feedback {...props} {...reduxData} />).find("Details").length
-    ).toEqual(1);
-  });
 });
