@@ -46,13 +46,12 @@ class LanguageButton extends Component {
   render() {
     const { t, url, i18n } = this.props;
 
+    let href = mutateUrl(url, "", { lng: t("other-language-code") });
+
     return (
       <React.Fragment>
         <div title={t("other-language-in-current-language")}>
-          <Link
-            id="changeLanguage"
-            href={mutateUrl(url, "", { lng: t("other-language-code") })}
-          >
+          <Link id="changeLanguage" href={href}>
             <a
               title={t("other-language-in-current-language")}
               css={[buttonStyle, desktopButton]}
@@ -62,6 +61,7 @@ class LanguageButton extends Component {
                 i18n.changeLanguage();
               }}
               lang={t("other-language-code")}
+              href={href}
             >
               {t("other-language")}
             </a>
@@ -80,6 +80,7 @@ class LanguageButton extends Component {
                 i18n.changeLanguage();
               }}
               lang={t("other-language-code")}
+              href={href}
             >
               {this.titleCase(t("other-language-code"))}
             </a>
