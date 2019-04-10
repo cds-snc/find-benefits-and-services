@@ -26,17 +26,6 @@ export class BenefitExpansion extends Component {
       JSON.stringify(getProfileFilters(reduxState, this.props))
     );
 
-    if (patronType === "family") {
-      // the following code exists because we don't ask veterans/servingMembers the statusAndVitals question
-      switch (profileFilters["patronType"]) {
-        case "veteran":
-          profileFilters["statusAndVitals"] = "releasedAlive";
-          break;
-        case "servingMember":
-          profileFilters["statusAndVitals"] = "stillServing";
-          break;
-      }
-    }
     const selectedNeeds = {}; // we don't want to filter by need here
     if (patronType !== "") {
       profileFilters["patronType"] = patronType;
@@ -53,30 +42,13 @@ export class BenefitExpansion extends Component {
   };
 
   render() {
-    const { t, benefit, benefits, reduxState, store } = this.props;
+    const { t, benefit, benefits, store } = this.props;
     const language = t("current-language-code");
     const benefitName =
       language === "en" ? benefit.benefitNameEn : benefit.benefitNameFr;
     const childBenefits = benefit.childBenefits
       ? benefits.filter(ab => benefit.childBenefits.indexOf(ab.id) > -1)
       : [];
-
-    const veteranBenefits = this.getAlsoEligibleBenefits(
-      childBenefits,
-      "veteran"
-    );
-    const servingMemberBenefits = this.getAlsoEligibleBenefits(
-      childBenefits,
-      "servingMember"
-    );
-    const vetServBenefits =
-      reduxState.statusAndVitals !== "deceased"
-        ? [...new Set(veteranBenefits.concat(servingMemberBenefits))]
-        : [];
-    const familyBenefits = this.getAlsoEligibleBenefits(
-      childBenefits,
-      "family"
-    );
 
     let otherBenefits = t("benefits_b.eligible_open_veteran", {
       x: benefitName
@@ -91,13 +63,8 @@ export class BenefitExpansion extends Component {
           language={language}
         />
         <ChildBenefitList
-          benefits={vetServBenefits}
+          benefits={childBenefits}
           colonText={otherBenefits}
-          t={t}
-        />
-        <ChildBenefitList
-          benefits={familyBenefits}
-          colonText={t("benefits_b.eligible_open_family")}
           t={t}
         />
       </div>
