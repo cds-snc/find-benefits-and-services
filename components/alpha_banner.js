@@ -22,8 +22,8 @@ const Banner = css`
   align-items: center;
   -ms-flex-align: center;
   padding-bottom: 24px;
-  border-bottom: 4px solid ${globalTheme.colour.backgroundFillColour2};
-  color: ${globalTheme.colour.linkTextColour};
+  border-bottom: 4px solid ${globalTheme.colour.divider};
+  color: ${globalTheme.colour.fontColour};
   font-family: ${globalTheme.fontFamilySerif};
   span:first-of-type {
     font-weight: 700 !important;

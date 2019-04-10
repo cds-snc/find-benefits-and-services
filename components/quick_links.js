@@ -7,7 +7,7 @@ import { Grid } from "@material-ui/core";
 import { globalTheme } from "../theme";
 
 const greyBox = css`
-  background-color: ${globalTheme.colour.backgroundFillColour};
+  background-color: ${globalTheme.colour.backgroundFillColour3};
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 50px;
@@ -27,7 +27,7 @@ const leftDiv = css`
 const rightDiv = css`
   font-family: ${globalTheme.fontFamilySerif};
   font-size: 24px;
-  color: ${globalTheme.colour.button1Hover};
+  color: ${globalTheme.colour.white};
   border-left: 4px solid ${globalTheme.colour.divider};
   height: 100%;
   box-sizing: border-box;
@@ -46,20 +46,19 @@ const link = css`
 const quickLinksText = css`
   font-family: ${globalTheme.fontFamilySansSerif};
   font-size: 12px;
-  color: ${globalTheme.colour.button1Hover};
+  color: ${globalTheme.colour.white};
   font-weight: bold;
   text-transform: uppercase;
 `;
 
 const linkStyle = css`
-  color: ${globalTheme.colour.button1Hover};
+  color: ${globalTheme.colour.white};
   text-align: left;
   font-size: 16px;
   font-weight: 400;
   padding: 0;
   text-decoration: underline;
   line-height: 16px;
-  color: ${globalTheme.colour.fontColour};
 `;
 
 class QuickLinks extends Component {

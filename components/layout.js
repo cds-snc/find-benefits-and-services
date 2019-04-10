@@ -22,7 +22,7 @@ const Content = styled("div")`
 `;
 
 const backgoundColour1 = css`
-  background-color: ${globalTheme.colour.button1Hover};
+  background-color: ${globalTheme.colour.backgroundFillColour4};
 `;
 const footerColour = css`
   background-color: ${globalTheme.colour.headerBackground};
