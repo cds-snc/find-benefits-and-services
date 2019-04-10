@@ -2,7 +2,7 @@
 
 ## De quoi s’agit-il?
 
-[AirTable](https://airtable.com/) (en anglais) est un produit de feuille de calcul en ligne semblable à Google Sheets, mais ayant une meilleure interface de programmation d’applications (API), des contrôles d’accès et un historique de révision. Il permet la création des feuilles de calcul et l’ajout ou la modification de données au moyen de l’application Web Airtable ou au moyen de son API REST. Cela peut être contrôlé en configurant des comptes d’utilisateurs et en leur donnant une autorisation de lecture ou d’écriture. Vous pouvez également générer des clés d’API qui ont une autorisation de lecture ou d’écriture. Des documents personnalisés d’API (avec des exemples d’appels!) sont produits à l’aide des noms de tableau ou de colonne pour votre projet, et on peut les consulter sur airtable.com.
+[AirTable](https://airtable.com/) (en anglais) est un produit de feuille de calcul en ligne semblable à Google Sheets, mais ayant une meilleure interface de programmation d’applications (API), des contrôles d’accès et un historique de révision. Il permet la création des feuilles de calcul et l’ajout ou la modification de données au moyen de l’application Web Airtable ou au moyen de son API REST. Cela peut être contrôlé en configurant des comptes d’utilisateurs et en leur donnant une autorisation de lecture ou d’écriture. Vous pouvez également générer des clés d’API qui ont une autorisation de lecture ou d’écriture. Des documents personnalisés d’API sont produits à l’aide des noms de tableau ou de colonne pour votre projet, et on peut les consulter sur airtable.com.
 
 ## Pourquoi et comment l’utilisons-nous?
 
@@ -40,7 +40,7 @@ Pour faire quoi que ce soit dans AirTable, effectuez toujours les étapes suivan
 5. Trouvez la rangée qui contient le texte que vous voulez modifier.
 6. Saisissez votre nouveau texte dans les colonnes en français et en anglais.
 
-| Texte que vous voulez modifier                                                   | Feuille (en anglais)  | Nom de la colonne en anglais         | Nom de la colonne en français       |
+| Texte que vous voulez modifier                                                   | Feuille               | Nom de la colonne en anglais         | Nom de la colonne en français       |
 | -------------------------------------------------------------------------------- | --------------------- | ------------------------------------ | ----------------------------------- |
 | Nom de l’avantage                                                                | benefits              | benefitNameEn                        | benefitNameFr                       |
 | Description en une ligne                                                         | benefits              | oneLineDescriptionEn                 | oneLineDescriptionFr                |
