@@ -30,6 +30,9 @@ const headerDesc = css`
   }
   a {
     color: ${globalTheme.colour.fontColour};
+    :focus {
+      outline: 3px solid ${globalTheme.colour.focusColour};
+    }
   }
 `;
 

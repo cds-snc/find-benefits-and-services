@@ -25,7 +25,13 @@ const envDetailsStyling = css`
 `;
 const cdsLogo = css`
   height: 80px;
+`;
+
+const focusStyle = css`
   margin-right: 1em;
+  :focus {
+    outline: 3px solid ${globalTheme.colour.focusColour};
+  }
 `;
 
 class Footer extends Component {
@@ -43,6 +49,7 @@ class Footer extends Component {
                 ? "https://digital.canada.ca"
                 : "https://numerique.canada.ca"
             }
+            css={focusStyle}
           >
             <img
               css={cdsLogo}
