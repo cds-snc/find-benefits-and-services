@@ -25,10 +25,10 @@ const envDetailsStyling = css`
 `;
 const cdsLogo = css`
   height: 80px;
-  margin-right: 1em;
 `;
 
 const focusStyle = css`
+  margin-right: 1em;
   :focus {
     outline: 3px solid ${globalTheme.colour.focusColour};
   }
