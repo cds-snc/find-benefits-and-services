@@ -1,6 +1,5 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
-import SaveChecked from "./icons/SaveChecked";
 import SaveUnchecked from "./icons/SaveUnchecked";
 import { connect } from "react-redux";
 import Cookies from "universal-cookie";
@@ -103,7 +102,7 @@ export class FavouriteButton extends Component {
             size="small"
           >
             {isSaved ? (
-              <SaveChecked css={["saved", saveIcon]} />
+              <CloseButton css={["saved", saveIcon]} />
             ) : (
               <SaveUnchecked css={["notSaved", saveIcon]} />
             )}

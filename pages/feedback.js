@@ -12,7 +12,6 @@ import HeaderButton from "../components/header_button";
 import Button from "../components/button";
 import PropTypes from "prop-types";
 import TextArea from "../components/text_area";
-import Details from "../components/details";
 require("isomorphic-fetch");
 import Raven from "raven-js";
 import AlphaBanner from "../components/alpha_banner";
@@ -33,12 +32,6 @@ const headerPadding = css`
 const textAreaStyle = css`
   padding: 10px 0px 60px;
   max-width: 700px;
-`;
-const detailsStyle = css`
-  margin-bottom: 30px;
-  a {
-    color: ${globalTheme.colour.fontColour};
-  }
 `;
 const radioStyle = css`
   margin-left: 0px;
@@ -124,20 +117,6 @@ export class Feedback extends Component {
             >
               {t("feedback.tell_us_more")}
             </TextArea>
-            <Details
-              summary={t("feedback.details_question")}
-              css={detailsStyle}
-            >
-              {t("feedback.details_expansion_pt1")}
-              <a href={t("feedback.vac_office_link")}>
-                {t("feedback.details_expansion_pt2")}
-              </a>
-              {t("feedback.details_expansion_pt3")}
-              <a href={t("feedback.transition_centre_link")}>
-                {t("feedback.details_expansion_pt4")}
-              </a>
-              {t("feedback.details_expansion_pt5")}
-            </Details>
             <div className={padding}>
               <Link
                 href={{
