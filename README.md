@@ -5,7 +5,11 @@
 
 # Find benefits and services
 
-This is generic version of _Find benefits and services_, a product developed by the Canadian Digital Service (CDS) and Veterans Affairs Canada (VAC). The generic version of the app is currently deployed [here](http://benefits-avantages.cds-snc.ca), and the VAC instance of the app is [here](https://benefits-avantages.veterans.gc.ca).
+This is a generic version of _Find benefits and services_, a product developed by the Canadian Digital Service (CDS) and Veterans Affairs Canada (VAC). The generic version of the app is currently deployed [here](http://benefits-avantages.cds-snc.ca), and the VAC instance of the app is [here](https://benefits-avantages.veterans.gc.ca).
+
+Refer to the [companion documentation](https://cds-snc.github.io/find-benefits-and-services-documentation/) for details on the product. 
+
+---
 
 To create your own instance of this service, first you will need to install Yarn:
 
