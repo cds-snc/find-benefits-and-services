@@ -135,8 +135,9 @@ describe("GuidedExperience", () => {
     props.url.query.statusAndVitals = "blah";
     expect(
       mounted_GuidedExperience()
-        .find("#nextLink")
+        .find("#nextButton")
         .first()
+        .parent()
         .props().href
     ).toEqual("/serviceHealthIssue?lng=en&patronType=veteran&serviceType=RCMP");
   });
@@ -146,8 +147,9 @@ describe("GuidedExperience", () => {
     props.url.query.selectedNeeds = "1,2";
     expect(
       mounted_GuidedExperience()
-        .find("#skipLink")
+        .find("#skipButton")
         .first()
+        .parent()
         .props().href
     ).toEqual("/needs?lng=en&patronType=veteran&selectedNeeds=1,2");
   });
@@ -161,8 +163,9 @@ describe("GuidedExperience", () => {
 
     expect(
       mounted_GuidedExperience()
-        .find("#skipLink")
+        .find("#skipButton")
         .first()
+        .parent()
         .props().href
     ).toEqual("/needs?lng=en&selectedNeeds=1,2");
   });

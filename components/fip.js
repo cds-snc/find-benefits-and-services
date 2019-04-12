@@ -19,7 +19,7 @@ class FIP extends Component {
 
 FIP.propTypes = {
   fillColor: PropTypes.string.isRequired,
-  t: PropTypes.object.isRequired
+  t: PropTypes.func.isRequired
 };
 
 export default FIP;
