@@ -254,7 +254,7 @@ export class GuidedExperience extends Component {
                     >
                       {t("back")}
                     </HeaderLink>
-                    <Link id="nextLink" href={this.getNextUrl()}>
+                    <Link href={this.getNextUrl()}>
                       <Button id="nextButton" mobileFullWidth={true}>
                         {this.getNextUrl().indexOf("benefits-directory") > -1
                           ? t("ge.show_results")
@@ -270,7 +270,7 @@ export class GuidedExperience extends Component {
                   lg={4}
                   css={alignRight}
                 >
-                  <Link id="skipLink" href={this.getSkipUrl()}>
+                  <Link href={this.getSkipUrl()}>
                     <HeaderButton
                       id="skipButton"
                       altStyle="grey"

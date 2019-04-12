@@ -51,8 +51,9 @@ class LanguageButton extends Component {
     return (
       <React.Fragment>
         <div title={t("other-language-in-current-language")}>
-          <Link id="changeLanguage" href={href}>
+          <Link href={href}>
             <a
+              id="changeLanguage"
               title={t("other-language-in-current-language")}
               css={[buttonStyle, desktopButton]}
               onClick={() => {
@@ -67,11 +68,9 @@ class LanguageButton extends Component {
             </a>
           </Link>
 
-          <Link
-            id="changeLanguageMobile"
-            href={mutateUrl(url, "", { lng: t("other-language-code") })}
-          >
+          <Link href={mutateUrl(url, "", { lng: t("other-language-code") })}>
             <a
+              id="changeLanguageMobile"
               title={t("other-language-in-current-language")}
               css={[buttonStyle, mobileButton]}
               onClick={() => {
