@@ -13,13 +13,13 @@
 | -------------------------------------------------------------------------------- | --------------------- | ------------------------------------ | ----------------------------------- |
 | Nom de l’avantage                                                                | benefits              | benefitNameEn                        | benefitNameFr                       |
 | Description en une ligne                                                         | benefits              | oneLineDescriptionEn                 | oneLineDescriptionFr                |
-| Lien Apprenez-en plus à ce sujet d’ACC                                           | benefits              | benefitPageEn                        | benefitPageFr                       |
+| (fra) Learn more link                                                            | benefits              | benefitPageEn                        | benefitPageFr                       |
 | Renseignements importants dans l’en-tête de la carte                             | benefits              | noteEn                               | noteFr                              |
 | Voir davantage de description de contenu                                         | benefits              | seeMoreSentenceEn                    | seeMoreSentenceFr                   |
 | Texte des questions dans le répertoire des avantages                             | questions             | display_text_english                 | display_text_french                 |
 | Texte des questions dans l’expérience guidée                                     | questions             | guided_experience_english            | guided_experience_french            |
 | Titre de la page de l’expérience guidée                                          | questions             | guided_experience_page_title_english | guided_experience_page_title_french |
-| Texte de l’infobulle sur les questions de santé                                  | questions             | tooltip_english                      | tooltip_french                      |
+| (fra) Question tooltip text                                                      | questions             | tooltip_english                      | tooltip_french                      |
 | Texte de l’option de choix multiples                                             | multipleChoiceOptions | display_text_english                 | display_text_french                 |
 | Texte de la piste de navigation ou du lien de l’expérience guidée                | multipleChoiceOptions | ge_breadcrumb_english                | ge_breadcrumb_french                |
 | Options de case à cocher dans l’expérience guidée et le répertoire des avantages | needs                 | nameEn                               | nameFr                              |
