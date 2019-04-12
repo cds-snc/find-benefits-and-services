@@ -93,7 +93,7 @@ Repeat these steps for each of the 4 environment variables in the table above.
 
 ## Adding in your new content and eligibility
 
-You can now start customizing the content in the app to suite your use case. Our [guide to changing content](/doc/en/AIRTABLE.md#step-by-step-guides) will help you get started with that. Note that there are two options for loading content into your app going forward:
+You can now start customizing the content in the app to suite your use case. Our [guide to changing content](/doc/en/CHANGING_CONTENT.md) will help you get started with that. Note that there are two options for loading content into your app going forward:
 
 1. Load content and logic directly from your airtable base (`USE_AIRTABLE = "true"`). This is great for development and quickly seeing your changes in the live app.
 2. Load content from [data.json](/data/data.json). This is a good option when your app is live and and content changes may be less frequent and require more peer review. To choose this option, remove the `USE_AIRTABLE` environment variable from your environment. To make a pull new content into the app, run `yarn download`. This copies the most recent airtable data to [data.json](/data/data.json).
@@ -104,7 +104,7 @@ It is also possible to not use Airtable. An alternative method would be to store
 
 ## Reference
 
-If you'd like to contribute to the project, we have more detailed documentation regarding our tech choices here: [doc](/doc/).
+If you'd like to contribute to the project, we have more detailed documentation regarding our tech choices here: [doc](/doc/en/TECH_CHOICES.md).
 
 This application uses the following resources:
 
