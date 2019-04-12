@@ -20,7 +20,7 @@ class Head extends Component {
         <title>{title}</title>
         <meta name="description" content={description || t("description")} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/static/leaf-favicon.png" />
+        <link rel="icon" href="/static/leaf-favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900"
           rel="stylesheet"
