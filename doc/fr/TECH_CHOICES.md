@@ -1,4 +1,4 @@
-## (fra) Tech choices
+## Choix technologiques
 
 ### Table des matières
 
