@@ -1,4 +1,4 @@
-## (fra) Guide to changing content
+## Guide de modification de contenu
 
 ### Modifier le texte et les liens dans l’application
 
