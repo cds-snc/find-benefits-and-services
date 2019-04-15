@@ -28,3 +28,7 @@ Pour faire quoi que ce soit dans AirTable, effectuez toujours les étapes suivan
 3. Pour visualiser vos modifications dans l’application en direct, consultez la [page de validation des données](https://benefits-avantages.cds-snc.ca/data-validation?lng=fr) et cliquez sur le bouton « Rafraîchir le cache » dans le coin supérieur droit.
 4. Veillez à ce qu’aucun nouveau test n’échoue en examinant les rangées sur la page de validation des données. S’il y en a, examinez et corrigez le problème dans Airtable.
 5. Retournez à la page dans l’application où vous vous attendez à ce que vos modifications soient appliquées. Actualisez la page pour les voir.
+
+## Modification de contenu
+
+Pour des indications étape par étape sur la modification de contenu, veuillez consulter notre [guide de modification de contenu](/doc/fr/CHANGING_CONTENT.md).
