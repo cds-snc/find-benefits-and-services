@@ -13,7 +13,7 @@
 | -------------------------------------------------------------------------------- | --------------------- | ------------------------------------ | ----------------------------------- |
 | Nom de l’avantage                                                                | benefits              | benefitNameEn                        | benefitNameFr                       |
 | Description en une ligne                                                         | benefits              | oneLineDescriptionEn                 | oneLineDescriptionFr                |
-| (fra) Learn more link                                                            | benefits              | benefitPageEn                        | benefitPageFr                       |
+| Lien pour en savoir plus                                                            | benefits              | benefitPageEn                        | benefitPageFr                       |
 | Renseignements importants dans l’en-tête de la carte                             | benefits              | noteEn                               | noteFr                              |
 | Voir davantage de description de contenu                                         | benefits              | seeMoreSentenceEn                    | seeMoreSentenceFr                   |
 | Texte des questions dans le répertoire des avantages                             | questions             | display_text_english                 | display_text_french                 |
