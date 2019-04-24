@@ -1,8 +1,6 @@
 [![CircleCI](https://circleci.com/gh/cds-snc/find-benefits-and-services.svg?style=svg)](https://circleci.com/gh/cds-snc/find-benefits-and-services)
 [![Known Vulnerabilities](https://snyk.io/test/github/cds-snc/find-benefits-and-services/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cds-snc/find-benefits-and-services?targetFile=package.json)
 
-[La version française suit.](#---------------------------------------------------------------------)
-
 # Find benefits and services
 
 This is a generic version of _Find benefits and services_, a product developed by the Canadian Digital Service (CDS) and Veterans Affairs Canada (VAC). The generic version of the app is currently deployed [here](http://benefits-avantages.cds-snc.ca), and the VAC instance of the app is [here](https://benefits-avantages.veterans.gc.ca).
