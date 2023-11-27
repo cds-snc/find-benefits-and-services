@@ -30,7 +30,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
-    "@material-ui/core": "^3.9.2",
+    "@material-ui/core": "^4.0.0",
     "autosuggest-highlight": "^3.1.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.9",
@@ -49,7 +49,7 @@
     "lunr": "^2.3.6",
     "lunr-languages": "^1.1.0",
     "markdown-it": "^8.4.2",
-    "next": "8.1.0",
+    "next": "10.0.6",
     "next-redux-wrapper": "^3.0.0-alpha.2",
     "raven-js": "^3.27.1",
     "react": "16.8.6",
