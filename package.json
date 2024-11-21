@@ -44,7 +44,7 @@
     "emotion": "^10.0.9",
     "emotion-server": "^10.0.9",
     "express": "^4.17.1",
-    "helmet": "^3.18.0",
+    "helmet": "^3.21.1",
     "isomorphic-unfetch": "^3.0.0",
     "lunr": "^2.3.6",
     "lunr-languages": "^1.1.0",
